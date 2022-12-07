@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.3
+
+### Patch Changes
+
+- modify package.json
+
 ## 0.0.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/button",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "types": "./index.d.ts",
   "files": [
@@ -37,12 +37,12 @@
     "access": "public"
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "@types/react": "^18.0.26",
     "@react-elf-types/button": "*"
   },
   "devDependencies": {
-    "@types/react": "^18.0.26",
     "@vitejs/plugin-react": "^2.2.0",
-    "react": "^18.2.0",
     "vite": "^3.2.5",
     "vitest": "0.22.1"
   }
