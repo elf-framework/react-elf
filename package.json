@@ -1,0 +1,41 @@
+{
+  "name": "react-elf",
+  "version": "1.0.0",
+  "description": "react component",
+  "private": true,
+  "workspaces": [
+    "apps/**/*",
+    "packages/**/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "docs:dev": "turbo run docs:dev --parallel",
+    "docs:build": "turbo run docs:build --parallel",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "prerelease": "npm run build",
+    "release": "changeset publish",
+    "lint": "turbo run lint",
+    "build:storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elf-framework/react-elf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elf-framework/react-elf/issues"
+  },
+  "homepage": "https://github.com/elf-framework/react-elf#readme",
+  "devDependencies": {
+    "@changesets/changelog-git": "^0.1.12",
+    "@changesets/changelog-github": "^0.4.6",
+    "@changesets/cli": "^2.25.2",
+    "changeset": "^0.2.6",
+    "eslint": "^8.22.0",
+    "turbo": "^1.6.3"
+  }
+}

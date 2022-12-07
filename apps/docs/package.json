@@ -1,0 +1,26 @@
+{
+  "name": "@react-elf/docs",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "docs:dev": "npm run dev",
+    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
+    "preview-storybook": "serve storybook-static",
+    "clean": "rm -rf .turbo && rm -rf node_modules"
+  },
+  "dependencies": {
+    "@react-elf/button": "*"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-docs": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/react": "^6.5.14",
+    "@vitejs/plugin-react": "^2.2.0",
+    "serve": "^14.1.2",
+    "typescript": "^4.9.3"
+  }
+}
