@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/shared",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "",
   "files": [
     "dist"
@@ -21,7 +21,7 @@
     "vite:watch": "vite build --config=vite.dist.config.js --watch",
     "ui:watch": "npm run watch",
     "docs:dev": "npm run ui:watch",
-    "build": "npm run vite:dist",
+    "build": "npm run nano:build",
     "nano:build": "nanobundle build",
     "test": "vitest",
     "coverage": "vitest --coverage"
