@@ -1,11 +1,12 @@
 {
   "name": "@react-elf/shared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "files": [
     "dist"
   ],
   "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
