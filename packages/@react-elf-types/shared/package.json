@@ -1,5 +1,5 @@
 {
-  "name": "@react-elf-types/button",
+  "name": "@react-elf-types/shared",
   "version": "0.0.3",
   "description": "Elf UI components in React",
   "license": "MIT",
@@ -10,8 +10,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0",
-    "@react-elf-types/shared": "*"
+    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
   "publishConfig": {
     "access": "public"

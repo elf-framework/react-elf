@@ -10,6 +10,9 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
+    "@elf-framework/color": "^0.0.69",
+    "@elf-framework/design-system": "^0.0.102",
+    "@elf-framework/design-tokens": "^0.0.102",
     "@react-elf/button": "*"
   },
   "devDependencies": {

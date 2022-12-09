@@ -1,4 +1,4 @@
-# @react-elf-types/button
+# @react-elf-types/shared
 
 ## 0.0.3
 
