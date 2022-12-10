@@ -15,6 +15,10 @@
       "docs:dev": {
         "dependsOn": ["^docs:dev"],
         "outputs": ["dist/**", "storybook-static/**"]
+      },
+      "npm-check": {
+        "dependsOn": ["^npm-check"],
+        "cache": false
       }
     }
   }

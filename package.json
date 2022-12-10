@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "npm-check": "turbo run npm-check --parallel",    
     "docs:dev": "turbo run docs:dev --parallel",
     "docs:build": "turbo run docs:build --parallel",
     "test": "echo \"Error: no test specified\" && exit 1",
