@@ -39,7 +39,9 @@ jobs:
         run: npm cache clean -f
       - name: Install
         run: npm install
-      - name: build
+      - name: Build for library
+        run: npm run docs:build        
+      - name: Build for documentation
         run: npm run docs:build
       - name: Setup Pages
         uses: actions/configure-pages@v2
