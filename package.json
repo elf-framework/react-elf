@@ -12,6 +12,7 @@
     "npm-check": "turbo run npm-check --parallel",    
     "docs:dev": "turbo run docs:dev --parallel",
     "docs:build": "turbo run docs:build --parallel",
+    "preview-storybook": "npm run docs:build && serve docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "changeset": "changeset",
     "version": "changeset version",
