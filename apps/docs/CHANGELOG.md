@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.10
+
+### Patch Changes
+
+- update vite version to v4.0.3
+
 ## 0.0.9
 
 ### Patch Changes

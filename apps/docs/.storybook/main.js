@@ -16,17 +16,6 @@ module.exports = {
     // customize the Vite config here
     return {
       ...config,
-      resolve: {
-        alias: [
-        //   {
-        //     find: "@acme/core",
-        //     replacement: path.resolve(
-        //       __dirname,
-        //       "../../../packages/acme-core/"
-        //     ),
-        //   },
-        ],
-      },
     };
   },
 };
