@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.9
+
+### Patch Changes
+
+- add Alert component
+
+- Updated dependencies []:
+  - @react-elf/alert@0.0.9
+
 ## 0.0.7
 
 ### Patch Changes
