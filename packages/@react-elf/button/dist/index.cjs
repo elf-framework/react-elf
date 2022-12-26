@@ -25,14 +25,17 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  Button: () => Button
+  Button: () => Button,
+  IconButton: () => IconButton,
+  OutlineButton: () => OutlineButton,
+  RoundButton: () => RoundButton
 });
 module.exports = __toCommonJS(src_exports);
 
 // src/Button.tsx
 var import_shared = require("@react-elf/shared");
-var import_classnames = __toESM(require("classnames"));
-var import_react = __toESM(require("react"));
+var import_classnames = __toESM(require("classnames"), 1);
+var import_jsx_runtime = require("react/jsx-runtime");
 var cssProperties = (0, import_shared.makeCssVariablePrefixMap)("--elf--button", {
   borderColor: true,
   backgroundColor: true,
@@ -93,7 +96,7 @@ function Button(props) {
     },
     className
   ]);
-  const buttonContent = /* @__PURE__ */ import_react.default.createElement("span", null, children || "");
+  const buttonContent = /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: children || "" });
   if (as === "link") {
     const styleObject = {
       className: localClass,
@@ -102,7 +105,7 @@ function Button(props) {
       ...extraProps,
       onClick: void 0
     };
-    return /* @__PURE__ */ import_react.default.createElement("a", { ...styleObject, href, target }, buttonContent);
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { ...styleObject, href, target, children: buttonContent });
   } else {
     const styleObject = {
       className: localClass,
@@ -110,7 +113,24 @@ function Button(props) {
       style: (0, import_shared.propertyMap)(style, cssProperties),
       ...extraProps
     };
-    return /* @__PURE__ */ import_react.default.createElement("button", { ...styleObject }, buttonContent);
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { ...styleObject, children: buttonContent });
   }
 }
-//# sourceMappingURL=index.cjs.js.map
+
+// src/RoundButton.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
+function RoundButton(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Button, { ...props, shape: "round" });
+}
+
+// src/IconButton.tsx
+var import_jsx_runtime3 = require("react/jsx-runtime");
+function IconButton(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(RoundButton, { ...props, iconOnly: true });
+}
+
+// src/OutlineButton.tsx
+var import_jsx_runtime4 = require("react/jsx-runtime");
+function OutlineButton(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Button, { ...props, outline: true });
+}

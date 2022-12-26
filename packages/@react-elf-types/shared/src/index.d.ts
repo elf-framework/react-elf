@@ -104,3 +104,21 @@ export function propertyMap(
   styles: KeyValue,
   mapper?: KeyValue
 ): KeyValue | undefined;
+
+
+export type ThemeType = "dark" | "light" | string;
+
+export type VariantType =
+  | "default"
+  | "primary"
+  | "secondary"
+  | "success"
+  | "danger"
+  | "warning"
+  | "info"
+  | "light"
+  | "dark";
+
+export type SizeType = "small" | "medium" | "large" | "extra-large";
+
+export type OrientationType = "horizontal" | "vertical";

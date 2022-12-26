@@ -104,3 +104,118 @@ export function makeCssVariablePrefixMap(
 
   return newObj;
 }
+
+
+
+export const ComponentPropsToStylePropsMap = {
+  alignContent: "alignContent",
+  alignItems: "alignItems",
+  alignSelf: "alignSelf",
+  area: "gridArea",
+  autoColumns: "gridAutoColumns",
+  autoFlow: "gridAutoFlow",
+  autoRows: "gridAutoRows",
+  backgroundColor: "backgroundColor",
+  backgroundImage: "backgroundImage",
+  basis: "flexBasis",
+  border: "border",
+  borderRadius: "borderRadius",
+  bottom: "bottom",
+  boxShadow: "boxShadow",
+  color: "color",
+  column: "gridColumn",
+  columnEnd: "gridColumnEnd",
+  columnGap: "columnGap",
+  columnSpan: "gridColumn", // Will set gridColumn if no `row` prop given
+  columnStart: "gridColumnStart",
+  direction: "flexDirection",
+  display: "display",
+  flex: "flex",
+  fontFamily: "fontFamily",
+  fontSize: "fontSize",
+  fontStyle: "fontStyle",
+  fontWeight: "fontWeight",
+  gap: "gap",
+  grow: "flexGrow",
+  height: "height",
+  justifyContent: "justifyContent",
+  left: "left",
+  letterSpacing: "letterSpacing",
+  lineHeight: "lineHeight",
+  margin: "margin",
+  marginBlock: "marginBlock",
+  marginBlockEnd: "marginBlockEnd",
+  marginBlockStart: "marginBlockStart",
+  marginBottom: "marginBlockEnd",
+  marginInline: "marginInline",
+  marginInlineEnd: "marginInlineEnd",
+  marginInlineStart: "marginInlineStart",
+  marginLeft: "marginInlineStart",
+  marginRight: "marginInlineEnd",
+  marginTop: "marginBlockStart",
+  maxHeight: "maxHeight",
+  maxWidth: "maxWidth",
+  minHeight: "minHeight",
+  minWidth: "minWidth",
+  objectFit: "objectFit",
+  objectPosition: "objectPosition",
+  opacity: "opacity",
+  order: "order",
+  overflow: "overflow",
+  padding: "padding",
+  paddingBlock: "paddingBlock",
+  paddingBlockEnd: "paddingBlockEnd",
+  paddingBlockStart: "paddingBlockStart",
+  paddingBottom: "paddingBlockEnd",
+  paddingInline: "paddingInline",
+  paddingInlineEnd: "paddingInlineEnd",
+  paddingInlineStart: "paddingInlineStart",
+  paddingLeft: "paddingInlineStart",
+  paddingRight: "paddingInlineEnd",
+  paddingTop: "paddingBlockStart",
+  position: "position",
+  resize: "resize",
+  right: "right",
+  row: "gridRow",
+  rowEnd: "gridRowEnd",
+  rowGap: "rowGap",
+  rowSpan: "gridRow", // Will set gridRow if no `row` prop given
+  rowStart: "gridRowStart",
+  shrink: "flexShrink",
+  templateAreas: "gridTemplateAreas",
+  templateColumns: "gridTemplateColumns",
+  templateRows: "gridTemplateRows",
+  textAlign: "textAlign",
+  textDecoration: "textDecoration",
+  textTransform: "textTransform",
+  top: "top",
+  transform: "transform",
+  transformOrigin: "transformOrigin",
+  width: "width",
+  whiteSpace: "whiteSpace",
+  wrap: "flexWrap",
+  zIndex: "zIndex",
+};
+
+
+/**
+ * properties key 중에 style key가 있는지 확인
+ * style key 와 none style key 를 분리해서 반환
+ *
+ */
+export function splitStyleKeyAndNoneStyleKey(properties: KeyValue) {
+  const style = {};
+  const noneStyle = {};
+
+  Object.keys(properties).forEach((key) => {
+    const value = properties[key];
+    const styleKey = ComponentPropsToStylePropsMap[key];
+    if (styleKey) {
+      style[styleKey] = value;
+    } else {
+      noneStyle[key] = value;
+    }
+  });
+
+  return { style, noneStyle };
+}

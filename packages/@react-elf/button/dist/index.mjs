@@ -1,7 +1,7 @@
 // src/Button.tsx
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import classnames from "classnames";
-import React from "react";
+import { jsx } from "react/jsx-runtime";
 var cssProperties = makeCssVariablePrefixMap("--elf--button", {
   borderColor: true,
   backgroundColor: true,
@@ -62,7 +62,7 @@ function Button(props) {
     },
     className
   ]);
-  const buttonContent = /* @__PURE__ */ React.createElement("span", null, children || "");
+  const buttonContent = /* @__PURE__ */ jsx("span", { children: children || "" });
   if (as === "link") {
     const styleObject = {
       className: localClass,
@@ -71,7 +71,7 @@ function Button(props) {
       ...extraProps,
       onClick: void 0
     };
-    return /* @__PURE__ */ React.createElement("a", { ...styleObject, href, target }, buttonContent);
+    return /* @__PURE__ */ jsx("a", { ...styleObject, href, target, children: buttonContent });
   } else {
     const styleObject = {
       className: localClass,
@@ -79,10 +79,30 @@ function Button(props) {
       style: propertyMap(style, cssProperties),
       ...extraProps
     };
-    return /* @__PURE__ */ React.createElement("button", { ...styleObject }, buttonContent);
+    return /* @__PURE__ */ jsx("button", { ...styleObject, children: buttonContent });
   }
 }
+
+// src/RoundButton.tsx
+import { jsx as jsx2 } from "react/jsx-runtime";
+function RoundButton(props) {
+  return /* @__PURE__ */ jsx2(Button, { ...props, shape: "round" });
+}
+
+// src/IconButton.tsx
+import { jsx as jsx3 } from "react/jsx-runtime";
+function IconButton(props) {
+  return /* @__PURE__ */ jsx3(RoundButton, { ...props, iconOnly: true });
+}
+
+// src/OutlineButton.tsx
+import { jsx as jsx4 } from "react/jsx-runtime";
+function OutlineButton(props) {
+  return /* @__PURE__ */ jsx4(Button, { ...props, outline: true });
+}
 export {
-  Button
+  Button,
+  IconButton,
+  OutlineButton,
+  RoundButton
 };
-//# sourceMappingURL=index.mjs.js.map

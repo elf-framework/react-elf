@@ -57,3 +57,19 @@ interface ButtonProps {
   pending?: boolean;
   as?: string;
 }
+
+
+interface ActionGroupProps {
+  children?: ReactNode;
+  direction?: OrientationType;
+  moreIcon?: ReactNode;
+  quiet?: boolean;
+  compact?: boolean;
+  justified?: boolean;
+  collapsed?: boolean;
+  disabled?: boolean;
+  shape?: "rect" | "normal";
+  onMoreClick?: (event: PointerEvent, items: ReactNode[]) => void;
+  style?: ButtonStyle & CommonStyle;
+  boundary?: number;
+}

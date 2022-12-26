@@ -8,14 +8,17 @@
     "docs:dev": "npm run dev",
     "docs:build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook --output-dir ../../docs",
     "preview-storybook": "serve storybook-static",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "chromatic": "npx chromatic --project-token=8c23b750b2a7"
   },
   "dependencies": {
-    "@elf-framework/color": "^0.0.69",
-    "@elf-framework/design-system": "^0.0.112",
-    "@elf-framework/design-tokens": "^0.0.112",
+    "@elf-framework/color": "^0.0.116",
+    "@elf-framework/design-system": "^0.0.137",
+    "@elf-framework/design-tokens": "^0.0.137",
     "@locofy/storybook-addon": "^0.2.64",
     "@react-elf/button": "*",
+    "@react-elf/tooltip": "*",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
@@ -25,8 +28,11 @@
     "@storybook/addon-links": "^6.5.14",
     "@storybook/builder-vite": "^0.2.5",
     "@storybook/react": "^6.5.14",
-    "@vitejs/plugin-react": "^3.0.0",
+    "@vitejs/plugin-react": "^2.2.0",
+    "chromatic": "^6.14.0",
     "serve": "^14.1.2",
     "typescript": "^4.9.4"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@react-elf/docs@0.0.7"
 }

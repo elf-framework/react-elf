@@ -1,5 +1,5 @@
 {
-  "name": "@react-elf/button",
+  "name": "@react-elf/tooltip",
   "version": "0.0.8",
   "description": "",
   "type": "module",
@@ -38,17 +38,18 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@react-elf-types/button": "*",
     "@react-elf-types/tooltip": "*",
     "@react-elf/shared": "*",
-    "@react-elf/tooltip": "*",
     "@types/react": "^18.0.26",
     "classnames": "^2.3.2",
-    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
+    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.0.0",
     "chokidar-cli": "^3.0.0",
     "nanobundle": "^1.1.0",
