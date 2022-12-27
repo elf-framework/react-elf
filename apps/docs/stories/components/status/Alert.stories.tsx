@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Alert } from "@react-elf/alert";
 import "@elf-framework/design-system/style.css";
+import { Alert } from "@react-elf/ui";
 
 
 export default {
   component: Alert,
-  title: "Components/Alert",
+  title: "Components/Status/Alert",
   argTypes: {
     title: {
       name: "title",
@@ -43,7 +43,7 @@ The label can be hidden to create an icon-only button. If the label is hidden, a
     }
   }
 } as Meta;
-export const DefaultTooltip: Story = (args) => {
+export const DefaultAlert: Story = (args) => {
   const { title,variant } = args;
   return <div style={{display: "flex", gap: 10, flexDirection: "column"}}>
     <div style={{display: "flex", gap: 10, flex: "1 1 auto"}}>

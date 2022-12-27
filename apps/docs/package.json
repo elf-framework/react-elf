@@ -1,10 +1,10 @@
 {
   "name": "@react-elf/docs",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": true,
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6007",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
     "docs:dev": "npm run dev",
     "docs:build": "NODE_OPTIONS=--openssl-legacy-provider build-storybook --output-dir ../../docs",
     "preview-storybook": "serve storybook-static",
@@ -17,9 +17,7 @@
     "@elf-framework/design-system": "^0.0.140",
     "@elf-framework/design-tokens": "^0.0.140",
     "@locofy/storybook-addon": "^0.2.64",
-    "@react-elf/alert": "*",
-    "@react-elf/button": "*",
-    "@react-elf/tooltip": "*",
+    "@react-elf/ui": "*",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {

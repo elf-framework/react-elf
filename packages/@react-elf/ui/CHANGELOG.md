@@ -4,7 +4,10 @@
 
 ### Patch Changes
 
-- update class property to className
+- initialize all ui project
+
+- Updated dependencies []:
+  - @react-elf/alert@0.0.11
 
 ## 0.0.9
 

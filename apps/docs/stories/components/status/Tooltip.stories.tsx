@@ -8,7 +8,7 @@ import { FaBeer } from 'react-icons/fa';
 
 export default {
   component: Tooltip,
-  title: "Components/Tooltip",
+  title: "Components/Status/Tooltip",
   argTypes: {
     children: {
       name: "children",

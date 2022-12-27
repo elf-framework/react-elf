@@ -5,7 +5,7 @@ import "@elf-framework/design-system/style.css";
 
 export default {
   component: Button,
-  title: "Components/Button",
+  title: "Components/Actions/Button",
   argTypes: {
     children: {
       name: "children",

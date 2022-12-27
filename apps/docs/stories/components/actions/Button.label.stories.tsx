@@ -7,7 +7,7 @@ import { FaBeer } from 'react-icons/fa';
 
 export default {
   component: Button,
-  title: "Components/Button",
+  title: "Components/Actions/Button",
   argTypes: {
     children: {
       name: "children",

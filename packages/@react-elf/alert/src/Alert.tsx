@@ -53,7 +53,7 @@ export function Alert (props: AlertProps) {
     }, [variant, weak, hide, closable, shape, dismissable]);
 
     const styleObject = {
-      class: localClass,
+      className: localClass,
       style: {
         ...propertyMap(style, cssProperties),
         ...{
