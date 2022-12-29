@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/tooltip",
-  "version": "0.0.8",
+  "version": "0.0.13",
   "description": "",
   "type": "module",
   "files": [
@@ -18,7 +18,7 @@
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
     "vite:dist": "vite build --config=vite.dist.config.js",
-    "watch": "chokidar \"src/*\" -c \"npm run nano:build\" --polling",
+    "watch": "chokidar \"src/**/*\" -c \"npm run nano:build\" --polling",
     "vite:watch": "vite build --config=vite.dist.config.js --watch",
     "ui:watch": "npm run watch",
     "docs:dev": "npm run ui:watch",

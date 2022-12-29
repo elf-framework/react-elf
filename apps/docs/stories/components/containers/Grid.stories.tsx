@@ -1,34 +1,36 @@
 import * as React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Alert } from "@react-elf/alert";
+import { Grid } from "@react-elf/layout";
 import "@elf-framework/design-system/style.css";
 
 
 export default {
-  component: Alert,
+  component: Grid,
   title: "Components/Containers/Grid",
   argTypes: {
     title: {
       name: "title",
-      description: "The title of the alert.",
-      type: { name: "string", required: true },
+      description: "The title of the Grid item.",
+      type: { name: "string" },
+      defaultValue: "(empty)",
       control: {
         type: "text",
       }     
     },
-    variant: {
-      name: "variant",
-      description: "The variant to use.",
-      type: { name: "string", required: false },
-      defaultValue: "default",
-      options: ["default", "primary", "secondary", "dark", "success", "info", "warning", "danger"],
+    gap: {
+      name: "gap",
+      description: "The gap between the Grid items.",
+      type: { name: "number", defaultValue: 0, required: false },
+      defaultValue: "0",
       control: {
-        type: "select",
+        type: "number",
       }
     },
+    onClick: { action: 'clicked' }
   },
   args: {
-    title: "Alert Sample Content",
+    title: "Grid Item",
+    gap: 0,
   },
   parameters: {
     componentSubtitle: "Buttons should always have a label, unless they are only using an icon that is universally understood and accessible. ",
@@ -43,13 +45,23 @@ The label can be hidden to create an icon-only button. If the label is hidden, a
     }
   }
 } as Meta;
-export const DefaultAlert: Story = (args) => {
-  const { title,variant } = args;
-  return <div style={{display: "flex", gap: 10, flexDirection: "column"}}>
-    <div style={{display: "flex", gap: 10, flex: "1 1 auto"}}>
-      <Alert title={title} variant={variant}>
-        하이
-      </Alert>
-    </div>
+export const DefaultGrid: Story = (args) => {
+  const { title, gap } = args;
+  return <div >
+    <Grid columns={3} gap={gap}>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+    </Grid>
+    <Grid columns={3} gap={gap}>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+    </Grid>
+    <Grid columns={3} gap={gap}>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+      <div style={{border: "1px solid #ececec"}}>{title}</div>
+    </Grid>
   </div>;
 }

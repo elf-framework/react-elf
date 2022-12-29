@@ -1,7 +1,8 @@
 {
-  "name": "@react-elf/shared",
-  "version": "0.0.13",
+  "name": "@react-elf/layout",
+  "version": "0.0.14",
   "description": "",
+  "type": "module",
   "files": [
     "dist"
   ],
@@ -37,7 +38,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@react-elf-types/shared": "*",
+    "@react-elf-types/layout": "*",
+    "@react-elf/shared": "*",
     "@types/react": "^18.0.26",
     "classnames": "^2.3.2",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
