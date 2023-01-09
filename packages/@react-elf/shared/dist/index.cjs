@@ -115,6 +115,7 @@ var ComponentPropsToStylePropsMap = {
   columnEnd: "gridColumnEnd",
   columnGap: "columnGap",
   columnSpan: "gridColumn",
+  // Will set gridColumn if no `row` prop given
   columnStart: "gridColumnStart",
   direction: "flexDirection",
   display: "display",
@@ -168,6 +169,7 @@ var ComponentPropsToStylePropsMap = {
   rowEnd: "gridRowEnd",
   rowGap: "rowGap",
   rowSpan: "gridRow",
+  // Will set gridRow if no `row` prop given
   rowStart: "gridRowStart",
   shrink: "flexShrink",
   templateAreas: "gridTemplateAreas",

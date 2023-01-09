@@ -1,34 +1,16 @@
 # @react-elf/button
 
-## 0.0.16
-
-### Patch Changes
-
-- add divider component
-
-- Updated dependencies []:
-  - @react-elf/shared@0.0.16
-
 ## 0.0.13
 
 ### Patch Changes
 
 - update package.json
 
-- Updated dependencies []:
-  - @react-elf/tooltip@0.0.13
-  - @react-elf/button@0.0.13
-  - @react-elf/shared@0.0.13
-  - @react-elf/alert@0.0.13
-
 ## 0.0.11
 
 ### Patch Changes
 
-- initialize all ui project
-
-- Updated dependencies []:
-  - @react-elf/alert@0.0.11
+- update class property to className
 
 ## 0.0.9
 

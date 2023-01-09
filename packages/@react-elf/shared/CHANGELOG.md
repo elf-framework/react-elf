@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.16
+
+### Patch Changes
+
+- add divider component
+
 ## 0.0.13
 
 ### Patch Changes
