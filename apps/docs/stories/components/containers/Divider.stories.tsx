@@ -38,6 +38,10 @@ export const DefaultDivider: Story = (args) => {
       </div>
       <div>
         <Divider />
+        <Divider style={{
+          borderStyle: "dashed",
+          borderWidth: 10
+        }}/>        
       </div>
       <div>
         <Divider />

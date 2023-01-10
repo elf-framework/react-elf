@@ -5,3 +5,4 @@ export * from "@react-elf/tooltip";
 export * from "@react-elf/layout";
 export * from "@react-elf/menu";
 export * from "@react-elf/divider";
+export * from "@react-elf/popover";

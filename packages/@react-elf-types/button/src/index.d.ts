@@ -7,7 +7,7 @@ interface ButtonStyle extends CommonStyle {
   disabledColor?: string;
   color?: string;
   fontSize?: string;
-  padding?: string;
+  padding?: string | number;
   borderRadius?: string;
 }
 

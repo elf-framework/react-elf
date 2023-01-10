@@ -61,7 +61,7 @@ export interface CommonStyle extends KeyValue {
   opacity?: string;
   order?: string;
   overflow?: string;
-  padding?: string;
+  padding?: string | number | number[] | string[];
   paddingBlock?: string;
   paddingBlockEnd?: string;
   paddingBlockStart?: string;

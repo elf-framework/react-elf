@@ -1,5 +1,5 @@
 {
-  "name": "@react-elf/ui",
+  "name": "@react-elf/popover",
   "version": "0.0.17",
   "description": "",
   "type": "module",
@@ -30,24 +30,16 @@
   "keywords": [
     "react",
     "elf",
-    "ui"
+    "button"
   ],
   "author": "elf-framework",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "@react-elf/shared": "*",
-    "@react-elf/button": "*",
-    "@react-elf/alert": "*",
-    "@react-elf/tooltip": "*",
-    "@react-elf/layout": "*",
-    "@react-elf/menu": "*",
-    "@react-elf/divider": "*",
-    "@react-elf/popover": "*"
-  },
   "peerDependencies": {
+    "@react-elf-types/popover": "*",
+    "@react-elf/shared": "*",
     "@types/react": "^18.0.26",
     "classnames": "^2.3.2",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
