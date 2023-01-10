@@ -45,7 +45,8 @@
     "@react-elf/layout": "*",
     "@react-elf/menu": "*",
     "@react-elf/divider": "*",
-    "@react-elf/popover": "*"
+    "@react-elf/popover": "*",
+    "@react-elf/notification": "*"
   },
   "peerDependencies": {
     "@types/react": "^18.0.26",
@@ -55,10 +56,10 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
-    "@vitejs/plugin-react": "^3.0.0",
+    "@vitejs/plugin-react": "^3.0.1",
     "chokidar-cli": "^3.0.0",
-    "nanobundle": "^1.1.0",
-    "vite": "^4.0.3",
-    "vitest": "0.26.2"
+    "nanobundle": "^1.2.0",
+    "vite": "^4.0.4",
+    "vitest": "0.27.0"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "@react-elf/menu",
-  "version": "0.0.15",
+  "name": "@react-elf/notification",
+  "version": "0.0.19",
   "description": "",
   "type": "module",
   "files": [
@@ -38,7 +38,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@react-elf-types/menu": "*",
+    "@react-elf-types/notification": "*",
     "@react-elf/shared": "*",
     "@types/react": "^18.0.26",
     "classnames": "^2.3.2",

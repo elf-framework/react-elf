@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@elf-framework/color": "^0.0.216",
-    "@elf-framework/design-system": "^0.0.220",
-    "@elf-framework/design-tokens": "^0.0.220",
+    "@elf-framework/design-system": "^0.0.233",
+    "@elf-framework/design-tokens": "^0.0.233",
     "@locofy/storybook-addon": "^0.2.64",
     "@react-elf/ui": "*",
     "react-icons": "^4.7.1"
