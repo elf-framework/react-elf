@@ -1,5 +1,14 @@
 # @react-elf/button
 
+## 0.0.20
+
+### Patch Changes
+
+- add dialog component
+
+- Updated dependencies []:
+  - @react-elf/dialog@0.0.20
+
 ## 0.0.17
 
 ### Patch Changes

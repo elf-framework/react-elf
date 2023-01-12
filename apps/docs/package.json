@@ -18,6 +18,7 @@
     "@elf-framework/design-tokens": "^0.0.233",
     "@locofy/storybook-addon": "^0.2.64",
     "@react-elf/ui": "*",
+    "@storybook/client-api": "^6.5.15",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
