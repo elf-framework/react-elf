@@ -20,7 +20,14 @@ const cssProperties = makeCssVariablePrefixMap("--elf--dialog", {
 
 
 export function Dialog(props: DialogProps) {
-  const { noBorder, title, closable = true, footer, style = {}, visible, center,
+  const { 
+    noBorder, 
+    title, 
+    closable = true, 
+    footer, 
+    style = {}, 
+    visible, 
+    center,
     cancelText = "Cancel",
     okText = "OK",
     okProps = {},

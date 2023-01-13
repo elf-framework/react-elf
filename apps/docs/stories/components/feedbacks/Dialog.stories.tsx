@@ -60,8 +60,9 @@ The label can be hidden to create an icon-only button. If the label is hidden, a
 } as Meta;
 export const DefaultNotification: Story = (args) => {
   const [{ content, title, okText, visible }, updateArgs] = useArgs();
-  const handleClose = () => updateArgs({ visible: !visible });  
+  const handleClose = () => updateArgs({ visible: !visible });
+
   return <div >
-    <Dialog title={title} okText={okText} visible={visible} onClose={handleClose}>{content}</Dialog>
+    {visible ? <Dialog title={title} okText={okText} visible={visible} onClose={handleClose}>{content}</Dialog> : undefined}
   </div >;
 }
