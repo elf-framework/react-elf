@@ -1,5 +1,23 @@
 # @react-elf/button
 
+## 0.0.25
+
+### Patch Changes
+
+- add toast component
+
+- Updated dependencies []:
+  - @react-elf/toast@0.0.25
+
+## 0.0.24
+
+### Patch Changes
+
+- add toast component
+
+- Updated dependencies []:
+  - @react-elf/toast@0.0.24
+
 ## 0.0.20
 
 ### Patch Changes

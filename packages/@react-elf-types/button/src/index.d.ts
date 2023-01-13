@@ -13,13 +13,16 @@ interface ButtonStyle extends CommonStyle {
 
 /** button */
 type ButtonVariant =
+  | "default"
   | "primary"
   | "secondary"
-  | "sucess"
+  | "success"
   | "info"
   | "danger"
   | "warning"
-  | "outline";
+  | "outline"
+  | "light" 
+  | "dark";
 type ButtonSize =
   | "extra-small"
   | "xsmall"
