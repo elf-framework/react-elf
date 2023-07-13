@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Menu } from "@react-elf/menu";
-import "@elf-framework/design-system/style.css";
+import { Menu } from "@react-elf/ui";
 
 export default {
   component: Menu,
