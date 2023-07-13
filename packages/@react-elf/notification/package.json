@@ -16,7 +16,7 @@
   },
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
-    "vite:dist": "vite build --config=vite.dist.config.js",
+    "vite:dist": "vite build --config=vite.dist.config.ts",
     "lib:build": "pnpm run vite:dist",
     "build": "pnpm run nano:build",
     "nano:build": "nanobundle build",
