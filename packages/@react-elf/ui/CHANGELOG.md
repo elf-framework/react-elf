@@ -1,5 +1,12 @@
 # @react-elf/button
 
+## 0.0.30
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/alert@0.0.30
+
 ## 0.0.29
 
 ### Patch Changes

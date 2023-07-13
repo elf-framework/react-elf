@@ -35,9 +35,20 @@ const meta = {
         type: "select",
       },
     },
+    shape: {
+      name: "shape",
+      description: "The shape of the alert.",
+      type: { name: "string", required: false },
+      defaultValue: "rect",
+      options: ["rect", "round"],
+      control: {
+        type: "radio",
+      },
+    },
   },
   args: {
     title: "Alert Sample Content",
+    shape: "round",
   },
   parameters: {
     componentSubtitle:

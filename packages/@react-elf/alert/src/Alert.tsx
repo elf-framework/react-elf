@@ -48,7 +48,7 @@ export function Alert(props: AlertProps) {
       weak,
       hide,
       closable,
-      [shape]: true,
+      round: shape === "round",
       dismissable,
     });
   }, [variant, weak, hide, closable, shape, dismissable]);

@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.30
+
+### Patch Changes
+
+- update alert shape style
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.30
+
 ## 0.0.29
 
 ### Patch Changes
