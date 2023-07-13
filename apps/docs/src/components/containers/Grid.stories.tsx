@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Meta, Story } from "@storybook/react";
-import { Grid } from "@react-elf/layout";
+import { Grid } from "@react-elf/ui";
 
 export default {
   component: Grid,
