@@ -27,6 +27,6 @@ jobs:
       - name: Build for documentation
         run: pnpm run lib:build
       - name: Publish to npm
-        run: pnpm release --no-git-checks
+        run: pnpm release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
