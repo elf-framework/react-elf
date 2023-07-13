@@ -71,6 +71,9 @@ importers:
       '@storybook/blocks':
         specifier: ^7.0.23
         version: 7.0.23(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/client-api':
+        specifier: 7.0.23
+        version: 7.0.23
       '@storybook/testing-library':
         specifier: ^0.0.14-next.2
         version: 0.0.14-next.2
@@ -250,7 +253,7 @@ importers:
         specifier: workspace:*
         version: link:../shared
       '@types/react':
-        specifier: ^18.0.37
+        specifier: ^18.0.26
         version: 18.0.37
       classnames:
         specifier: ^2.3.2
@@ -4412,6 +4415,13 @@ packages:
       - encoding
       - supports-color
       - utf-8-validate
+    dev: true
+
+  /@storybook/client-api@7.0.23:
+    resolution: {integrity: sha512-Z2ubbWJXORuhb1Faur3DL5zV8OObanQY7ow506CmEwNKRgy2LVzkBwpm4woEJHgw95sOyGuz3f3xfDP2DC6M7A==}
+    dependencies:
+      '@storybook/client-logger': 7.0.23
+      '@storybook/preview-api': 7.0.23
     dev: true
 
   /@storybook/client-logger@7.0.23:

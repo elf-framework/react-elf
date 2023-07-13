@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Meta, Story } from "@storybook/react";
-import "@elf-framework/design-system/style.css";
 import { Dialog } from "@react-elf/ui";
 import { useArgs } from "@storybook/client-api";
 

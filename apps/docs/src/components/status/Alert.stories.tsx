@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Meta, Story } from "@storybook/react";
-import "@elf-framework/design-system/style.css";
+import { Meta, StoryObj } from "@storybook/react";
 import { Alert } from "@react-elf/ui";
 
-
-export default {
+// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
+const meta = {
   component: Alert,
+  tags: ["autodocs"],
   title: "Components/Status/Alert",
   argTypes: {
     title: {
@@ -14,42 +14,62 @@ export default {
       type: { name: "string", required: true },
       control: {
         type: "text",
-      }     
+      },
     },
     variant: {
       name: "variant",
       description: "The variant to use.",
       type: { name: "string", required: false },
       defaultValue: "default",
-      options: ["default", "primary", "secondary", "dark", "success", "info", "warning", "danger"],
+      options: [
+        "default",
+        "primary",
+        "secondary",
+        "dark",
+        "success",
+        "info",
+        "warning",
+        "danger",
+      ],
       control: {
         type: "select",
-      }
+      },
     },
   },
   args: {
     title: "Alert Sample Content",
   },
   parameters: {
-    componentSubtitle: "Buttons should always have a label, unless they are only using an icon that is universally understood and accessible. ",
+    componentSubtitle:
+      "Buttons should always have a label, unless they are only using an icon that is universally understood and accessible. ",
     docs: {
       description: {
         component: `
 They can have an optional icon, but it should not be used for decoration. Use an icon only when necessary and when it has a strong association with the label text.
 
 The label can be hidden to create an icon-only button. If the label is hidden, an icon is required, and the label will appear in a tooltip.
-        `
-      }
-    }
-  }
-} as Meta;
-export const DefaultAlert: Story = (args) => {
-  const { title,variant } = args;
-  return <div style={{display: "flex", gap: 10, flexDirection: "column"}}>
-    <div style={{display: "flex", gap: 10, flex: "1 1 auto"}}>
-      <Alert title={title} variant={variant}>
-        하이
-      </Alert>
-    </div>
-  </div>;
-}
+        `,
+      },
+    },
+  },
+} satisfies Meta<typeof Alert>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+export const Primary: Story = {
+  args: {
+    variant: "primary",
+    title: "Alert",
+    children: "Alert Content",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    title: "Alert",
+    children: "Alert Content",
+  },
+};

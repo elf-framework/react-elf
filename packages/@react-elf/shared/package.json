@@ -17,8 +17,6 @@
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
     "vite:dist": "vite build --config=vite.dist.config.js",
-    "watch": "chokidar \"src/**/*\" -c \"pnpm run nano:build\" --polling",
-    "vite:watch": "vite build --config=vite.dist.config.js --watch",
     "build": "pnpm run nano:build",
     "nano:build": "nanobundle build",
     "test": "vitest",
