@@ -36,8 +36,6 @@ jobs:
           version: 6.0.2
       - name: Install
         run: pnpm install
-      - name: Build for library
-        run: pnpm run build
       - name: Build for documentation
         run: pnpm run docs:build
       - name: Setup Pages
