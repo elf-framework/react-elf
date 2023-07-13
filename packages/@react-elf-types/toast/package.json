@@ -1,6 +1,6 @@
 {
   "name": "@react-elf-types/toast",
-  "version": "0.0.25",
+  "version": "0.0.29",
   "description": "Elf UI components in React",
   "license": "MIT",
   "types": "src/index.d.ts",

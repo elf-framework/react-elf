@@ -1,6 +1,6 @@
 {
   "name": "@react-elf-types/notification",
-  "version": "0.0.19",
+  "version": "0.0.29",
   "description": "Elf UI components in React",
   "license": "MIT",
   "types": "src/index.d.ts",

@@ -10,7 +10,7 @@
       "outputs": ["dist/**"]
     },
     "docs:build": {
-      "dependsOn": ["lib:build", "^docs:build"],
+      "dependsOn": ["^docs:build"],
       "outputs": ["dist/**", "storybook-static/**"]
     },
     "lint": {

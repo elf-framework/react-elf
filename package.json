@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "changeset": "changeset",
     "version": "changeset version",
-    "prerelease": "pnpm run build",
+    "prerelease": "pnpm run lib:build",
     "release": "changeset publish",
     "lint": "turbo run lint",
     "build:storybook": "build-storybook"
