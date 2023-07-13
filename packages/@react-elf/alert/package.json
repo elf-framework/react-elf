@@ -30,7 +30,7 @@
   ],
   "author": "elf-framework",
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "@react-elf-types/alert": "workspace:*",
     "@react-elf/shared": "workspace:*",
     "@types/react": "^18.0.26",

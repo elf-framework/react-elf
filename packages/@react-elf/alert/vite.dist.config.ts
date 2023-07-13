@@ -36,6 +36,8 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "@react-elf/shared": "ReactElfShared",
+          classnames: "classNames",
         },
       },
     },
