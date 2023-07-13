@@ -1,13 +1,11 @@
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
+    "module": "NodeNext",
     "rootDir": "src",
     "outDir": "dist",
-    "jsx": "react-jsx"
+    "jsx": "react"
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-  ]
+  "include": ["src"],
+  "exclude": []
 }

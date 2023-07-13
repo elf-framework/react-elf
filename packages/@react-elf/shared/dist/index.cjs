@@ -2,6 +2,7 @@ var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -69,6 +70,7 @@ function convertNumberStyleValue(key, value) {
   }
   return value;
 }
+__name(convertNumberStyleValue, "convertNumberStyleValue");
 function propertyMap(styles = {}, mapper = {}) {
   const styleObj = {};
   Object.keys(styles).forEach((key) => {
@@ -78,6 +80,7 @@ function propertyMap(styles = {}, mapper = {}) {
   });
   return Object.keys(styleObj).length ? styleObj : void 0;
 }
+__name(propertyMap, "propertyMap");
 var styleKeys = {};
 var uppercasePattern = /([A-Z])/g;
 function convertStyleKey(key) {
@@ -88,6 +91,7 @@ function convertStyleKey(key) {
   styleKeys[key] = upperKey;
   return upperKey;
 }
+__name(convertStyleKey, "convertStyleKey");
 function makeCssVariablePrefixMap(prefix, obj = {}) {
   const newObj = {};
   Object.keys(obj).forEach((key) => {
@@ -95,6 +99,7 @@ function makeCssVariablePrefixMap(prefix, obj = {}) {
   });
   return newObj;
 }
+__name(makeCssVariablePrefixMap, "makeCssVariablePrefixMap");
 var ComponentPropsToStylePropsMap = {
   alignContent: "alignContent",
   alignItems: "alignItems",
@@ -200,3 +205,6 @@ function splitStyleKeyAndNoneStyleKey(properties) {
   });
   return { style, noneStyle };
 }
+__name(splitStyleKeyAndNoneStyleKey, "splitStyleKeyAndNoneStyleKey");
+/*! For license information please see index.cjs.LEGAL.txt */
+//# sourceMappingURL=index.cjs.map

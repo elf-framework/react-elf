@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from "react";
 import { CommonStyle, VariantType } from "@react-elf-types/shared";
 
 export interface AlertProps {

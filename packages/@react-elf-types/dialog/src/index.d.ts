@@ -1,5 +1,5 @@
 import { ButtonProps } from "@react-elf-types/button";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 type DialogPositionType = "relative" | "absolute" | "fixed";
 

@@ -1,8 +1,8 @@
-import { MouseEvent } from 'react';
-import { ReactNode } from 'react';
+import { MouseEvent } from "react";
+import type { ReactNode } from "react";
 import { CommonStyle } from "@react-elf-types/shared";
 
-export type MenuVariant = "light" | "dark"
+export type MenuVariant = "light" | "dark";
 
 /** menu */
 export type MenuItemType = {
@@ -40,10 +40,10 @@ export type CustomMenuRenderFunctionType = ReactNode;
 
 export type CustomMenuItemType =
   | {
-    type: "custom";
-    rootClose?: () => void;
-    render?: (context: any) => ReactNode;
-  }
+      type: "custom";
+      rootClose?: () => void;
+      render?: (context: any) => ReactNode;
+    }
   | CustomMenuRenderFunctionType;
 
 export type LinkMenuItemType = {
@@ -104,7 +104,7 @@ export interface CustomMenuItemProps {
 }
 
 export interface DividerMenuItemProps {
-  variant?:MenuVariant;
+  variant?: MenuVariant;
   dashed?: boolean;
 }
 

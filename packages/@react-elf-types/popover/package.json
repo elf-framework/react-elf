@@ -13,6 +13,11 @@
     "@react-elf-types/tooltip": "workspace:*",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11"
+  },
   "publishConfig": {
     "access": "public"
   }

@@ -2,7 +2,7 @@ import { ToastProps } from "@react-elf-types/toast";
 import { Button } from "@react-elf/button";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import classNames from "classnames";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--toast", {
   backgroundColor: true,
@@ -30,7 +30,7 @@ export function Toast(props: ToastProps) {
     visible = false,
     variant = undefined,
     onClose,
-    onShow
+    onShow,
   } = props;
   const [localDelay, setLocalDelay] = useState(delay);
   const [hide, setHide] = useState(false);
@@ -75,7 +75,7 @@ export function Toast(props: ToastProps) {
       {...styleObject}
       onContextMenu={(e) => e.preventDefault()}
       onTransitionEnd={() => {
-        if (typeof (onClose) === "function") onClose();
+        if (typeof onClose === "function") onClose();
         else setHide(true);
       }}
     >

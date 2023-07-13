@@ -1,3 +1,6 @@
+var __defProp = Object.defineProperty;
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
+
 // src/index.ts
 var NumberStyleKeys = {
   width: true,
@@ -40,6 +43,7 @@ function convertNumberStyleValue(key, value) {
   }
   return value;
 }
+__name(convertNumberStyleValue, "convertNumberStyleValue");
 function propertyMap(styles = {}, mapper = {}) {
   const styleObj = {};
   Object.keys(styles).forEach((key) => {
@@ -49,6 +53,7 @@ function propertyMap(styles = {}, mapper = {}) {
   });
   return Object.keys(styleObj).length ? styleObj : void 0;
 }
+__name(propertyMap, "propertyMap");
 var styleKeys = {};
 var uppercasePattern = /([A-Z])/g;
 function convertStyleKey(key) {
@@ -59,6 +64,7 @@ function convertStyleKey(key) {
   styleKeys[key] = upperKey;
   return upperKey;
 }
+__name(convertStyleKey, "convertStyleKey");
 function makeCssVariablePrefixMap(prefix, obj = {}) {
   const newObj = {};
   Object.keys(obj).forEach((key) => {
@@ -66,6 +72,7 @@ function makeCssVariablePrefixMap(prefix, obj = {}) {
   });
   return newObj;
 }
+__name(makeCssVariablePrefixMap, "makeCssVariablePrefixMap");
 var ComponentPropsToStylePropsMap = {
   alignContent: "alignContent",
   alignItems: "alignItems",
@@ -171,6 +178,7 @@ function splitStyleKeyAndNoneStyleKey(properties) {
   });
   return { style, noneStyle };
 }
+__name(splitStyleKeyAndNoneStyleKey, "splitStyleKeyAndNoneStyleKey");
 export {
   ComponentPropsToStylePropsMap,
   NumberStyleKeys,
@@ -180,3 +188,5 @@ export {
   propertyMap,
   splitStyleKeyAndNoneStyleKey
 };
+/*! For license information please see index.mjs.LEGAL.txt */
+//# sourceMappingURL=index.mjs.map

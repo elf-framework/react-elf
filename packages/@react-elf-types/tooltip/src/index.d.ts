@@ -1,5 +1,6 @@
-import { CommonStyle, VariantType } from '@react-elf-types/shared';
-import { ReactNode } from 'react';
+import { CommonStyle, VariantType } from "@react-elf-types/shared";
+import type { ReactNode } from "react";
+
 interface TooltipStyle {
   backgroundColor?: string;
   hoverColor?: string;

@@ -1,5 +1,6 @@
 import { CommonStyle } from "@react-elf-types/shared";
-import { MouseEvent, MouseEventHandler, ReactNode } from "react";
+import { MouseEventHandler } from "react";
+import type { ReactNode } from "react";
 
 interface ButtonStyle extends CommonStyle {
   borderColor?: string;
@@ -21,7 +22,7 @@ type ButtonVariant =
   | "danger"
   | "warning"
   | "outline"
-  | "light" 
+  | "light"
   | "dark";
 type ButtonSize =
   | "extra-small"
@@ -60,7 +61,6 @@ interface ButtonProps {
   pending?: boolean;
   as?: string;
 }
-
 
 interface ActionGroupProps {
   children?: ReactNode;

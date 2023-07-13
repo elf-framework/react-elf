@@ -1,7 +1,6 @@
 import { ButtonProps } from "@react-elf-types/button";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import classnames from "classnames";
-import React from "react";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--button", {
   borderColor: true,
@@ -73,7 +72,7 @@ export function Button(props: ButtonProps) {
           <ProgressCircle value={80} size={size} variant={variant} />
         </Animation.spin>
       ) : ( */}
-      {children || ""}
+      {children}
       {/* )} */}
     </span>
   );

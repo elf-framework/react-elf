@@ -6,7 +6,7 @@
     "npm-check": "npx npm-check-updates -u",
     "dev": "storybook dev -p 6006",
     "docs:dev": "pnpm run dev",
-    "docs:build": "storybook build --output-dir ../../docs",
+    "docs:build": "storybook build --output-dir ../../storybook-build-results",
     "preview-storybook": "serve storybook-static",
     "build-storybook": "storybook build",
     "clean": "rm -rf .turbo && rm -rf node_modules",

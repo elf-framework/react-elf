@@ -2,22 +2,21 @@
   "name": "@react-elf/alert",
   "version": "0.0.26",
   "description": "",
-  "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "package.json"
   ],
-  "main": "./dist/index.cjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
+  "main": "./src/index.ts",
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/types/index.d.ts"
   },
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
-    "vite:dist": "vite build --config=vite.dist.config.js",
+    "vite:dist": "vite build --config=vite.dist.config.ts",
     "watch": "chokidar \"src/**/*\" -c \"pnpm run nano:build\" --polling",
     "vite:watch": "vite build --config=vite.dist.config.js --watch",
     "ui:watch": "pnpm run watch",
@@ -34,9 +33,6 @@
   ],
   "author": "elf-framework",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "peerDependencies": {
     "@react-elf-types/alert": "workspace:*",
     "@react-elf/shared": "workspace:*",
@@ -47,9 +43,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react-swc": "^3.0.0",
     "chokidar-cli": "^3.0.0",
     "nanobundle": "^1.6.0",
     "vite": "^4.3.9",
+    "vite-plugin-dts": "^3.0.0-beta.1",
     "vitest": "0.33.0"
   }
 }
