@@ -1,7 +1,7 @@
-// import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 import path from "path";
+import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,29 +10,35 @@ export default defineConfig({
       localsConvention: "camelCaseOnly",
     },
   },
+  esbuild: {
+    keepNames: true,
+    tsconfigRaw: {
+      compilerOptions: {
+        jsx: "react",
+      },
+    },
+  },
   build: {
     emptyOutDir: false,
     minify: false,
-    esbuild: {
-      keepNames: true,
-    },
     lib: {
-      entry: path.resolve(__dirname, "index.ts"),
-      name: "button",
-      fileName: (format) => `button.${format}.js`,
+      entry: path.resolve(__dirname, "src/index.ts"),
+      name: "@react-elf/shared",
+      fileName: "index",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ["react"],
+      external: ["react", "react-dom"],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
           react: "React",
+          "react-dom": "ReactDOM",
         },
       },
     },
   },
-  plugins: [],
+  plugins: [dts({ outDir: "dist/types" })],
 });

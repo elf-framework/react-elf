@@ -1,8 +1,6 @@
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
-
-// src/index.ts
-var NumberStyleKeys = {
+const NumberStyleKeys = {
   width: true,
   height: true,
   top: true,
@@ -54,8 +52,8 @@ function propertyMap(styles = {}, mapper = {}) {
   return Object.keys(styleObj).length ? styleObj : void 0;
 }
 __name(propertyMap, "propertyMap");
-var styleKeys = {};
-var uppercasePattern = /([A-Z])/g;
+const styleKeys = {};
+const uppercasePattern = /([A-Z])/g;
 function convertStyleKey(key) {
   if (styleKeys[key]) {
     return styleKeys[key];
@@ -73,7 +71,7 @@ function makeCssVariablePrefixMap(prefix, obj = {}) {
   return newObj;
 }
 __name(makeCssVariablePrefixMap, "makeCssVariablePrefixMap");
-var ComponentPropsToStylePropsMap = {
+const ComponentPropsToStylePropsMap = {
   alignContent: "alignContent",
   alignItems: "alignItems",
   alignSelf: "alignSelf",
@@ -188,5 +186,3 @@ export {
   propertyMap,
   splitStyleKeyAndNoneStyleKey
 };
-/*! For license information please see index.mjs.LEGAL.txt */
-//# sourceMappingURL=index.mjs.map
