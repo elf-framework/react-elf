@@ -17,6 +17,7 @@
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
     "vite:dist": "vite build --config=vite.dist.config.js",
+    "lib:build": "pnpm run vite:dist",
     "build": "pnpm run nano:build",
     "nano:build": "nanobundle build",
     "test": "vitest",
@@ -31,11 +32,11 @@
   "license": "MIT",
   "dependencies": {
     "@react-elf-types/dialog": "workspace:*",
-    "@react-elf-types/button": "workspace:*",
+    "@react-elf/button": "workspace:*",
     "@react-elf/shared": "workspace:*",
     "@types/react": "^18.0.37",
     "classnames": "^2.3.2",
-    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
+    "react": "^18.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

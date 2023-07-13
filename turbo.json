@@ -1,24 +1,28 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "pipeline": {
-      "build": {
-        "dependsOn": ["^build"],
-        "outputs": ["dist/**", "storybook-static/**"]
-      },
-      "docs:build": {
-        "dependsOn": ["^docs:build"],
-        "outputs": ["dist/**", "storybook-static/**"]
-      },      
-      "lint": {
-        "outputs": []
-      },
-      "docs:dev": {
-        "dependsOn": ["^docs:dev"],
-        "outputs": ["dist/**", "storybook-static/**"]
-      },
-      "npm-check": {
-        "dependsOn": ["^npm-check"],
-        "cache": false
-      }
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "storybook-static/**"]
+    },
+    "lib:build": {
+      "dependsOn": ["^lib:build"],
+      "outputs": ["dist/**"]
+    },
+    "docs:build": {
+      "dependsOn": ["lib:build", "^docs:build"],
+      "outputs": ["dist/**", "storybook-static/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "docs:dev": {
+      "dependsOn": ["^docs:dev"],
+      "outputs": ["dist/**", "storybook-static/**"]
+    },
+    "npm-check": {
+      "dependsOn": ["^npm-check"],
+      "cache": false
     }
   }
+}

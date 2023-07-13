@@ -18,15 +18,14 @@ const cssProperties = makeCssVariablePrefixMap("--elf--dialog", {
   width: true,
 });
 
-
 export function Dialog(props: DialogProps) {
-  const { 
-    noBorder, 
-    title, 
-    closable = true, 
-    footer, 
-    style = {}, 
-    visible, 
+  const {
+    noBorder,
+    title,
+    closable = true,
+    footer,
+    style = {},
+    visible,
     center,
     cancelText = "Cancel",
     okText = "OK",
@@ -44,7 +43,7 @@ export function Dialog(props: DialogProps) {
       visible,
       center,
       "no-border": noBorder,
-    })
+    });
   }, [visible, center, noBorder]);
 
   const styleObject = {
@@ -59,9 +58,7 @@ export function Dialog(props: DialogProps) {
       <div className="elf--dialog-title">
         <div className="elf--dialog-title-text">{title}</div>
         {tools ? (
-          <div className="elf--dialog-title-tools">
-            {tools}
-          </div>
+          <div className="elf--dialog-title-tools">{tools}</div>
         ) : undefined}
         {closable ? (
           <div
@@ -76,9 +73,15 @@ export function Dialog(props: DialogProps) {
       <div className="elf--dialog-content">
         <div className="elf--dialog-text">{children}</div>
         <div className="elf--dialog-content-tools">
-          {footer ? footer :
+          {footer ? (
+            footer
+          ) : (
             <>
-              <Button shape="round" {...cancelProps} onClick={(e) => onCancel?.(e)}>
+              <Button
+                shape="round"
+                {...cancelProps}
+                onClick={(e) => onCancel?.(e)}
+              >
                 {cancelText}
               </Button>
               <Button
@@ -90,7 +93,7 @@ export function Dialog(props: DialogProps) {
                 {okText}
               </Button>
             </>
-          }
+          )}
         </div>
       </div>
     </div>
