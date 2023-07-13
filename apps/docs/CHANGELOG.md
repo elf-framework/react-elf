@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.26
+
+### Patch Changes
+
+- modify vite build
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.26
+
 ## 0.0.13
 
 ### Patch Changes

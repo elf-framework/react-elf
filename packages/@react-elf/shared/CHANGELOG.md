@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.26
+
+### Patch Changes
+
+- modify vite build
+
 ## 0.0.16
 
 ### Patch Changes

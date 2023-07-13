@@ -9,14 +9,14 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "npm-check": "turbo run npm-check --parallel",    
+    "npm-check": "turbo run npm-check --parallel",
     "docs:dev": "turbo run docs:dev --parallel",
     "docs:build": "turbo run docs:build --parallel",
-    "preview-storybook": "npm run docs:build && serve docs",
+    "preview-storybook": "pnpm run docs:build && serve docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "changeset": "changeset",
     "version": "changeset version",
-    "prerelease": "npm run build",
+    "prerelease": "pnpm run build",
     "release": "changeset publish",
     "lint": "turbo run lint",
     "build:storybook": "build-storybook"
@@ -43,5 +43,8 @@
     "changeset": "^0.2.6",
     "eslint": "^8.22.0",
     "turbo": "^1.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

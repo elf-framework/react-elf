@@ -33,23 +33,27 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18        
-          cache: 'npm'
-      - name: Cache 
-        run: npm cache clean -f
+          node-version: 18
+          cache: "npm"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
+      - name: Cache
+        run: pnpm cache clean -f
       - name: Install
-        run: npm install --no-save turbo-linux-64 && npm install
+        run: pnpm install
       - name: Build for library
-        run: npm run build        
+        run: pnpm run build
       - name: Build for documentation
-        run: npm run docs:build
+        run: pnpm run docs:build
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './docs'
+          path: "./docs"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

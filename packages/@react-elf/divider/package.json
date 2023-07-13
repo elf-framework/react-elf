@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/divider",
-  "version": "0.0.22",
+  "version": "0.0.26",
   "description": "",
   "type": "module",
   "files": [
@@ -18,11 +18,11 @@
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
     "vite:dist": "vite build --config=vite.dist.config.js",
-    "watch": "chokidar \"src/**/*\" -c \"npm run nano:build\" --polling",
+    "watch": "chokidar \"src/**/*\" -c \"pnpm run nano:build\" --polling",
     "vite:watch": "vite build --config=vite.dist.config.js --watch",
-    "ui:watch": "npm run watch",
-    "docs:dev": "npm run ui:watch",
-    "build": "npm run nano:build",
+    "ui:watch": "pnpm run watch",
+    "docs:dev": "pnpm run ui:watch",
+    "build": "pnpm run nano:build",
     "nano:build": "nanobundle build",
     "test": "vitest",
     "coverage": "vitest --coverage"
@@ -38,19 +38,19 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@react-elf-types/alert": "*",
-    "@react-elf/shared": "*",
+    "@react-elf-types/alert": "workspace:*",
+    "@react-elf/shared": "workspace:*",
     "@types/react": "^18.0.26",
     "classnames": "^2.3.2",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^12.1.5",
-    "@vitejs/plugin-react": "^3.0.1",
+    "@testing-library/react": "^14.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
     "chokidar-cli": "^3.0.0",
-    "nanobundle": "^1.2.0",
-    "vite": "^4.0.4",
-    "vitest": "0.27.0"
+    "nanobundle": "^1.6.0",
+    "vite": "^4.3.9",
+    "vitest": "0.33.0"
   }
 }

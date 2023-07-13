@@ -1,5 +1,11 @@
 # @react-elf/layout
 
+## 0.0.26
+
+### Patch Changes
+
+- modify vite build
+
 ## 0.0.14
 
 ### Patch Changes

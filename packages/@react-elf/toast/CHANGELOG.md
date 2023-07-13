@@ -1,5 +1,11 @@
 # @react-elf/dialog
 
+## 0.0.26
+
+### Patch Changes
+
+- modify vite build
+
 ## 0.0.25
 
 ### Patch Changes

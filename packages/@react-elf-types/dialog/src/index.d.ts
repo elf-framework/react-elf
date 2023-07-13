@@ -1,5 +1,5 @@
-import { ButtonProps } from '@react-elf-types/button';
-import { ReactNode } from 'react';
+import { ButtonProps } from "@react-elf-types/button";
+import { ReactNode } from "react";
 
 type DialogPositionType = "relative" | "absolute" | "fixed";
 
@@ -8,7 +8,7 @@ interface DialogStyle {
   color?: string;
   fontSize?: string;
   fontWeight?: string;
-  height?: string;
+  height?: number | string;
   width?: number | string;
   boxShadow: string;
   borderRadius: string;
