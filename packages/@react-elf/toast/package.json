@@ -2,17 +2,17 @@
   "name": "@react-elf/toast",
   "version": "0.0.26",
   "description": "",
-  "sideEffects": false,
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "package.json"
   ],
   "main": "./src/index.ts",
   "publishConfig": {
     "access": "public",
-    "main": "./dist/index.umd.cjs",
+    "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts"
+    "types": "./dist/types/index.d.ts"
   },
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
