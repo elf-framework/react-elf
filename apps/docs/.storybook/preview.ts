@@ -10,6 +10,13 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    options: {
+      storySort: {
+        method: "configure",
+        includeNames: true,
+        order: ["Introduction", "Foundation", "Components"],
+      },
+    },
   },
 };
 

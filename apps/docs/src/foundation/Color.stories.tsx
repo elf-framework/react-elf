@@ -6,6 +6,7 @@ function ColorView() {
   return <div>c</div>;
 }
 const meta = {
+  title: "Foundation/Base Style/Color",
   component: ColorView,
   tags: ["autodocs"],
   argTypes: {

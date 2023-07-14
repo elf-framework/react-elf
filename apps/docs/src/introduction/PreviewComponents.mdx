@@ -1,0 +1,34 @@
+import { Meta, Unstyled } from "@storybook/blocks";
+import { Grid, Button, RoundButton } from "@react-elf/ui";
+import { PreviewItem } from "../ui/PreviewItem";
+
+<Meta title="Introduction/Preview Component" />
+
+# Preview Component
+
+The preview component is used to display a preview of a component in the documentation.
+
+## Actions
+
+<Unstyled>
+<Grid columns={2} gap={10}>
+  <PreviewItem
+    title={"Button"}
+    link={"/?path=/docs/components-actions-button--docs"}
+  >
+    <RoundButton size="extra-large" variant="primary">
+      Button
+    </RoundButton>
+  </PreviewItem>
+  <PreviewItem
+    title={"Action group"}
+    link={"/pages/design-system/components/actions/actiongroup/"}
+  >
+    {/* <ActionGroup compact>
+      <RoundButton variant="primary">Button</RoundButton>
+      <RoundButton>Button</RoundButton>
+    </ActionGroup> */}
+  </PreviewItem>
+</Grid>
+
+</Unstyled>
