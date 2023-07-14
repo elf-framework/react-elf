@@ -29,7 +29,7 @@
   "author": "elf-framework",
   "license": "MIT",
   "dependencies": {
-    "@react-elf-types/shared": "workspace:^"
+    "@react-elf-types/shared": "workspace:*"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

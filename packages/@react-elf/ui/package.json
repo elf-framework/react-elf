@@ -29,17 +29,17 @@
   "author": "elf-framework",
   "license": "MIT",
   "dependencies": {
-    "@react-elf/shared": "workspace:^",
-    "@react-elf/button": "workspace:^",
-    "@react-elf/alert": "workspace:^",
-    "@react-elf/tooltip": "workspace:^",
-    "@react-elf/layout": "workspace:^",
-    "@react-elf/menu": "workspace:^",
-    "@react-elf/divider": "workspace:^",
-    "@react-elf/popover": "workspace:^",
-    "@react-elf/notification": "workspace:^",
-    "@react-elf/dialog": "workspace:^",
-    "@react-elf/toast": "workspace:^"
+    "@react-elf/shared": "workspace:*",
+    "@react-elf/button": "workspace:*",
+    "@react-elf/alert": "workspace:*",
+    "@react-elf/tooltip": "workspace:*",
+    "@react-elf/layout": "workspace:*",
+    "@react-elf/menu": "workspace:*",
+    "@react-elf/divider": "workspace:*",
+    "@react-elf/popover": "workspace:*",
+    "@react-elf/notification": "workspace:*",
+    "@react-elf/dialog": "workspace:*",
+    "@react-elf/toast": "workspace:*"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

@@ -9,7 +9,7 @@
     "url": "https://github.com/elf-framework/react-elf"
   },
   "peerDependencies": {
-    "@react-elf-types/shared": "workspace:^",
+    "@react-elf-types/shared": "workspace:*",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
   "publishConfig": {
