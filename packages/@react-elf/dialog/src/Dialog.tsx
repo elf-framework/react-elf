@@ -1,8 +1,8 @@
+import React, { useMemo } from "react";
+import classNames from "classnames";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import { DialogProps } from "@react-elf-types/dialog";
-import classNames from "classnames";
 import { Button } from "@react-elf/button";
-import { useMemo } from "react";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--dialog", {
   position: true,

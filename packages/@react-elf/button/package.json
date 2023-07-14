@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/button",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "",
   "files": [
     "dist",
@@ -29,10 +29,9 @@
   "author": "elf-framework",
   "license": "MIT",
   "dependencies": {
-    "@react-elf-types/button": "workspace:*",
-    "@react-elf-types/tooltip": "workspace:*",
-    "@react-elf/shared": "workspace:*",
-    "@react-elf/tooltip": "workspace:*",
+    "@react-elf-types/button": "workspace:^",
+    "@react-elf/shared": "workspace:^",
+    "@react-elf/tooltip": "workspace:^",
     "classnames": "^2.3.2",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },

@@ -1,6 +1,7 @@
-import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import classNames from "classnames";
-import { useCallback, useEffect, useMemo, useState } from "react";
+
+import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import { PopoverProps } from "@react-elf-types/popover";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--popover", {
@@ -19,7 +20,6 @@ const cssProperties = makeCssVariablePrefixMap("--elf--popover", {
 });
 
 export function Popover(props: PopoverProps) {
-
   const {
     style = {},
     body = "",
@@ -38,7 +38,6 @@ export function Popover(props: PopoverProps) {
   } = props;
 
   const [isShow, setIsShow] = useState<boolean>(show);
-
 
   const runOpen = useCallback(() => {
     setIsShow(true);
@@ -59,8 +58,8 @@ export function Popover(props: PopoverProps) {
   }, [isShow, runClose, runOpen]);
 
   const localClass = useMemo(() => {
-    return classNames("elf--popover", { [placement]: true, animated })
-  }, [placement, animated])
+    return classNames("elf--popover", { [placement]: true, animated });
+  }, [placement, animated]);
 
   const styleObject = {
     className: localClass,
@@ -68,8 +67,6 @@ export function Popover(props: PopoverProps) {
       ...propertyMap(style, cssProperties),
     },
   };
-
-
 
   const focusCallback = useCallback(() => {
     if (trigger.includes("focus")) {
@@ -98,26 +95,34 @@ export function Popover(props: PopoverProps) {
   useEffect(() => {
     let eventCallback: any = null;
     if (trigger === "click") {
-      document.addEventListener("click", eventCallback = (e: any) => {
-        const target = e.target;
-        const isClickOutside = !target.closest(".elf--popover");
-        if (isClickOutside) {
-          runClose();
-        }
-      });
+      document.addEventListener(
+        "click",
+        (eventCallback = (e: any) => {
+          const target = e.target;
+          const isClickOutside = !target.closest(".elf--popover");
+          if (isClickOutside) {
+            runClose();
+          }
+        })
+      );
     }
 
     return () => {
       document.removeEventListener("click", eventCallback);
-    }
-  }, [trigger, runClose])
-
+    };
+  }, [trigger, runClose]);
 
   const isPopoverShow = isShow || props.show;
   const isShowTip = isPopoverShow && showTip;
 
   return (
-    <div {...styleObject} onFocus={focusCallback} onClick={clickCallback} onPointerEnter={pointerEnterCallback} onPointerLeave={pointerLeaveCallback}>
+    <div
+      {...styleObject}
+      onFocus={focusCallback}
+      onClick={clickCallback}
+      onPointerEnter={pointerEnterCallback}
+      onPointerLeave={pointerLeaveCallback}
+    >
       <div className="elf--popover-content">
         {children}
         {isShowTip ? <div className="tip"></div> : undefined}
@@ -131,5 +136,4 @@ export function Popover(props: PopoverProps) {
       ) : undefined}
     </div>
   );
-
 }

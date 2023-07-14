@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/popover",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "",
   "files": [
     "dist",
@@ -24,13 +24,13 @@
   "keywords": [
     "react",
     "elf",
-    "button"
+    "popover"
   ],
   "author": "elf-framework",
   "license": "MIT",
   "dependencies": {
-    "@react-elf-types/popover": "workspace:*",
-    "@react-elf/shared": "workspace:*",
+    "@react-elf-types/popover": "workspace:^",
+    "@react-elf/shared": "workspace:^",
     "@types/react": "^18.0.37",
     "classnames": "^2.3.2",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"

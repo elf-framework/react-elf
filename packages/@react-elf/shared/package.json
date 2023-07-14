@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/shared",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "",
   "files": [
     "dist",
@@ -29,10 +29,7 @@
   "author": "elf-framework",
   "license": "MIT",
   "dependencies": {
-    "@react-elf-types/shared": "workspace:*",
-    "@types/react": "^18.0.37",
-    "classnames": "^2.3.2",
-    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
+    "@react-elf-types/shared": "workspace:^"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

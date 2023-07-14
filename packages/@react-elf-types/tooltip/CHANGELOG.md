@@ -1,5 +1,11 @@
 # @react-elf-types/button
 
+## 0.0.35
+
+### Patch Changes
+
+- clean config code
+
 ## 0.0.29
 
 ### Patch Changes

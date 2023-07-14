@@ -1,8 +1,9 @@
+import React, { useEffect, useMemo, useState } from "react";
+import classNames from "classnames";
+
 import { ToastProps } from "@react-elf-types/toast";
 import { Button } from "@react-elf/button";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
-import classNames from "classnames";
-import { useEffect, useMemo, useState } from "react";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--toast", {
   backgroundColor: true,

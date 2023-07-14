@@ -1,6 +1,6 @@
-import { MenuItemProps } from "@react-elf-types/menu";
+import React, { useMemo } from "react";
 import classNames from "classnames";
-import { useMemo } from "react";
+import { MenuItemProps } from "@react-elf-types/menu";
 import { Menu } from "./Menu";
 export function MenuItem(props: MenuItemProps) {
   const {
@@ -23,7 +23,7 @@ export function MenuItem(props: MenuItemProps) {
 
   const hasItems = items.length > 0;
 
-  const selectedValue = typeof (selected) === "function" ? selected() : selected;
+  const selectedValue = typeof selected === "function" ? selected() : selected;
 
   const localClass = useMemo(() => {
     return classNames({
@@ -32,7 +32,11 @@ export function MenuItem(props: MenuItemProps) {
   }, [hover]);
 
   return (
-    <li className={localClass} data-disabled={disabled ? true : undefined} onClick={(e: React.MouseEvent<HTMLLIElement, MouseEvent>) => onClick(e)}>
+    <li
+      className={localClass}
+      data-disabled={disabled ? true : undefined}
+      onClick={(e: React.MouseEvent<HTMLLIElement, MouseEvent>) => onClick(e)}
+    >
       <div className="menu-item-content">
         {selectable ? (
           <span className="selected-icon">
@@ -58,5 +62,4 @@ export function MenuItem(props: MenuItemProps) {
       ) : undefined}
     </li>
   );
-
 }

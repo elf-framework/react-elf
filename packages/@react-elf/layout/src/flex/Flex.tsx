@@ -1,35 +1,34 @@
 import { propertyMap } from "@react-elf/shared";
 import classNames from "classnames";
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 
 import { FlexProps } from "@react-elf-types/layout";
 
+export function Flex(props: FlexProps) {
+  const {
+    style = {},
+    className = "",
+    children,
+    stack,
+    wrap = false,
+    sameWidth = false,
+  } = props;
 
-export function Flex (props: FlexProps) {
-    const {
-      style = {},
-      className = "",
-      children,
+  const localClass = useMemo(() => {
+    return classNames("elf--flex", className, {
       stack,
-      wrap = false,
-      sameWidth = false,
-    } = props;
+      wrap,
+      "same-width": sameWidth,
+    });
+  }, [className, stack, wrap, sameWidth]);
 
-    const localClass = useMemo(() => {
-      return classNames("elf--flex", className, {
-        stack,
-        wrap,
-        "same-width": sameWidth,
-      });
-    }, [className, stack, wrap, sameWidth]);
+  const styleObject = {
+    class: localClass,
 
-    const styleObject = {
-      class: localClass,
+    style: {
+      ...propertyMap(style, {}),
+    },
+  };
 
-      style: {
-        ...propertyMap(style, {}),
-      },
-    };
-
-    return <div {...styleObject}>{children}</div>;
+  return <div {...styleObject}>{children}</div>;
 }

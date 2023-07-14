@@ -1,5 +1,5 @@
+import React, { useMemo } from "react";
 import classNames from "classnames";
-import { useMemo } from "react";
 
 import { MenuProps } from "@react-elf-types/menu";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
@@ -22,11 +22,9 @@ function makeMenuItem(items = [], variant, rootClose) {
   return items.map((it, index) => {
     const key = it.key || index;
 
-    if (typeof (it) === "string" && it === "-") {
-      return (
-        <DividerMenuItem key={key} variant={variant} />
-      );
-    } else if (typeof (it) === "function") {
+    if (typeof it === "string" && it === "-") {
+      return <DividerMenuItem key={key} variant={variant} />;
+    } else if (typeof it === "function") {
       return (
         <CustomMenuItem
           key={key}
@@ -63,13 +61,7 @@ function makeMenuItem(items = [], variant, rootClose) {
         />
       );
     } else if (it.type === MenuItemType.DIVIDER) {
-      return (
-        <DividerMenuItem
-          key={key}
-          variant={variant}
-          {...it}
-        />
-      );
+      return <DividerMenuItem key={key} variant={variant} {...it} />;
     }
 
     return (
@@ -77,7 +69,6 @@ function makeMenuItem(items = [], variant, rootClose) {
     );
   });
 }
-
 
 const cssProperties = makeCssVariablePrefixMap("--elf--menu", {
   left: true,
@@ -113,7 +104,6 @@ export function Menu(props: MenuProps) {
     variant = "light",
     compact = false,
   } = props;
-
 
   let itemStyle = { ...style };
 

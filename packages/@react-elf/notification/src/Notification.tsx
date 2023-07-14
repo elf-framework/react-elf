@@ -1,7 +1,7 @@
+import React, { useMemo } from "react";
 import { NotificationProps } from "@react-elf-types/notification";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import classNames from "classnames";
-import { useMemo } from "react";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--notification", {
   backgroundColor: true,
@@ -46,4 +46,3 @@ export function Notification(props: NotificationProps) {
     </div>
   );
 }
-

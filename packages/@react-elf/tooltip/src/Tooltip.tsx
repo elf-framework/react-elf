@@ -1,8 +1,8 @@
-import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
-import { TooltipProps } from "@react-elf-types/tooltip";
-import { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import * as ReactDOM from "react-dom";
 import classNames from "classnames";
+import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
+import { TooltipProps } from "@react-elf-types/tooltip";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--tooltip", {
   backgroundColor: true,
@@ -46,90 +46,93 @@ export function Tooltip({
   hideDelay = 0,
   trigger = "hover",
 }: TooltipProps) {
+  const [isShow, setIsShow] = useState<boolean>(show);
 
-    const [isShow, setIsShow] = useState<boolean>(show);
+  const runOpen = useCallback(() => {
+    setIsShow(true);
+  }, [setIsShow]);
 
-    const runOpen = useCallback(() => {
-      setIsShow(true);
-    }, [setIsShow]);
+  const runShow = useCallback(() => {
+    runOpen();
+  }, [runOpen]);
 
-    const runShow = useCallback(() => {
+  const runClose = useCallback(() => {
+    setTimeout(() => {
+      setIsShow(false);
+    }, hideDelay);
+  }, [setIsShow, hideDelay]);
+
+  const runHide = useCallback(() => {
+    runClose();
+  }, [runClose]);
+
+  const runToggle = useCallback(() => {
+    if (isShow) {
+      runHide();
+    } else {
+      runShow();
+    }
+  }, [isShow, runHide, runShow]);
+
+  const localClass = useMemo(() => {
+    return classNames("elf--tooltip", {
+      [placement]: true,
+      animated,
+      [variant]: true,
+      [position]: true,
+    });
+  }, [placement, animated, variant, position]);
+
+  const styleObject = {
+    className: localClass,
+    style: propertyMap(style, cssProperties),
+  };
+
+  const focusCallback = useCallback(() => {
+    if (trigger.includes("focus")) {
       runOpen();
-    }, [runOpen])
+    }
+  }, [runOpen]);
 
-    const runClose = useCallback(() => {
-      setTimeout(() => {
-        setIsShow(false);
-      }, hideDelay);
-    }, [setIsShow, hideDelay]);
+  const clickCallback = useCallback(() => {
+    if (trigger.includes("click")) {
+      runToggle();
+    }
+  }, [runToggle]);
 
-    const runHide = useCallback(() => {
+  const pointerEnterCallback = useCallback(() => {
+    if (trigger.includes("hover")) {
+      runOpen();
+    }
+  }, [runOpen]);
+
+  const pointerLeaveCallback = useCallback(() => {
+    if (trigger.includes("hover")) {
       runClose();
-    }, [runClose]);    
+    }
+  }, [runClose]);
 
-    const runToggle = useCallback(() => {
-      if (isShow) {
-        runHide();
-      } else {
-        runShow();
-      }
-    }, [isShow, runHide, runShow]);
-
-
-    const localClass = useMemo(() => {
-      return classNames("elf--tooltip", {
-        [placement]: true,
-        animated,
-        [variant]: true,
-        [position]: true,
-      });
-    }, [placement, animated, variant, position]);
-
-    const styleObject = {
-      className: localClass,
-      style: propertyMap(style, cssProperties),
-    };
-
-    const focusCallback = useCallback(() => {
-      if (trigger.includes("focus")) {
-        runOpen();
-      }
-    }, [runOpen]);
-
-    const clickCallback = useCallback(() => {
-      if (trigger.includes("click")) {
-        runToggle();
-      }
-    }, [runToggle]);
-
-    const pointerEnterCallback = useCallback(() => {
-      if (trigger.includes("hover")) {
-        runOpen();
-      }
-    }, [runOpen]);
-
-    const pointerLeaveCallback = useCallback(() => {
-      if (trigger.includes("hover")) {
-        runClose();
-      }
-    }, [runClose]);
-
-    return (
-      <div {...styleObject} onFocus={focusCallback} onClick={clickCallback} onPointerEnter={pointerEnterCallback} onPointerLeave={pointerLeaveCallback}>
-        <div className="content">{children}</div>
-        {isShow || show ? (
-          <div className="message">
-            {hideArrow ? undefined : <div className="arrow"></div>}
-            {icon ? <div className="icon">{icon}</div> : undefined}
-            <div className="message-content">
-              <div>{message}</div>
-            </div>
+  return (
+    <div
+      {...styleObject}
+      onFocus={focusCallback}
+      onClick={clickCallback}
+      onPointerEnter={pointerEnterCallback}
+      onPointerLeave={pointerLeaveCallback}
+    >
+      <div className="content">{children}</div>
+      {isShow || show ? (
+        <div className="message">
+          {hideArrow ? undefined : <div className="arrow"></div>}
+          {icon ? <div className="icon">{icon}</div> : undefined}
+          <div className="message-content">
+            <div>{message}</div>
           </div>
-        ) : undefined}
-      </div>
-    );
+        </div>
+      ) : undefined}
+    </div>
+  );
 }
-
 
 export function tooltip({
   children,

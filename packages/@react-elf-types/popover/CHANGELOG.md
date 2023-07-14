@@ -1,5 +1,14 @@
 # @react-elf-types/popover
 
+## 0.0.35
+
+### Patch Changes
+
+- clean config code
+
+- Updated dependencies []:
+  - @react-elf-types/tooltip@0.0.35
+
 ## 0.0.29
 
 ### Patch Changes
