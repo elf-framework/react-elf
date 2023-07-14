@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.32
+
+### Patch Changes
+
+- update alert width style
+
 ## 0.0.31
 
 ### Patch Changes
