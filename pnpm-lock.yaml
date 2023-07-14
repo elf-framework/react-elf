@@ -35,7 +35,7 @@ importers:
         specifier: ^0.0.252
         version: 0.0.252
       '@react-elf/ui':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../packages/@react-elf/ui
       '@storybook/react':
         specifier: ^7.0.27
@@ -135,7 +135,7 @@ importers:
   packages/@react-elf-types/alert:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -147,7 +147,7 @@ importers:
   packages/@react-elf-types/button:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -156,10 +156,10 @@ importers:
   packages/@react-elf-types/dialog:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@react-elf-types/tooltip':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../tooltip
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -168,7 +168,7 @@ importers:
   packages/@react-elf-types/divider:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -177,7 +177,7 @@ importers:
   packages/@react-elf-types/layout:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -186,7 +186,7 @@ importers:
   packages/@react-elf-types/menu:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -195,10 +195,10 @@ importers:
   packages/@react-elf-types/notification:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@react-elf-types/tooltip':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../tooltip
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -207,10 +207,10 @@ importers:
   packages/@react-elf-types/popover:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@react-elf-types/tooltip':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../tooltip
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -235,7 +235,7 @@ importers:
   packages/@react-elf-types/toast:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -244,7 +244,7 @@ importers:
   packages/@react-elf-types/tooltip:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
@@ -253,10 +253,10 @@ importers:
   packages/@react-elf/alert:
     dependencies:
       '@react-elf-types/alert':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/alert
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.26
@@ -274,12 +274,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      chokidar-cli:
-        specifier: ^3.0.0
-        version: 3.0.0
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -293,16 +287,13 @@ importers:
   packages/@react-elf/button:
     dependencies:
       '@react-elf-types/button':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/button
-      '@react-elf-types/tooltip':
-        specifier: workspace:*
-        version: link:../../@react-elf-types/tooltip
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@react-elf/tooltip':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../tooltip
       classnames:
         specifier: ^2.3.2
@@ -317,9 +308,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -333,13 +321,13 @@ importers:
   packages/@react-elf/dialog:
     dependencies:
       '@react-elf-types/dialog':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/dialog
       '@react-elf/button':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../button
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -357,9 +345,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -372,11 +357,11 @@ importers:
 
   packages/@react-elf/divider:
     dependencies:
-      '@react-elf-types/alert':
-        specifier: workspace:*
-        version: link:../../@react-elf-types/alert
+      '@react-elf-types/divider':
+        specifier: workspace:^
+        version: link:../../@react-elf-types/divider
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -394,9 +379,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -410,10 +392,10 @@ importers:
   packages/@react-elf/layout:
     dependencies:
       '@react-elf-types/layout':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/layout
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -431,9 +413,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -447,10 +426,10 @@ importers:
   packages/@react-elf/menu:
     dependencies:
       '@react-elf-types/menu':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/menu
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -468,9 +447,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -484,10 +460,10 @@ importers:
   packages/@react-elf/notification:
     dependencies:
       '@react-elf-types/notification':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/notification
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -505,9 +481,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -521,10 +494,10 @@ importers:
   packages/@react-elf/popover:
     dependencies:
       '@react-elf-types/popover':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/popover
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -542,9 +515,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -558,17 +528,8 @@ importers:
   packages/@react-elf/shared:
     dependencies:
       '@react-elf-types/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/shared
-      '@types/react':
-        specifier: ^18.0.37
-        version: 18.0.37
-      classnames:
-        specifier: ^2.3.2
-        version: 2.3.2
-      react:
-        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
-        version: 18.2.0
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^5.16.5
@@ -576,12 +537,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      chokidar-cli:
-        specifier: ^3.0.0
-        version: 3.0.0
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -595,13 +550,13 @@ importers:
   packages/@react-elf/toast:
     dependencies:
       '@react-elf-types/toast':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/toast
       '@react-elf/button':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../button
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -619,9 +574,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -635,10 +587,10 @@ importers:
   packages/@react-elf/tooltip:
     dependencies:
       '@react-elf-types/tooltip':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../@react-elf-types/tooltip
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@types/react':
         specifier: ^18.0.37
@@ -659,9 +611,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -675,47 +624,38 @@ importers:
   packages/@react-elf/ui:
     dependencies:
       '@react-elf/alert':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../alert
       '@react-elf/button':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../button
       '@react-elf/dialog':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../dialog
       '@react-elf/divider':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../divider
       '@react-elf/layout':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../layout
       '@react-elf/menu':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../menu
       '@react-elf/notification':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../notification
       '@react-elf/popover':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../popover
       '@react-elf/shared':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../shared
       '@react-elf/toast':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../toast
       '@react-elf/tooltip':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../tooltip
-      '@types/react':
-        specifier: ^18.0.37
-        version: 18.0.37
-      classnames:
-        specifier: ^2.3.2
-        version: 2.3.2
-      react:
-        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
-        version: 18.2.0
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^5.16.5
@@ -723,9 +663,6 @@ importers:
       '@testing-library/react':
         specifier: ^14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      nanobundle:
-        specifier: ^1.6.0
-        version: 1.6.0(typescript@5.1.6)
       vite:
         specifier: ^4.4.3
         version: 4.4.3(@types/node@18.15.3)(sass@1.63.6)
@@ -3280,17 +3217,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@cometjs/core@2.3.2(typescript@5.1.6):
-    resolution: {integrity: sha512-Plhs4vJj0M/DigLnzjV9ZGKOVpHnaO1h9fu176R4xYXGeQkHlIZmbTBnxHqPoylFPLZoBHZm1HYbXES7NT/xMg==}
-    peerDependencies:
-      typescript: ^4.5.0 || ^5.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      typescript: 5.1.6
-    dev: true
 
   /@discoveryjs/json-ext@0.5.7:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
@@ -5964,11 +5890,6 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /ansi-regex@4.1.1:
-    resolution: {integrity: sha512-ILlv4k/3f6vfQ4OoP2AGvirOktlQ98ZEL1k9FaQjxa3L1abBgbuTDAdPOpvbGncC0BTVQrl+OM8xZGK6tWXt7g==}
-    engines: {node: '>=6'}
-    dev: true
-
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -6415,16 +6336,6 @@ packages:
       quick-lru: 4.0.1
     dev: true
 
-  /camelcase-keys@8.0.2:
-    resolution: {integrity: sha512-qMKdlOfsjlezMqxkUGGMaWWs17i2HoL15tM+wtx8ld4nLrUwU58TFdvyGOz/piNP842KeO8yXvggVQSdQ828NA==}
-    engines: {node: '>=14.16'}
-    dependencies:
-      camelcase: 7.0.1
-      map-obj: 4.3.0
-      quick-lru: 6.1.1
-      type-fest: 2.19.0
-    dev: true
-
   /camelcase@5.3.1:
     resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
     engines: {node: '>=6'}
@@ -6433,11 +6344,6 @@ packages:
   /camelcase@6.3.0:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /camelcase@7.0.1:
-    resolution: {integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==}
-    engines: {node: '>=14.16'}
     dev: true
 
   /camelize@1.0.1:
@@ -6506,17 +6412,6 @@ packages:
     resolution: {integrity: sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA==}
     dev: true
 
-  /chokidar-cli@3.0.0:
-    resolution: {integrity: sha512-xVW+Qeh7z15uZRxHOkP93Ux8A0xbPzwK4GaqD8dQOYc34TlkqUhVSS59fK36DOp5WdJlrRzlYSy02Ht99FjZqQ==}
-    engines: {node: '>= 8.10.0'}
-    hasBin: true
-    dependencies:
-      chokidar: 3.5.3
-      lodash.debounce: 4.0.8
-      lodash.throttle: 4.1.1
-      yargs: 13.3.2
-    dev: true
-
   /chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
@@ -6578,14 +6473,6 @@ packages:
       string-width: 4.2.3
     optionalDependencies:
       '@colors/colors': 1.5.0
-    dev: true
-
-  /cliui@5.0.0:
-    resolution: {integrity: sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==}
-    dependencies:
-      string-width: 3.1.0
-      strip-ansi: 5.2.0
-      wrap-ansi: 5.1.0
     dev: true
 
   /cliui@6.0.0:
@@ -6885,11 +6772,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /decamelize@6.0.0:
-    resolution: {integrity: sha512-Fv96DCsdOgB6mdGl67MT5JaTNKRzrzill5OH5s8bjYJXVlcXyPYGyPsUkWyGV5p1TXI5esYIYMMeDJL0hEIwaA==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: true
-
   /decode-named-character-reference@1.0.2:
     resolution: {integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==}
     dependencies:
@@ -7082,10 +6964,6 @@ packages:
 
   /electron-to-chromium@1.4.459:
     resolution: {integrity: sha512-XXRS5NFv8nCrBL74Rm3qhJjA2VCsRFx0OjHKBMPI0otij56aun8UWiKTDABmd5/7GTR021pA4wivs+Ri6XCElg==}
-
-  /emoji-regex@7.0.3:
-    resolution: {integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==}
-    dev: true
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -7872,14 +7750,6 @@ packages:
       locate-path: 6.0.0
       path-exists: 4.0.0
 
-  /find-up@6.3.0:
-    resolution: {integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      locate-path: 7.2.0
-      path-exists: 5.0.0
-    dev: true
-
   /find-yarn-workspace-root2@1.2.16:
     resolution: {integrity: sha512-hr6hb1w8ePMpPVUK39S4RlwJzi+xPLuVuG8XlwXU3KD5Yn3qgBWVfy3AzNlDhWvE1EORCE65/Qm26rFQt3VLVA==}
     dependencies:
@@ -8258,20 +8128,6 @@ packages:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
 
-  /hosted-git-info@4.1.0:
-    resolution: {integrity: sha512-kyCuEOWjJqZuDbRHzL8V93NzQhwIB71oFWSyzVo+KPZI+pnQPPxucdkrOZvkLRnrf5URsQM+IJ09Dw29cRALIA==}
-    engines: {node: '>=10'}
-    dependencies:
-      lru-cache: 6.0.0
-    dev: true
-
-  /hosted-git-info@5.2.1:
-    resolution: {integrity: sha512-xIcQYMnhcx2Nr4JTjsFmwwnr9vldugPy9uVm0o87bjqqWMv9GaqsTeT+i99wTl0mk1uLxJtHxLb8kymqTENQsw==}
-    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
-    dependencies:
-      lru-cache: 7.18.3
-    dev: true
-
   /html-escaper@2.0.2:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
     dev: false
@@ -8361,11 +8217,6 @@ packages:
   /indent-string@4.0.0:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
     engines: {node: '>=8'}
-    dev: true
-
-  /indent-string@5.0.0:
-    resolution: {integrity: sha512-m6FAo/spmsW2Ab2fU35JTYwtOKa2yAwXSwgjSv1TJzh4Mh7mC3lzAOVLBprb72XsTrgkEIsl7YrFNAiDiRhIGg==}
-    engines: {node: '>=12'}
     dev: true
 
   /inflight@1.0.6:
@@ -8478,11 +8329,6 @@ packages:
   /is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
-
-  /is-fullwidth-code-point@2.0.0:
-    resolution: {integrity: sha512-VHskAKYM8RfSFXwee5t5cbN5PZeq1Wrh6qd5bkyiXIf6UQcN6w/A0eXM9r6t8d+GYOh+o6ZhiEnb88LN/Y8m2w==}
-    engines: {node: '>=4'}
-    dev: true
 
   /is-fullwidth-code-point@3.0.0:
     resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
@@ -9031,13 +8877,6 @@ packages:
     dependencies:
       p-locate: 5.0.0
 
-  /locate-path@7.2.0:
-    resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      p-locate: 6.0.0
-    dev: true
-
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
@@ -9054,10 +8893,6 @@ packages:
 
   /lodash.startcase@4.4.0:
     resolution: {integrity: sha512-+WKqsK294HMSc2jEbNgpHpd0JfIBhp7rEV4aqXWqFr6AlXov+SlcgB1Fv01y2kGe3Gc8nMW7VA0SrGuSkRfIEg==}
-    dev: true
-
-  /lodash.throttle@4.1.1:
-    resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
     dev: true
 
   /lodash@4.17.21:
@@ -9104,11 +8939,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-
-  /lru-cache@7.18.3:
-    resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
-    engines: {node: '>=12'}
-    dev: true
 
   /lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
@@ -9300,24 +9130,6 @@ packages:
     resolution: {integrity: sha512-/EuHYwAPdLtXwAwSZkh/Gutery6pD2KYd44oQLhAvQp/50mpyduZh8Q7PYHXTCJ+wuXxt7oij2LXyIJOOYFPog==}
     dependencies:
       map-or-similar: 1.5.0
-
-  /meow@11.0.0:
-    resolution: {integrity: sha512-Cl0yeeIrko6d94KpUo1M+0X1sB14ikoaqlIGuTH1fW4I+E3+YljL54/hb/BWmVfrV9tTV9zU04+xjw08Fh2WkA==}
-    engines: {node: '>=14.16'}
-    dependencies:
-      '@types/minimist': 1.2.2
-      camelcase-keys: 8.0.2
-      decamelize: 6.0.0
-      decamelize-keys: 1.1.1
-      hard-rejection: 2.1.0
-      minimist-options: 4.1.0
-      normalize-package-data: 4.0.1
-      read-pkg-up: 9.1.0
-      redent: 4.0.0
-      trim-newlines: 4.1.1
-      type-fest: 3.13.0
-      yargs-parser: 21.1.1
-    dev: true
 
   /meow@6.1.1:
     resolution: {integrity: sha512-3YffViIt2QWgTy6Pale5QpopX/IvU3LPL03jOTqp6pGj3VjesdO/U8CuHMKpnQr4shCNCM5fd5XFFvIIl6JBHg==}
@@ -9738,29 +9550,6 @@ packages:
     resolution: {integrity: sha512-ckmWDJjphvd/FvZawgygcUeQCxzvohjFO5RxTjj4eq8kw359gFF3E1brjfI+viLMxss5JrHTDRHZvu2/tuy0Qg==}
     dev: true
 
-  /nanobundle@1.6.0(typescript@5.1.6):
-    resolution: {integrity: sha512-jwksXUVZ5gTiGfzU5KkF8ozl/OfLLoO9/AcrnDuElhaaO8ltf4/M8KOEHiK4ZE68QSDZxS7acCrBho5lVF938Q==}
-    engines: {node: '>=16.0.0'}
-    hasBin: true
-    peerDependencies:
-      typescript: ^3.7.0 || ^4.0.0 || ^5.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@cometjs/core': 2.3.2(typescript@5.1.6)
-      browserslist: 4.21.9
-      esbuild: 0.17.19
-      kleur: 4.1.5
-      meow: 11.0.0
-      pretty-bytes: 6.1.0
-      semver: 7.5.4
-      string-dedent: 3.0.1
-      tsconfck: 2.1.1(typescript@5.1.6)
-      typescript: 5.1.6
-      xstate: 4.38.1
-    dev: true
-
   /nanoid@3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -9810,26 +9599,6 @@ packages:
       hosted-git-info: 2.8.9
       resolve: 1.22.2
       semver: 5.7.2
-      validate-npm-package-license: 3.0.4
-    dev: true
-
-  /normalize-package-data@3.0.3:
-    resolution: {integrity: sha512-p2W1sgqij3zMMyRC067Dg16bfzVH+w7hyegmpIvZ4JNjqtGOVAIvLmjBx3yP7YTe9vKJgkoNOPjwQGogDoMXFA==}
-    engines: {node: '>=10'}
-    dependencies:
-      hosted-git-info: 4.1.0
-      is-core-module: 2.12.1
-      semver: 7.5.4
-      validate-npm-package-license: 3.0.4
-    dev: true
-
-  /normalize-package-data@4.0.1:
-    resolution: {integrity: sha512-EBk5QKKuocMJhB3BILuKhmaPjI8vNRSpIfO9woLC6NyHVkKKdVEdAO1mrT0ZfxNR1lKwCcTkuZfmGIFdizZ8Pg==}
-    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
-    dependencies:
-      hosted-git-info: 5.2.1
-      is-core-module: 2.12.1
-      semver: 7.5.4
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -10040,13 +9809,6 @@ packages:
     dependencies:
       p-limit: 3.1.0
 
-  /p-locate@6.0.0:
-    resolution: {integrity: sha512-wPrq66Llhl7/4AGC6I+cqxT07LhXvWL08LNXz1fENOw0Ap4sRZZ/gZpTTJ5jpurzzzfS2W/Ge9BY3LgLjCShcw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      p-limit: 4.0.0
-    dev: true
-
   /p-map@2.1.0:
     resolution: {integrity: sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==}
     engines: {node: '>=6'}
@@ -10096,11 +9858,6 @@ packages:
   /path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
-
-  /path-exists@5.0.0:
-    resolution: {integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: true
 
   /path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
@@ -10244,11 +10001,6 @@ packages:
     hasBin: true
     dev: false
 
-  /pretty-bytes@6.1.0:
-    resolution: {integrity: sha512-Rk753HI8f4uivXi4ZCIYdhmG1V+WKzvRMg/X+M42a6t7D07RcmopXJMDNk6N++7Bl75URRGsb40ruvg7Hcp2wQ==}
-    engines: {node: ^14.13.1 || >=16.0.0}
-    dev: true
-
   /pretty-format@27.5.1:
     resolution: {integrity: sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -10381,11 +10133,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /quick-lru@6.1.1:
-    resolution: {integrity: sha512-S27GBT+F0NTRiehtbrgaSE1idUAJ5bX8dPAQTdylEyNlrdcH5X4Lz7Edz3DYzecbsCluD5zO8ZNEe04z3D3u6Q==}
-    engines: {node: '>=12'}
-    dev: true
-
   /ramda@0.29.0:
     resolution: {integrity: sha512-BBea6L67bYLtdbOqfp8f58fPMqEwx0doL+pAi8TZyp2YWz8R9G8z9x75CZI8W+ftqhFHCpEX2cRnUUXK130iKA==}
 
@@ -10512,15 +10259,6 @@ packages:
       type-fest: 0.8.1
     dev: true
 
-  /read-pkg-up@9.1.0:
-    resolution: {integrity: sha512-vaMRR1AC1nrd5CQM0PhlRsO5oc2AAigqr7cCrZ/MW/Rsaflz4RlgzkpL4qoU/z1F6wrbd85iFv1OQj/y5RdGvg==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      find-up: 6.3.0
-      read-pkg: 7.1.0
-      type-fest: 2.19.0
-    dev: true
-
   /read-pkg@5.2.0:
     resolution: {integrity: sha512-Ug69mNOpfvKDAc2Q8DRpMjjzdtrnv9HcSMX+4VsZxD1aZ6ZzrIE7rlzXBtWTyhULSMKg076AW6WR5iZpD0JiOg==}
     engines: {node: '>=8'}
@@ -10529,16 +10267,6 @@ packages:
       normalize-package-data: 2.5.0
       parse-json: 5.2.0
       type-fest: 0.6.0
-    dev: true
-
-  /read-pkg@7.1.0:
-    resolution: {integrity: sha512-5iOehe+WF75IccPc30bWTbpdDQLOCc3Uu8bi3Dte3Eueij81yx1Mrufk8qBx/YAbR4uL1FdUr+7BKXDwEtisXg==}
-    engines: {node: '>=12.20'}
-    dependencies:
-      '@types/normalize-package-data': 2.4.1
-      normalize-package-data: 3.0.3
-      parse-json: 5.2.0
-      type-fest: 2.19.0
     dev: true
 
   /read-yaml-file@1.1.0:
@@ -10610,14 +10338,6 @@ packages:
     dependencies:
       indent-string: 4.0.0
       strip-indent: 3.0.0
-    dev: true
-
-  /redent@4.0.0:
-    resolution: {integrity: sha512-tYkDkVVtYkSVhuQ4zBgfvciymHaeuel+zFKXShfDnFP5SyVEP7qo70Rf1jTOTCx3vGNAbnEi/xFkcfQVMIBWag==}
-    engines: {node: '>=12'}
-    dependencies:
-      indent-string: 5.0.0
-      strip-indent: 4.0.0
     dev: true
 
   /regenerate-unicode-properties@10.1.0:
@@ -11122,20 +10842,6 @@ packages:
     engines: {node: '>=0.6.19'}
     dev: true
 
-  /string-dedent@3.0.1:
-    resolution: {integrity: sha512-A2zCXSgpPrpFi1lDJlDwIPYakBWeDtQZ8ZBKssB8M/WbtNEKTzsl1yCDRmHx55jSB27xZDQ6NOtRYekESWx6fw==}
-    engines: {node: '>=0.12.0'}
-    dev: true
-
-  /string-width@3.1.0:
-    resolution: {integrity: sha512-vafcv6KjVZKSgz06oM/H6GDBrAtz8vdhQakGjFIvNrHA6y3HCF1CInLy+QLq8dTJPQ1b+KDUqDFctkdRW44e1w==}
-    engines: {node: '>=6'}
-    dependencies:
-      emoji-regex: 7.0.3
-      is-fullwidth-code-point: 2.0.0
-      strip-ansi: 5.2.0
-    dev: true
-
   /string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
     engines: {node: '>=8'}
@@ -11190,13 +10896,6 @@ packages:
     dependencies:
       safe-buffer: 5.2.1
 
-  /strip-ansi@5.2.0:
-    resolution: {integrity: sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==}
-    engines: {node: '>=6'}
-    dependencies:
-      ansi-regex: 4.1.1
-    dev: true
-
   /strip-ansi@6.0.1:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
     engines: {node: '>=8'}
@@ -11217,13 +10916,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       min-indent: 1.0.1
-
-  /strip-indent@4.0.0:
-    resolution: {integrity: sha512-mnVSV2l+Zv6BLpSD/8V87CW/y9EmmbYzGCIavsnsI6/nwn26DwffM/yztm30Z/I2DY9wdS3vXVCMnHDgZaVNoA==}
-    engines: {node: '>=12'}
-    dependencies:
-      min-indent: 1.0.1
-    dev: true
 
   /strip-json-comments@3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
@@ -11439,11 +11131,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /trim-newlines@4.1.1:
-    resolution: {integrity: sha512-jRKj0n0jXWo6kh62nA5TEh3+4igKDXLvzBJcPpiizP7oOolUrYIxmVBG9TOtHYFHoddUk6YvAkGeGoSVTXfQXQ==}
-    engines: {node: '>=12'}
-    dev: true
-
   /trough@2.1.0:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
     dev: true
@@ -11451,19 +11138,6 @@ packages:
   /ts-dedent@2.2.0:
     resolution: {integrity: sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==}
     engines: {node: '>=6.10'}
-
-  /tsconfck@2.1.1(typescript@5.1.6):
-    resolution: {integrity: sha512-ZPCkJBKASZBmBUNqGHmRhdhM8pJYDdOXp4nRgj/O0JwUwsMq50lCDRQP/M5GBNAA0elPrq4gAeu4dkaVCuKWww==}
-    engines: {node: ^14.13.1 || ^16 || >=18}
-    hasBin: true
-    peerDependencies:
-      typescript: ^4.3.5 || ^5.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      typescript: 5.1.6
-    dev: true
 
   /tsconfig-paths@3.14.2:
     resolution: {integrity: sha512-o/9iXgCYc5L/JxCHPe3Hvh8Q/2xm5Z+p18PESBU6Ff33695QnCHBEjcytY2q19ua7Mbl/DavtBOLq+oG0RCL+g==}
@@ -11614,11 +11288,6 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  /type-fest@3.13.0:
-    resolution: {integrity: sha512-Gur3yQGM9qiLNs0KPP7LPgeRbio2QTt4xXouobMCarR0/wyW3F+F/+OWwshg3NG0Adon7uQfSZBpB46NfhoF1A==}
-    engines: {node: '>=14.16'}
-    dev: true
-
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -11662,6 +11331,7 @@ packages:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: false
 
   /udc@1.0.1:
     resolution: {integrity: sha512-jv+D9de1flsum5QkFtBdjyppCQAdz9kTck/0xST5Vx48T9LL2BYnw0Iw77dSKDQ9KZ/PS3qPO1vfXHDpLZlxcQ==}
@@ -12184,15 +11854,6 @@ packages:
   /wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
 
-  /wrap-ansi@5.1.0:
-    resolution: {integrity: sha512-QC1/iN/2/RPVJ5jYK8BGttj5z83LmSKmvbvrXPNCLZSEb32KKVDJDl/MOt2N01qU2H/FkzEa9PKto1BqDjtd7Q==}
-    engines: {node: '>=6'}
-    dependencies:
-      ansi-styles: 3.2.1
-      string-width: 3.1.0
-      strip-ansi: 5.2.0
-    dev: true
-
   /wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
     engines: {node: '>=8'}
@@ -12256,10 +11917,6 @@ packages:
         optional: true
     dev: true
 
-  /xstate@4.38.1:
-    resolution: {integrity: sha512-1gBUcFWBj/rv/pRcP2Bedl5sNRGX2d36CaOx9z7fE9uSiHaOEHIWzLg1B853q2xdUHUA9pEiWKjLZ3can4SJaQ==}
-    dev: true
-
   /xtend@4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
@@ -12283,13 +11940,6 @@ packages:
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
-  /yargs-parser@13.1.2:
-    resolution: {integrity: sha512-3lbsNRf/j+A4QuSZfDRA7HRSfWrzO0YjqTJd5kjAq37Zep1CEgaYmrH9Q3GwPiB9cHyd1Y1UwggGhJGoxipbzg==}
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-    dev: true
-
   /yargs-parser@18.1.3:
     resolution: {integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==}
     engines: {node: '>=6'}
@@ -12306,21 +11956,6 @@ packages:
   /yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
-    dev: true
-
-  /yargs@13.3.2:
-    resolution: {integrity: sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==}
-    dependencies:
-      cliui: 5.0.0
-      find-up: 3.0.0
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      require-main-filename: 2.0.0
-      set-blocking: 2.0.0
-      string-width: 3.1.0
-      which-module: 2.0.1
-      y18n: 4.0.3
-      yargs-parser: 13.1.2
     dev: true
 
   /yargs@15.4.1:
