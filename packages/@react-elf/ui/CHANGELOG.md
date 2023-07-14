@@ -1,5 +1,39 @@
 # @react-elf/button
 
+## 0.0.37
+
+### Patch Changes
+
+- modify vite config
+
+- Updated dependencies []:
+  - @react-elf/notification@0.0.37
+  - @react-elf/divider@0.0.37
+  - @react-elf/popover@0.0.37
+  - @react-elf/tooltip@0.0.37
+  - @react-elf/button@0.0.37
+  - @react-elf/dialog@0.0.37
+  - @react-elf/layout@0.0.37
+  - @react-elf/alert@0.0.37
+  - @react-elf/toast@0.0.37
+  - @react-elf/menu@0.0.37
+
+## 0.0.36
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/notification@0.0.36
+  - @react-elf/divider@0.0.36
+  - @react-elf/popover@0.0.36
+  - @react-elf/tooltip@0.0.36
+  - @react-elf/button@0.0.36
+  - @react-elf/layout@0.0.36
+  - @react-elf/alert@0.0.36
+  - @react-elf/toast@0.0.36
+  - @react-elf/menu@0.0.36
+  - @react-elf/dialog@0.0.36
+
 ## 0.0.35
 
 ### Patch Changes

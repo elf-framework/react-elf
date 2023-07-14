@@ -29,11 +29,40 @@ export default defineConfig({
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: [],
+      external: [
+        "react",
+        "react-dom",
+        "@react-elf/button",
+        "@react-elf/tooltip",
+        "@react-elf/notification",
+        "@react-elf/popover",
+        "@react-elf/alert",
+        "@react-elf/shared",
+        "@react-elf/layout",
+        "@react-elf/menu",
+        "@react-elf/divider",
+
+        "@react-elf/dialog",
+        "@react-elf/toast",
+      ],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
-        globals: {},
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+          "@react-elf/button": "Button",
+          "@react-elf/tooltip": "Tooltip",
+          "@react-elf/notification": "Notification",
+          "@react-elf/popover": "Popover",
+          "@react-elf/shared": "Shared",
+          "@react-elf/alert": "Alert",
+          "@react-elf/layout": "Layout",
+          "@react-elf/menu": "Menu",
+          "@react-elf/divider": "Divider",
+          "@react-elf/dialog": "Dialog",
+          "@react-elf/toast": "Toast",
+        },
       },
     },
   },

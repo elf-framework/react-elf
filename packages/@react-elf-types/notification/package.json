@@ -1,6 +1,6 @@
 {
   "name": "@react-elf-types/notification",
-  "version": "0.0.35",
+  "version": "0.0.37",
   "description": "Elf UI components in React",
   "license": "MIT",
   "types": "src/index.d.ts",
@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/elf-framework/react-elf"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@react-elf-types/shared": "workspace:*",
     "@react-elf-types/tooltip": "workspace:*",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"

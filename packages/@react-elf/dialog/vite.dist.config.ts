@@ -29,12 +29,20 @@ export default defineConfig({
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ["react"],
+      external: [
+        "react",
+        "classnames",
+        "@react-elf/button",
+        "@react-elf/shared",
+      ],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
           react: "React",
+          classnames: "classNames",
+          "@react-elf/button": "ReactElf.Button",
+          "@react-elf/shared": "ReactElf.Shared",
         },
       },
     },

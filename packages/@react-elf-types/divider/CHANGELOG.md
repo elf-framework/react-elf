@@ -1,5 +1,17 @@
 # @react-elf-types/divider
 
+## 0.0.37
+
+### Patch Changes
+
+- modify vite config
+
+## 0.0.36
+
+### Patch Changes
+
+- update peerDependencies for all types
+
 ## 0.0.35
 
 ### Patch Changes

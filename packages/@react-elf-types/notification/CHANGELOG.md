@@ -1,5 +1,23 @@
 # @react-elf-types/notification
 
+## 0.0.37
+
+### Patch Changes
+
+- modify vite config
+
+- Updated dependencies []:
+  - @react-elf-types/tooltip@0.0.37
+
+## 0.0.36
+
+### Patch Changes
+
+- update peerDependencies for all types
+
+- Updated dependencies []:
+  - @react-elf-types/tooltip@0.0.36
+
 ## 0.0.35
 
 ### Patch Changes
