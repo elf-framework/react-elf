@@ -3,6 +3,9 @@ name: Release @react-elf/* to npmjs
 
 on:
   # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+  # Runs on pushes targeting the default branch
   release:
     types: [published]
 
