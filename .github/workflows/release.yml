@@ -26,7 +26,13 @@ jobs:
       - name: Install
         run: pnpm install
       - name: Setup npmrc
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            email=cyberuls@gmail.com
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Build for documentation
         run: pnpm run lib:build
       - name: Publish to npm
