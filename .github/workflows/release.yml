@@ -27,7 +27,6 @@ jobs:
         run: pnpm install
       - name: Setup npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-      - run: cat "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}"
       - name: setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
       - name: Build for documentation
@@ -35,5 +34,6 @@ jobs:
       - name: Publish to npm
         run: pnpm release
         env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
