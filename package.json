@@ -18,7 +18,7 @@
     "changeset": "changeset",
     "version": "changeset version",
     "prerelease": "pnpm run lib:build",
-    "release": "changeset publish",
+    "release": "pnpm publish -r",
     "lint": "turbo run lint",
     "build:storybook": "build-storybook"
   },
