@@ -1,5 +1,12 @@
 # @react-elf/docs
 
+## 0.0.33
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.33
+
 ## 0.0.32
 
 ### Patch Changes
