@@ -16,11 +16,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup .npmrc file to publish to npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -29,6 +24,7 @@ jobs:
         run: pnpm install
       - name: Setup npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+      - run: cat "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}"
       - name: setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
       - name: Build for documentation
