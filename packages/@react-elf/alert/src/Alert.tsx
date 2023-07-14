@@ -15,6 +15,7 @@ const cssProperties = makeCssVariablePrefixMap("--elf--alert", {
   height: true,
   padding: true,
   borderRadius: true,
+  width: true,
 });
 
 export function Alert(props: AlertProps) {
