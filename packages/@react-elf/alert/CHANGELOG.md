@@ -1,5 +1,14 @@
 # @react-elf/button
 
+## 0.0.34
+
+### Patch Changes
+
+- remove nanobundle
+
+- Updated dependencies []:
+  - @react-elf/shared@0.0.34
+
 ## 0.0.33
 
 ### Patch Changes

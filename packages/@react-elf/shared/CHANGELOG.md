@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.34
+
+### Patch Changes
+
+- remove nanobundle
+
 ## 0.0.29
 
 ### Patch Changes

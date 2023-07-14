@@ -1,5 +1,24 @@
 # @react-elf/button
 
+## 0.0.34
+
+### Patch Changes
+
+- remove nanobundle
+
+- Updated dependencies []:
+  - @react-elf/notification@0.0.34
+  - @react-elf/divider@0.0.34
+  - @react-elf/popover@0.0.34
+  - @react-elf/tooltip@0.0.34
+  - @react-elf/button@0.0.34
+  - @react-elf/dialog@0.0.34
+  - @react-elf/layout@0.0.34
+  - @react-elf/shared@0.0.34
+  - @react-elf/alert@0.0.34
+  - @react-elf/toast@0.0.34
+  - @react-elf/menu@0.0.34
+
 ## 0.0.33
 
 ### Patch Changes
