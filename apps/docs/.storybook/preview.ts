@@ -14,7 +14,22 @@ const preview: Preview = {
       storySort: {
         method: "configure",
         includeNames: true,
-        order: ["Introduction", "Foundation", "Components"],
+        order: [
+          "Introduction",
+          "Foundation",
+          [
+            "Components",
+            [
+              "Actions",
+              "Containers",
+              "Feed Backs",
+              "Inputs",
+              "Navigations",
+              "Status",
+              "Pattern",
+            ],
+          ],
+        ],
       },
     },
   },

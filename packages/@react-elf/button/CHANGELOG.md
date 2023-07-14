@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.39
+
+### Patch Changes
+
+- support ActionGroup component
+
 ## 0.0.37
 
 ### Patch Changes
