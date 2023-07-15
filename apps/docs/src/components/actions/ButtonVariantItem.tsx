@@ -9,16 +9,23 @@ interface ButtonVariantItemProps {
   button1?: StoryObj;
   button2?: StoryObj;
   width?: number;
+  layout?: string;
 }
 
 export function ButtonVariantItem({
   name,
   button1,
   button2,
+  layout = "horizontal",
   width = 100,
 }: ButtonVariantItemProps) {
   return (
-    <div className={style.button}>
+    <div
+      className={[
+        style.button,
+        layout === "vertical" ? style.vertical : "",
+      ].join(" ")}
+    >
       <p
         style={{
           width,

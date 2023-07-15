@@ -13,3 +13,12 @@
     width: 100px;
   }
 }
+
+.vertical {
+  flex-direction: column;
+  width: 300px;
+  * {
+    width: 100%;
+    justify-content: center;
+  }
+}

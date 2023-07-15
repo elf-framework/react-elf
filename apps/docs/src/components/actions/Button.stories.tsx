@@ -221,3 +221,13 @@ export const ExtraLarge: Story = {
     shape: "round",
   },
 };
+
+export const Justified: Story = {
+  args: {
+    size: "extra-large",
+    children: "Button",
+    shape: "round",
+    justified: true,
+    variant: "primary",
+  },
+};

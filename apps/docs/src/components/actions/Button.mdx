@@ -136,5 +136,24 @@ The accent button communicates strong emphasis and is reserved for actions that 
 
 </ContainerView>
 </Unstyled>
+
 Buttons come in four different sizes: small, medium, large, and extra-large. The medium size is the default and most frequently used option. Use the other sizes sparingly; they should be used to create a hierarchy of importance within the page.
+
 <Canvas of={ButtonStories.Small} sourceState="shown" />
+
+## Justified
+
+<Unstyled>
+<ContainerView>
+  <ButtonVariantItem
+    layout="vertical"
+    name="justified"
+    button1={ButtonStories.Justified}
+  />
+
+</ContainerView>
+</Unstyled>
+
+A button can become justified. By default, it is not justified since the button size depends on the label and/or icon inside of each button. When a button is justified, it takes up the entire available container width.
+
+<Canvas of={ButtonStories.Justified} sourceState="shown" />

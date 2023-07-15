@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.41
+
+### Patch Changes
+
+- add justified button to Button docs
+
 ## 0.0.40
 
 ### Patch Changes
