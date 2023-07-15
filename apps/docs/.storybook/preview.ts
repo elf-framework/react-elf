@@ -20,7 +20,7 @@ const preview: Preview = {
           [
             "Components",
             [
-              "Actions",
+              ["Actions", ["Button", "Action Group", "Toolbar", "Menu"]],
               "Containers",
               "Feed Backs",
               "Inputs",

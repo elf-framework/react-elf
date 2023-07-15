@@ -24,14 +24,7 @@ type ButtonVariant =
   | "outline"
   | "light"
   | "dark";
-type ButtonSize =
-  | "extra-small"
-  | "xsmall"
-  | "small"
-  | "default"
-  | "large"
-  | "extra-large"
-  | "xlarge";
+type ButtonSize = "extra-small" | "small" | "default" | "large" | "extra-large";
 
 type ButtonShape = "square" | "round" | "circle";
 

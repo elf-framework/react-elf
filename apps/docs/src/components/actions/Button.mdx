@@ -1,0 +1,140 @@
+import { Controls, Canvas, Meta, Unstyled } from "@storybook/blocks";
+import { Button } from "@react-elf/ui";
+import * as ButtonStories from "./Button.stories";
+import { ButtonVariantItem } from "./ButtonVariantItem";
+
+import { ContainerView } from "../../ui/ContainerView";
+
+<Meta title="Components/Actions/Button" of={ButtonStories} />
+
+# Button
+
+Buttons allow users to perform an action or to navigate to another page. They have multiple styles for various needs, and are ideal for calling attention to where a user needs to do something in order to move forward in a flow.
+
+## Usage
+
+<Canvas of={ButtonStories.ExtraLargePrimary} sourceState="shown" />
+
+{/* <Controls exclude={["onClick"]} /> */}
+
+## Options
+
+### Label and icon
+
+Buttons should always have a label, unless they are only using an icon that is universally understood and accessible. They can have an optional icon, but it should not be used for decoration. Use an icon only when necessary and when it has a strong association with the label text.
+
+The label can be hidden to create an icon-only button. If the label is hidden, an icon is required, and the label will appear in a tooltip.
+
+<Unstyled>
+<ContainerView>
+    <ButtonVariantItem 
+        width={200}
+        name="With label and icon"
+        button1={ButtonStories.WithLabelAndIcon}
+    />
+
+    <ButtonVariantItem
+        width={200}
+        name="Without icon"
+        button1={ButtonStories.WithoutIcon}
+    />
+
+    <ButtonVariantItem
+        width={200}
+        name="With label and icon hidden"
+        button1={ButtonStories.WithIconAndLabelHidden}
+    />
+
+</ContainerView>
+</Unstyled>
+
+<Canvas of={ButtonStories.WithLabelAndIcon} sourceState="shown" />
+
+### Variant
+
+The accent button communicates strong emphasis and is reserved for actions that are essential to an experience. Don’t use more than 3 accent buttons in the same view. These give extra prominence to important actions and are meant to establish a clear hierarchy.
+
+<Unstyled>
+<ContainerView>
+  <ButtonVariantItem
+    name="default"
+    button1={ButtonStories.Default}
+    button2={ButtonStories.DefaultOutline}
+  />
+  <ButtonVariantItem
+    name="primary"
+    button1={ButtonStories.Primary}
+    button2={ButtonStories.PrimaryOutline}
+  />
+  <ButtonVariantItem
+    name="secondary"
+    button1={ButtonStories.Secondary}
+    button2={ButtonStories.SecondaryOutline}
+  />
+
+    <ButtonVariantItem
+        name="danger"
+        button1={ButtonStories.Danger}
+        button2={ButtonStories.DangerOutline}
+    />
+
+    <ButtonVariantItem
+        name="warning"
+        button1={ButtonStories.Warning}
+        button2={ButtonStories.WarningOutline}
+    />
+
+    <ButtonVariantItem
+        name="success"
+        button1={ButtonStories.Success}
+        button2={ButtonStories.SuccessOutline}
+    />
+
+    <ButtonVariantItem
+        name="info"
+        button1={ButtonStories.Info}
+        button2={ButtonStories.InfoOutline}
+
+    />
+
+    <ButtonVariantItem
+        name="dark"
+        button1={ButtonStories.Dark}
+        button2={ButtonStories.DarkOutline}
+    />
+
+</ContainerView>
+</Unstyled>
+
+<Canvas of={ButtonStories.Primary} sourceState="shown" />
+<Canvas of={ButtonStories.PrimaryOutline} sourceState="shown" />
+
+### Size
+
+<Unstyled>
+<ContainerView>
+  <ButtonVariantItem
+    name="extra-small"
+    button1={ButtonStories.ExtraSmall}
+  />
+    <ButtonVariantItem
+        name="small"
+        button1={ButtonStories.Small}
+    />
+    <ButtonVariantItem
+        name="default"
+        button1={ButtonStories.Default}
+    />
+    <ButtonVariantItem
+        name="large"
+        button1={ButtonStories.Large}
+    />
+    <ButtonVariantItem
+        name="extra-large"
+        button1={ButtonStories.ExtraLarge}
+    />
+
+</ContainerView>
+</Unstyled>
+Buttons come in four different sizes: small, medium, large, and extra-large. The medium size is the default and most frequently used option. Use the other sizes sparingly; they should be used to create a hierarchy of importance within the page.
+<Canvas of={ButtonStories.Small} sourceState="shown" />

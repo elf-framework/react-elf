@@ -1,5 +1,11 @@
 # @react-elf-types/button
 
+## 0.0.40
+
+### Patch Changes
+
+- add button docs
+
 ## 0.0.37
 
 ### Patch Changes

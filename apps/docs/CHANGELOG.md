@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.40
+
+### Patch Changes
+
+- add button docs
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.40
+
 ## 0.0.39
 
 ### Patch Changes
