@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.43
+
+### Patch Changes
+
+- modify tooltip button stories
+
 ## 0.0.42
 
 ### Patch Changes

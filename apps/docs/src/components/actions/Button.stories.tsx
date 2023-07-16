@@ -360,6 +360,7 @@ export const TooltipPreview: Story = {
       style={{
         display: "flex",
         gap: 30,
+        padding: 50,
       }}
     >
       <Tooltip message={"Share"} show placement="top" variant="dark">
