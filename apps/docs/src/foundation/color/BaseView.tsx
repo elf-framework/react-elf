@@ -29,7 +29,7 @@ export function BaseView() {
       <ColorDetailView
         color={tokens.color.text.default}
         title={"Body Text"}
-        message={"Color Gray 8"}
+        message={"Color Gray 9"}
       />
       <ColorDetailView
         color={tokens.color.text.title}
