@@ -8,6 +8,7 @@ const config: StorybookConfig = {
     "@storybook/addon-controls",
     "storybook-dark-mode",
     "@storybook/addon-mdx-gfm",
+    "@storybook/addon-styling",
   ],
   framework: {
     name: "@storybook/react-vite",

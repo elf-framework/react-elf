@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.48
+
+### Patch Changes
+
+- add @storybook/addon-styling to change theme for react-elf
+
 ## 0.0.47
 
 ### Patch Changes

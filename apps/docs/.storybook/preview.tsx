@@ -1,7 +1,18 @@
 import type { Preview } from "@storybook/react";
+import { withThemeByClassName } from "@storybook/addon-styling";
+
 import "@elf-framework/design-system/style.css";
 
 const preview: Preview = {
+  decorators: [
+    withThemeByClassName({
+      themes: {
+        light: "theme-light",
+        dark: "theme-dark",
+      },
+      defaultTheme: "light",
+    }),
+  ],
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
