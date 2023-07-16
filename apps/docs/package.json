@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/docs",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "private": true,
   "scripts": {
     "npm-check": "npx npm-check-updates -u",

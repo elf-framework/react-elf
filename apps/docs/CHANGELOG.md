@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.45
+
+### Patch Changes
+
+- add brand image to title
+
 ## 0.0.44
 
 ### Patch Changes
