@@ -26,13 +26,16 @@ export function ButtonVariantItem({
         layout === "vertical" ? style.vertical : "",
       ].join(" ")}
     >
-      <p
-        style={{
-          width,
-        }}
-      >
-        {name}
-      </p>
+      {name ? (
+        <p
+          style={{
+            width,
+          }}
+        >
+          {name}
+        </p>
+      ) : undefined}
+
       {button1 ? (
         <div>
           <Canvas of={button1} layout="fullscreen" sourceState="none" />

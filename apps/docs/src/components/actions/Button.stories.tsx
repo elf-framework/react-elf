@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@react-elf/ui";
+import { Button, Tooltip } from "@react-elf/ui";
 import { FaBeer } from "react-icons/fa";
 
 const meta = {
@@ -224,10 +224,149 @@ export const ExtraLarge: Story = {
 
 export const Justified: Story = {
   args: {
-    size: "extra-large",
     children: "Button",
     shape: "round",
     justified: true,
     variant: "primary",
   },
+};
+
+export const JustifiedWithIcon: Story = {
+  args: {
+    children: (
+      <>
+        <FaBeer />
+        Button
+      </>
+    ),
+    shape: "round",
+    justified: true,
+    variant: "primary",
+  },
+};
+
+/**
+ * Pending Button Story
+ *
+ * TODO: Add play button
+ */
+export const PendingSmall: Story = {
+  args: {
+    children: "Button",
+    shape: "round",
+    pending: true,
+    play: true,
+    size: "small",
+  },
+};
+
+export const PendingDefault: Story = {
+  args: {
+    children: "Button",
+    shape: "round",
+    pending: true,
+    play: true,
+    size: "default",
+  },
+};
+
+export const PendingLarge: Story = {
+  args: {
+    children: "Button",
+    shape: "round",
+    pending: true,
+    play: true,
+    size: "large",
+  },
+};
+
+export const PendingExtraLarge: Story = {
+  args: {
+    children: "Button",
+    shape: "round",
+    pending: true,
+    play: true,
+    size: "extra-large",
+  },
+};
+
+// Disabled Button Story
+export const DisabledFill: Story = {
+  args: {
+    children: "Button",
+    shape: "round",
+    disabled: true,
+  },
+};
+
+export const DisabledOutline: Story = {
+  args: {
+    children: "Button",
+    shape: "round",
+    disabled: true,
+    outline: true,
+  },
+};
+
+export const DisabledPreview: Story = {
+  render: () => (
+    <div
+      style={{
+        display: "flex",
+        gap: 30,
+      }}
+    >
+      <Button shape="round" disabled>
+        Button
+      </Button>
+      <Button shape="round" disabled outline>
+        Button
+      </Button>
+    </div>
+  ),
+};
+
+// Focus Button Story
+
+export const Focus: Story = {
+  args: {
+    children: "Button",
+    shape: "round",
+    variant: "primary",
+    focused: true,
+  },
+};
+
+export const FocusPreview: Story = {
+  render: () => (
+    <div
+      style={{
+        display: "flex",
+        gap: 30,
+      }}
+    >
+      <Button shape="round" focused variant="primary">
+        Button
+      </Button>
+    </div>
+  ),
+};
+
+// Tooltip Button Story
+
+export const TooltipPreview: Story = {
+  render: () => (
+    <div
+      style={{
+        display: "flex",
+        gap: 30,
+      }}
+    >
+      <Tooltip message={"Share"} show placement="top" variant="dark">
+        <Button shape="round" variant="primary" iconOnly>
+          <FaBeer />
+        </Button>
+      </Tooltip>
+    </div>
+  ),
 };

@@ -149,6 +149,7 @@ Buttons come in four different sizes: small, medium, large, and extra-large. The
     layout="vertical"
     name="justified"
     button1={ButtonStories.Justified}
+    button2={ButtonStories.JustifiedWithIcon}
   />
 
 </ContainerView>
@@ -157,3 +158,87 @@ Buttons come in four different sizes: small, medium, large, and extra-large. The
 A button can become justified. By default, it is not justified since the button size depends on the label and/or icon inside of each button. When a button is justified, it takes up the entire available container width.
 
 <Canvas of={ButtonStories.Justified} sourceState="shown" />
+
+## Pending
+
+<Unstyled>
+<ContainerView>
+  <ButtonVariantItem
+    name="small"
+    button1={ButtonStories.PendingSmall}
+  />
+    <ButtonVariantItem
+        name="default"
+        button1={ButtonStories.PendingDefault}
+    />
+    <ButtonVariantItem
+        name="large"
+        button1={ButtonStories.PendingLarge}
+    />
+    <ButtonVariantItem
+        name="extra-large"
+        button1={ButtonStories.PendingExtraLarge}
+    />
+
+</ContainerView>
+</Unstyled>
+
+Buttons can indicate that a quick progress taking place (e.g., saving settings on a server). In this case, the label and optional icon disappear and a progress circle appears. The progress circle always shows an indeterminate progress.
+
+Use the pending state for a button sparingly. It should be reserved only for when the progress is supposed to be quick (taking 5 seconds or less), and when there is no better way to communicate as such.
+
+<Canvas of={ButtonStories.PendingExtraLarge} sourceState="shown" />
+
+## Disabled
+
+<Unstyled>
+<ContainerView>
+
+    {ButtonStories.DisabledPreview.render()}
+
+</ContainerView>
+</Unstyled>
+
+A button in a `disabled` state shows that an action exists, but is not available in that circumstance. This state can be used to maintain layout continuity and to communicate that an action may become available later.
+
+<Canvas of={ButtonStories.DisabledFill} sourceState="shown" />
+
+## Focus
+
+<Unstyled>
+<ContainerView>
+
+    {ButtonStories.FocusPreview.render()}
+
+</ContainerView>
+</Unstyled>
+
+A button can be navigated using a keyboard. The keyboard focus state takes the button’s visual hover state and adds a blue ring to the button in focus.
+
+<Canvas of={ButtonStories.Focus} sourceState="shown" />
+
+## Tooltip
+
+<Unstyled>
+<ContainerView>
+
+    {ButtonStories.TooltipPreview.render()}
+
+</ContainerView>
+</Unstyled>
+
+When the button label is hidden, a tooltip is shown on hover that displays the label text and, if appropriate, a keyboard shortcut.
+
+```jsx dark
+import { Button, Tooltip } from "@react-elf/ui";
+
+function App() {
+  return (
+    <Tooltip message={"Share"} show placement="top" variant="dark">
+      <Button shape="round" variant="primary" iconOnly>
+        <FaBeer />
+      </Button>
+    </Tooltip>
+  );
+}
+```
