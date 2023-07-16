@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.46
+
+### Patch Changes
+
+- add color sample
+
 ## 0.0.45
 
 ### Patch Changes
