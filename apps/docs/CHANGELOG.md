@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.50
+
+### Patch Changes
+
+- add foundation/base style/icongraphy
+
 ## 0.0.49
 
 ### Patch Changes
