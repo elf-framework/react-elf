@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.49
+
+### Patch Changes
+
+- add StatusView, PaletteView to Color page
+
 ## 0.0.48
 
 ### Patch Changes
