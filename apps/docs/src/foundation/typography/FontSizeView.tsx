@@ -1,11 +1,12 @@
+import React from "react";
 import tokens from "@elf-framework/design-tokens/tokens.json";
 
-import { CopyText } from "../CopyText";
+import { CopyText } from "../color/CopyText";
 import "./FontSizeView.scss";
 
 export function FontSizeView() {
   return (
-    <div class="font-size-view">
+    <div className="font-size-view">
       <table
         style={{
           width: "100%",
@@ -22,7 +23,7 @@ export function FontSizeView() {
         <tbody>
           {Object.keys(tokens.font.size).map((key) => {
             return (
-              <tr>
+              <tr key={key}>
                 <td>
                   <CopyText text={`--font-size-${key}`} />
                 </td>

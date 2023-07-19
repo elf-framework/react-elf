@@ -1,4 +1,7 @@
-export function UnderlineView() {
+import React from "react";
+import "./EmphasisView.scss";
+
+export function EmphasisView() {
   return (
     <div
       style={{
@@ -10,16 +13,7 @@ export function UnderlineView() {
       }}
     >
       <label>
-        See{" "}
-        <a
-          href="#"
-          style={{
-            textDecoration: "underline",
-          }}
-        >
-          this link
-        </a>{" "}
-        for more information.
+        I am <em>emphasized</em>.
       </label>
     </div>
   );

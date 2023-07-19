@@ -1,11 +1,12 @@
+import React from "react";
 import tokens from "@elf-framework/design-tokens/tokens.json";
 
-import { CopyText } from "../CopyText";
+import { CopyText } from "../color/CopyText";
 import "./FontWeightView.scss";
 
 export function FontWeightView() {
   return (
-    <div class="font-weight-view">
+    <div className="font-weight-view">
       <table
         style={{
           width: "100%",
@@ -22,7 +23,7 @@ export function FontWeightView() {
         <tbody>
           {Object.keys(tokens.font.weight).map((key) => {
             return (
-              <tr>
+              <tr key={key}>
                 <td>
                   <CopyText text={`--font-weight-${key}`} />
                 </td>

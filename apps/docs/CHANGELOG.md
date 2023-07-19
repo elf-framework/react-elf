@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.51
+
+### Patch Changes
+
+- add typograpy mdx
+
 ## 0.0.50
 
 ### Patch Changes

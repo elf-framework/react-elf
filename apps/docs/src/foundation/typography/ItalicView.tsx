@@ -1,3 +1,4 @@
+import React from "react";
 import "./ItalicView.scss";
 
 export function ItalicView() {
