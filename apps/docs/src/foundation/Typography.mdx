@@ -1,4 +1,4 @@
-import { Controls, Meta } from "@storybook/blocks";
+import { Controls, Meta, Unstyled } from "@storybook/blocks";
 
 import { FontSizeView } from "./typography/FontSizeView";
 import { FontWeightView } from "./typography/FontWeightView";
@@ -19,32 +19,42 @@ import { EmphasisView } from "./typography/EmphasisView";
 Bold is used to add hierarchy within a sentence or to call attention, for example, in buttons and toasts.
 It’s also used to directly refer to the names of UI elements in running text.
 
-<BoldView />
+<Unstyled>
+  <BoldView />
+</Unstyled>
 
 ### Italic
 
 Italic is used only for placeholder (“ghost”) text and image captions.
 
-<ItalicView />
+<Unstyled>
+  <ItalicView />
+</Unstyled>
 
 ### Underline
 
 Underline is used only for text links and should never be used as a mechanism for adding emphasis.
 
-<UnderlineView />
+<Unstyled>
+  <UnderlineView />
+</Unstyled>
 
 ### Strong
 
 Strong can be used for placing importance on part of a sentence, rendering the text as a heavier font weight.
 This is for semantic formatting, when it’s intended to add a tone that conveys importance.
 
-<StrongView />
+<Unstyled>
+  <StrongView />
+</Unstyled>
 
 ### Emphasis
 
 Emphasis can be used for placing emphasis on part of a sentence, rendering the text as italic.
 
-<EmphasisView />
+<Unstyled>
+  <EmphasisView />
+</Unstyled>
 
 ## Font Size
 

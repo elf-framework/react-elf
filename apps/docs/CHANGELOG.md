@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.52
+
+### Patch Changes
+
+- upgrade storybook 7.0 to 7.1
+
 ## 0.0.51
 
 ### Patch Changes

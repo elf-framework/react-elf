@@ -4,17 +4,20 @@ import { withThemeByClassName } from "@storybook/addon-styling";
 import "@elf-framework/design-system/style.css";
 
 const preview: Preview = {
-  decorators: [
-    withThemeByClassName({
-      themes: {
-        light: "theme-light",
-        dark: "theme-dark",
-      },
-      defaultTheme: "light",
-    }),
-  ],
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
+    docs: {
+      toc: {
+        contentsSelector: ".sbdocs-content",
+        headingSelector: "h1, h2, h3",
+        ignoreSelector: "#primary",
+        title: "Table of Contents",
+        disable: false,
+        unsafeTocbotOptions: {
+          orderedList: false,
+        },
+      },
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,

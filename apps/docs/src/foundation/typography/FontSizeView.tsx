@@ -34,7 +34,12 @@ export function FontSizeView() {
                   <CopyText text={tokens.font.size[key]} />
                 </td>
                 <td>
-                  <span style={{ fontSize: `var(--font-size-${key})` }}>
+                  <span
+                    style={{
+                      fontSize: `var(--font-size-${key})`,
+                      lineHeight: 1.6,
+                    }}
+                  >
                     I can do it.
                   </span>
                 </td>
