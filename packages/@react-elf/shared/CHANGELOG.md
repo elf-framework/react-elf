@@ -1,5 +1,14 @@
 # @react-elf/button
 
+## 0.0.60
+
+### Patch Changes
+
+- add toolbar, tools component
+
+- Updated dependencies []:
+  - @react-elf-types/shared@0.0.60
+
 ## 0.0.56
 
 ### Patch Changes

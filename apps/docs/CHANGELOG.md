@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.60
+
+### Patch Changes
+
+- add toolbar, tools component
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.60
+
 ## 0.0.59
 
 ### Patch Changes

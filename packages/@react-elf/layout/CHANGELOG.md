@@ -1,5 +1,15 @@
 # @react-elf/layout
 
+## 0.0.60
+
+### Patch Changes
+
+- add toolbar, tools component
+
+- Updated dependencies []:
+  - @react-elf/shared@0.0.60
+  - @react-elf-types/layout@0.0.60
+
 ## 0.0.56
 
 ### Patch Changes

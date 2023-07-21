@@ -1,5 +1,12 @@
 # @react-elf-types/divider
 
+## 0.0.60
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/shared@0.0.60
+
 ## 0.0.56
 
 ### Patch Changes

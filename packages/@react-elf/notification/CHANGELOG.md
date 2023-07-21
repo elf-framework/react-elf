@@ -1,5 +1,15 @@
 # @react-elf/notification
 
+## 0.0.60
+
+### Patch Changes
+
+- add toolbar, tools component
+
+- Updated dependencies []:
+  - @react-elf/shared@0.0.60
+  - @react-elf-types/notification@0.0.60
+
 ## 0.0.56
 
 ### Patch Changes

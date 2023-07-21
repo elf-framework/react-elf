@@ -1,5 +1,16 @@
 # @react-elf/dialog
 
+## 0.0.60
+
+### Patch Changes
+
+- add toolbar, tools component
+
+- Updated dependencies []:
+  - @react-elf/button@0.0.60
+  - @react-elf/shared@0.0.60
+  - @react-elf-types/dialog@0.0.60
+
 ## 0.0.58
 
 ### Patch Changes

@@ -1,5 +1,26 @@
 # @react-elf/button
 
+## 0.0.60
+
+### Patch Changes
+
+- add toolbar, tools component
+
+- Updated dependencies []:
+  - @react-elf/notification@0.0.60
+  - @react-elf/divider@0.0.60
+  - @react-elf/popover@0.0.60
+  - @react-elf/tooltip@0.0.60
+  - @react-elf/button@0.0.60
+  - @react-elf/dialog@0.0.60
+  - @react-elf/layout@0.0.60
+  - @react-elf/shared@0.0.60
+  - @react-elf/alert@0.0.60
+  - @react-elf/toast@0.0.60
+  - @react-elf/menu@0.0.60
+  - @react-elf/toolbar@0.0.60
+  - @react-elf/tools@0.0.60
+
 ## 0.0.58
 
 ### Patch Changes

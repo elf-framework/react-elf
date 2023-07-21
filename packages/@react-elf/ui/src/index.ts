@@ -10,3 +10,5 @@ export * from "@react-elf/notification";
 export * from "@react-elf/dialog";
 export * from "@react-elf/toast";
 export * from "@react-elf/dialog";
+export * from "@react-elf/toolbar";
+export * from "@react-elf/tools";

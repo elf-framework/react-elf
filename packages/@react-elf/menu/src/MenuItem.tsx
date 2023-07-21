@@ -35,7 +35,7 @@ export function MenuItem(props: MenuItemProps) {
     <li
       className={localClass}
       data-disabled={disabled ? true : undefined}
-      onClick={(e: React.MouseEvent<HTMLLIElement, MouseEvent>) => onClick(e)}
+      onClick={onClick}
     >
       <div className="menu-item-content">
         {selectable ? (
