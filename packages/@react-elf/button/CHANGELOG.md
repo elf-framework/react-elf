@@ -1,5 +1,16 @@
 # @react-elf/button
 
+## 0.0.56
+
+### Patch Changes
+
+- modify type definition
+
+- Updated dependencies []:
+  - @react-elf-types/button@0.0.56
+  - @react-elf/shared@0.0.56
+  - @react-elf/tooltip@0.0.56
+
 ## 0.0.40
 
 ### Patch Changes

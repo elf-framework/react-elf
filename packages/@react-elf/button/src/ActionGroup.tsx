@@ -79,9 +79,9 @@ export function ActionGroup(props: ActionGroupProps) {
         });
       });
 
-      if (!this.$el) return;
+      if (!elRef.current) return;
 
-      resizeObserver.observe(this.$el.el);
+      resizeObserver.observe(elRef.current);
     }
 
     return () => {
@@ -101,7 +101,7 @@ export function ActionGroup(props: ActionGroupProps) {
   }, [direction, quiet, compact, collapsed, justified, shape]);
 
   const styleObject = {
-    class: localClass,
+    className: localClass,
     style: propertyMap(
       {
         ...style,

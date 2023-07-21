@@ -29,12 +29,12 @@ export interface CommonStyle extends KeyValue {
   columnStart?: string;
   direction?: string;
   display?: string;
-  flex?: string;
+  flex?: string | number;
   fontFamily?: string;
-  fontSize?: string;
+  fontSize?: string | number;
   fontStyle?: string;
   fontWeight?: string;
-  gap?: string;
+  gap?: string | number;
   grow?: string;
   height?: string | number;
   justifyContent?: string;
@@ -104,7 +104,6 @@ export function propertyMap(
   styles: KeyValue,
   mapper?: KeyValue
 ): KeyValue | undefined;
-
 
 export type ThemeType = "dark" | "light" | string;
 

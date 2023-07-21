@@ -23,7 +23,7 @@ export function Flex(props: FlexProps) {
   }, [className, stack, wrap, sameWidth]);
 
   const styleObject = {
-    class: localClass,
+    className: localClass,
 
     style: {
       ...propertyMap(style, {}),

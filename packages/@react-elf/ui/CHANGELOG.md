@@ -1,5 +1,22 @@
 # @react-elf/button
 
+## 0.0.56
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/button@0.0.56
+  - @react-elf/layout@0.0.56
+  - @react-elf/shared@0.0.56
+  - @react-elf/dialog@0.0.56
+  - @react-elf/toast@0.0.56
+  - @react-elf/alert@0.0.56
+  - @react-elf/divider@0.0.56
+  - @react-elf/menu@0.0.56
+  - @react-elf/notification@0.0.56
+  - @react-elf/popover@0.0.56
+  - @react-elf/tooltip@0.0.56
+
 ## 0.0.40
 
 ### Patch Changes

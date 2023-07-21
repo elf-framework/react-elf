@@ -1,5 +1,11 @@
 # @react-elf-types/shared
 
+## 0.0.56
+
+### Patch Changes
+
+- modify type definition
+
 ## 0.0.29
 
 ### Patch Changes
