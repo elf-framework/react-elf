@@ -1,5 +1,11 @@
 # @react-elf-types/toolbar
 
+## 0.0.61
+
+### Patch Changes
+
+- fix to open menu in tools menu item
+
 ## 0.0.60
 
 ### Patch Changes

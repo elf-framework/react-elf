@@ -37,7 +37,7 @@ export type ToolbarItemProps = {
 export interface ToolbarProps {
   items: ToolsProps[];
   align?: ToolbarAlignType;
-  style: ToolbarStyle;
+  style?: ToolbarStyle;
   variant?: VariantType;
   emphasized?: boolean;
   rounded?: boolean;

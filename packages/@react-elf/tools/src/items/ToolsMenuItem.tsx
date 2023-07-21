@@ -1,4 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  MouseEventHandler,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { ToolsMenuItemType } from "@react-elf-types/tools";
 import { useMemo } from "react";
 import classNames from "classnames";
@@ -96,24 +102,27 @@ export function ToolsMenuItem(props: ToolsMenuItemType) {
   const onClickCallback = useCallback(
     (e) => {
       e.preventDefault();
+      e.stopPropagation();
       if (disabled) return;
 
       if (checkClickable(e) || checkTriggerClick()) {
-        toggleCallback();
+        if ((e.target.classList.contains("arrow") && !noArrow) || noArrow) {
+          toggleCallback();
 
-        if (localOpened) {
-          onClose?.(e);
+          if (localOpened) {
+            onClose?.(e);
+          } else {
+            onOpen?.(e);
+          }
+          onClick?.(e);
         } else {
-          onOpen?.(e);
-        }
-        onClick?.(e);
-      } else {
-        closeCallback();
+          closeCallback();
 
-        onClick?.(e);
+          onClick?.(e);
+        }
       }
     },
-    [disabled, localOpened, onClick, onOpen, onClose]
+    [disabled, localOpened, noArrow, onClick, onOpen, onClose]
   );
 
   const onPointerOverCallback = useCallback(() => {
@@ -132,8 +141,9 @@ export function ToolsMenuItem(props: ToolsMenuItemType) {
     if (!menuItemRef.current) return;
 
     function onDocumentClick(e) {
-      if (checkClickable(e) || checkTriggerClick()) return;
-      closeCallback();
+      if (checkClickable(e) || checkNotInMenu(e)) {
+        closeCallback();
+      }
     }
 
     document.addEventListener("click", onDocumentClick);
@@ -150,7 +160,7 @@ export function ToolsMenuItem(props: ToolsMenuItemType) {
       ref={menuItemRef}
       onPointerOver={onPointerOverCallback}
       onPointerLeave={onPointerLeaveCallback}
-      onClick={onClickCallback}
+      onClick={onClickCallback as MouseEventHandler<HTMLDivElement>}
     >
       <button type="button" className="tools-button" disabled={disabled}>
         <Flex style={{ columnGap: 4 }}>

@@ -29,11 +29,11 @@ importers:
         specifier: ^0.0.216
         version: 0.0.216
       '@elf-framework/design-system':
-        specifier: ^0.0.253
-        version: 0.0.253
+        specifier: ^0.0.254
+        version: 0.0.254
       '@elf-framework/design-tokens':
-        specifier: ^0.0.253
-        version: 0.0.253
+        specifier: ^0.0.254
+        version: 0.0.254
       '@react-elf/ui':
         specifier: workspace:*
         version: link:../../packages/@react-elf/ui
@@ -2387,14 +2387,14 @@ packages:
     resolution: {integrity: sha512-0HV6mZr8JkyGWlxui01nGhiL93+/A/iTZBF7O3stP6vyisbpLXvMXlFoB7jzG0LEt6tPsvjdww6Tuc8zYIrWJw==}
     dev: false
 
-  /@elf-framework/design-system@0.0.253:
-    resolution: {integrity: sha512-wowSEMjlmM+4YqJi1nRp2D+ZlqZ1Piy+dVxD/Y1luW9d5eCRgPw41H15oCq6dgk9SYhXquEx/2w0M6HOG8a7gA==}
+  /@elf-framework/design-system@0.0.254:
+    resolution: {integrity: sha512-83zOpxw2KuLdB3ANwsAZBUJElfM7pJQUcPrEQ7U/SJ8nHUvtl6GBynxCSYKZwornxTqw1Gpa3xZnuUAPUB0JaA==}
     dependencies:
-      '@elf-framework/design-tokens': 0.0.253
+      '@elf-framework/design-tokens': 0.0.254
     dev: false
 
-  /@elf-framework/design-tokens@0.0.253:
-    resolution: {integrity: sha512-ygMqrjjQ+xl0DkDY+lMv0zzhLlFVNorT12FkOCf7E0rMr4QaXvjyf6mGQX9hGpZ8u8mn/YfixKdbVDcdt/x38g==}
+  /@elf-framework/design-tokens@0.0.254:
+    resolution: {integrity: sha512-EhgdNGJ0A/aKy/UXdFFKhVFq+NTvQDrvV4UamZcEu7CepSccnjqZJLUUt8w7vcQ8RFHDfi5Bb+GcmVVNktNrAg==}
     dev: false
 
   /@emotion/is-prop-valid@1.2.1:

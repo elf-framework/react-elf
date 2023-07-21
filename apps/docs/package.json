@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/docs",
-  "version": "0.0.60",
+  "version": "0.0.62",
   "private": true,
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@elf-framework/color": "^0.0.216",
-    "@elf-framework/design-system": "^0.0.253",
-    "@elf-framework/design-tokens": "^0.0.253",
+    "@elf-framework/design-system": "^0.0.254",
+    "@elf-framework/design-tokens": "^0.0.254",
     "@react-elf/ui": "workspace:*",
     "@storybook/react": "^7.1.0",
     "@storybook/react-vite": "^7.1.0",

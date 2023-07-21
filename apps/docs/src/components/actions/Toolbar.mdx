@@ -13,7 +13,13 @@ import { OptionsView } from "./toolbar/OptionsView";
 
 Toolbar is used for single and bulk selection patterns, when a user needs to perform actions on either a single or multiple items at the same time.
 
+## Usage
+
 <MainView />
+
+<Canvas of={ToolbarStories.Default} sourceState="shown" />
+
+<Controls />
 
 ## Options
 
@@ -30,3 +36,5 @@ to elsewhere in a view.
 The emphasized action bar has a blue background that adds visual
 emphasis on the actions and selection. Use this for when the bar
 should call attention (e.g., floating in a table).
+
+<Canvas of={ToolbarStories.Emphasis} sourceState="shown" />

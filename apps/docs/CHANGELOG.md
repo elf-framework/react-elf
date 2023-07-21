@@ -1,5 +1,18 @@
 # @react-elf/docs
 
+## 0.0.62
+
+### Patch Changes
+
+- update toolbar stories
+
+## 0.0.61
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.61
+
 ## 0.0.60
 
 ### Patch Changes
