@@ -43,25 +43,31 @@ export function OverflowView() {
         <div>
           <em>Collapse</em>
         </div>
-        <ActionGroup
-          collapsed={true}
-          moreIcon={<MdOutlineMoreHoriz />}
-          onMoreClick={(e, items) => {
-            console.log(items);
+        <div
+          style={{
+            width: 400,
           }}
-          style={{ gap: 10, margin: 10 }}
         >
-          <Button>
-            <MdDescription />
-            Document Setup
-          </Button>
-          <Button>
-            <MdSettings /> Settings
-          </Button>
-          <Button onClick={() => console.log("copy")}>
-            <MdContentCopy /> Copy
-          </Button>
-        </ActionGroup>
+          <ActionGroup
+            collapsed={true}
+            moreIcon={<MdOutlineMoreHoriz />}
+            onMoreClick={(e, items) => {
+              console.log(items);
+            }}
+            style={{ gap: 10, margin: 10 }}
+          >
+            <Button>
+              <MdDescription />
+              Document Setup
+            </Button>
+            <Button>
+              <MdSettings /> Settings
+            </Button>
+            <Button onClick={() => console.log("copy")}>
+              <MdContentCopy /> Copy
+            </Button>
+          </ActionGroup>
+        </div>
       </div>
     </VBox>
   );

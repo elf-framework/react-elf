@@ -38,7 +38,7 @@ export function ActionGroup(props: ActionGroupProps) {
   const { style: styleProperties } = splitStyleKeyAndNoneStyleKey(extraStyle);
 
   useEffect(() => {
-    if (!collapsed) return;
+    if (!collapsed || !elRef.current) return;
     const list = [];
     let totalWidth = 0;
     const localRect = elRef.current?.getBoundingClientRect();
@@ -65,7 +65,7 @@ export function ActionGroup(props: ActionGroupProps) {
     });
 
     setVisibilityTargetList(list);
-  }, [collapsed, rootRect]);
+  }, [collapsed, elRef.current, rootRect]);
 
   useEffect(() => {
     let resizeObserver: ResizeObserver;
@@ -111,14 +111,16 @@ export function ActionGroup(props: ActionGroupProps) {
     ),
   };
 
+  const newChildren = React.Children.map(children, (child) => child);
+
   const items = collapsed
-    ? (children as ReactNode[]).filter((item, index) => {
+    ? newChildren.filter((item, index) => {
         return visibleTargetList[index];
       })
     : children;
 
   const hiddenItems = collapsed
-    ? (children as ReactNode[]).filter((item, index) => {
+    ? newChildren.filter((item, index) => {
         return !visibleTargetList[index];
       })
     : [];
