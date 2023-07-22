@@ -1,5 +1,11 @@
 # @react-elf-types/toolbar
 
+## 0.0.64
+
+### Patch Changes
+
+- exclude some type in variant type of toolbar's props
+
 ## 0.0.63
 
 ### Patch Changes

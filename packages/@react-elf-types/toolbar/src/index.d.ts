@@ -43,7 +43,10 @@ export interface ToolbarProps {
    *
    * @default default
    */
-  variant?: VariantType;
+  variant?: Exclude<
+    VariantType,
+    "light" | "success" | "danger" | "info" | "warning"
+  >;
   emphasized?: boolean;
   rounded?: boolean;
   className?: string;
