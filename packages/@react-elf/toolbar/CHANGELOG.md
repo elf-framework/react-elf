@@ -1,5 +1,12 @@
 # @react-elf/toolbar
 
+## 0.0.63
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/toolbar@0.0.63
+
 ## 0.0.61
 
 ### Patch Changes

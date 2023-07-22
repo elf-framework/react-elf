@@ -48,7 +48,7 @@ export function MainView() {
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdEdit />,
                   tooltip: {
                     message: "Edit",
@@ -57,12 +57,12 @@ export function MainView() {
                   title: "Edit",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdContentCopy />,
                   title: "Copy",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdDelete />,
                   title: "Delete",
                 },
@@ -80,7 +80,7 @@ export function MainView() {
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdAddCard />,
                   title: "Add Card",
                 },
@@ -89,17 +89,17 @@ export function MainView() {
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdEdit />,
                   title: "Edit",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdContentCopy />,
                   title: "Copy",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdDelete />,
                   title: "Delete",
                 },
@@ -116,7 +116,7 @@ export function MainView() {
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdAddCard />,
                   title: "Add Card",
                 },
@@ -125,12 +125,12 @@ export function MainView() {
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdEdit />,
                   title: "Edit",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdContentCopy />,
                   title: "Copy",
                 },
@@ -146,13 +146,13 @@ export function MainView() {
       </div>
       <div>
         <Toolbar
-          variant="success"
+          variant="dark"
           rounded={true}
           items={[
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdAddCard />,
                   title: "Add Card",
                 },
@@ -161,17 +161,17 @@ export function MainView() {
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdEdit />,
                   title: "Edit",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdContentCopy />,
                   title: "Copy",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdDelete />,
                   title: "Delete",
                 },

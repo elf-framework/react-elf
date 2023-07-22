@@ -1,5 +1,11 @@
 # @react-elf-types/toolbar
 
+## 0.0.63
+
+### Patch Changes
+
+- update toolbar component jsdoc
+
 ## 0.0.61
 
 ### Patch Changes

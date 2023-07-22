@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.63
+
+### Patch Changes
+
+- update toolbar component jsdoc
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.63
+
 ## 0.0.62
 
 ### Patch Changes

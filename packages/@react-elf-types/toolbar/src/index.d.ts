@@ -38,6 +38,11 @@ export interface ToolbarProps {
   items: ToolsProps[];
   align?: ToolbarAlignType;
   style?: ToolbarStyle;
+  /**
+   * The variant of the toolbar.
+   *
+   * @default default
+   */
   variant?: VariantType;
   emphasized?: boolean;
   rounded?: boolean;
