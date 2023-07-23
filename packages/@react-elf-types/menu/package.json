@@ -1,6 +1,6 @@
 {
   "name": "@react-elf-types/menu",
-  "version": "0.0.66",
+  "version": "0.0.69",
   "description": "Elf UI components in React",
   "license": "MIT",
   "types": "src/index.d.ts",

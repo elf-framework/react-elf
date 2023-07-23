@@ -1,5 +1,11 @@
 # @react-elf-types/shared
 
+## 0.0.69
+
+### Patch Changes
+
+- modify attribute type
+
 ## 0.0.66
 
 ### Patch Changes

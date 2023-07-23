@@ -1,5 +1,14 @@
 # @react-elf-types/tools
 
+## 0.0.69
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/menu@0.0.69
+  - @react-elf-types/shared@0.0.69
+  - @react-elf-types/tooltip@0.0.69
+
 ## 0.0.66
 
 ### Patch Changes

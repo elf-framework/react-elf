@@ -1,5 +1,15 @@
 # @react-elf/button
 
+## 0.0.69
+
+### Patch Changes
+
+- modify attribute type
+
+- Updated dependencies []:
+  - @react-elf-types/menu@0.0.69
+  - @react-elf/shared@0.0.69
+
 ## 0.0.66
 
 ### Patch Changes

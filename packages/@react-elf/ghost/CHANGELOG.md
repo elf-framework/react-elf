@@ -1,5 +1,15 @@
 # @react-elf/ghost
 
+## 0.0.69
+
+### Patch Changes
+
+- modify attribute type
+
+- Updated dependencies []:
+  - @react-elf/shared@0.0.69
+  - @react-elf-types/ghost@0.0.69
+
 ## 0.0.66
 
 ### Patch Changes
