@@ -9,7 +9,7 @@ export function MainView() {
     >
       <div>
         <Toolbar
-          class="shadow-1"
+          className="shadow-1"
           rounded={true}
           items={[
             {
@@ -135,7 +135,7 @@ export function MainView() {
                   title: "Copy",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdDelete />,
                   title: "Delete",
                 },

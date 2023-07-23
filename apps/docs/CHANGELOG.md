@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.65
+
+### Patch Changes
+
+- add Menu stories
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.65
+
 ## 0.0.64
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @react-elf/button
 
+## 0.0.65
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/divider@0.0.65
+  - @react-elf/shared@0.0.65
+
 ## 0.0.60
 
 ### Patch Changes

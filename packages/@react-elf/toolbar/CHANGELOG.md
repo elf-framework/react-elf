@@ -1,5 +1,15 @@
 # @react-elf/toolbar
 
+## 0.0.65
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/shared@0.0.65
+  - @react-elf-types/toolbar@0.0.65
+  - @react-elf/shared@0.0.65
+  - @react-elf/tools@0.0.65
+
 ## 0.0.64
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @react-elf-types/menu
 
+## 0.0.65
+
+### Patch Changes
+
+- add Menu stories
+
+- Updated dependencies []:
+  - @react-elf-types/shared@0.0.65
+
 ## 0.0.60
 
 ### Patch Changes

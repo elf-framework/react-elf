@@ -1,6 +1,6 @@
 {
   "name": "@react-elf-types/tooltip",
-  "version": "0.0.60",
+  "version": "0.0.65",
   "description": "Elf UI components in React",
   "license": "MIT",
   "types": "src/index.d.ts",

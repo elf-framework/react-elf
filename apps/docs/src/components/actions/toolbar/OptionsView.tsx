@@ -15,14 +15,14 @@ export function OptionsView() {
     >
       <div>
         <Toolbar
-          class="shadow-1"
+          className="shadow-1"
           emphasized={true}
           rounded={true}
           items={[
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdAddCard />,
                   title: "Add Card",
                 },
@@ -32,17 +32,17 @@ export function OptionsView() {
               moreIcon: <MdOutlineMoreHoriz />,
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdEdit />,
                   title: "Edit",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdContentCopy />,
                   title: "Copy",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdDelete />,
                   title: "Delete",
                 },
@@ -61,7 +61,7 @@ export function OptionsView() {
             {
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdAddCard />,
                   title: "Add Card",
                 },
@@ -71,17 +71,17 @@ export function OptionsView() {
               moreIcon: <MdOutlineMoreHoriz />,
               items: [
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdEdit />,
                   title: "Edit",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdContentCopy />,
                   title: "Copy",
                 },
                 {
-                  type: "button",
+                  type: "item",
                   icon: <MdDelete />,
                   title: "Delete",
                 },

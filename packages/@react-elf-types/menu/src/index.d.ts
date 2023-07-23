@@ -1,8 +1,8 @@
 import { MouseEvent } from "react";
 import type { ReactNode } from "react";
-import { CommonStyle } from "@react-elf-types/shared";
+import { CommonStyle, VariantType } from "@react-elf-types/shared";
 
-export type MenuVariant = "light" | "dark";
+export type MenuVariant = Extract<VariantType, "light" | "dark">;
 
 /** menu */
 export type MenuItemType = {

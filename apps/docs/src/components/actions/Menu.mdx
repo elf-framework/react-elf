@@ -1,0 +1,120 @@
+import { Controls, Canvas, Meta, Unstyled } from "@storybook/blocks";
+import { Menu } from "@react-elf/ui";
+import * as MenuStories from "./Menu.stories";
+
+import { ContainerView } from "../../ui/ContainerView";
+
+import { MainView } from "./menu/MainView";
+import { PopoverContainer } from "./menu/PopoverContainer";
+import { IconView } from "./menu/IconView";
+import { DescriptionView } from "./menu/DescriptionView";
+import { ValueView } from "./menu/ValueView";
+import { DisabledView } from "./menu/DisabledView";
+import { SectionView } from "./menu/SectionView";
+import { VariantView } from "./menu/VariantView";
+
+<Meta title="Components/Actions/Menu" of={MenuStories} />
+
+# Menu
+
+Menus help users take actions, choose from a list of options, configure settings, and more. They can be placed in a transient container, like a popover or tray.
+
+## Usage
+
+<MainView />
+
+<Canvas of={MenuStories.Default} sourceState="shown" />
+
+<Controls />
+
+## Options
+
+### Popover container
+
+For desktop apps, a menu is shown in a popover by default. Mobile apps
+can show a menu in a popover when appropriate. Submenus cascade in
+another popover by default.
+
+<PopoverContainer />
+
+<Canvas
+  of={MenuStories.PopoverContainer}
+  sourceState="shown"
+  layout="centered"
+/>
+
+### Icon
+
+A menu item can include an icon, but not purely for decoration. Use an
+icon only when necessary and when it has a strong association with the
+label text (e.g., tool switching options in a toolbar).
+
+<IconView />
+
+<Canvas of={MenuStories.Icon} sourceState="shown" layout="centered" />
+
+### Description
+
+Menu items can display additional description text when necessary.
+Descriptions offer helpful details for clarifying the menu item, such
+as when introducing new features to users.
+
+Descriptions should be used sparingly and only when necessary.
+
+<Unstyled>
+  <DescriptionView />
+</Unstyled>
+
+<Canvas of={MenuStories.Description} sourceState="shown" layout="centered" />
+
+### Value
+
+A menu item can display a related value in the value area. Examples of
+values include the selected option from a submenu, a keyboard shortcut
+for the action, or other content that clarifies the menu item.
+
+<Unstyled>
+  <ValueView />
+</Unstyled>
+
+<Canvas of={MenuStories.Value} sourceState="shown" layout="centered" />
+
+### Disabled
+
+A menu item in a disabled state shows that an option exists, but is
+not available in that circumstance. This state can be used to maintain
+layout continuity and to communicate that an action may become
+available later.
+
+<Unstyled>
+  <DisabledView />
+</Unstyled>
+
+<Canvas of={MenuStories.Disabled} sourceState="shown" layout="centered" />
+
+### Section
+
+<strong>Section headers</strong>
+
+Use a section header when a menu section requires a descriptor.
+Section headers are helpful when two or more sections differ in their
+functionality or relationships.
+
+<Unstyled>
+  <SectionView />
+</Unstyled>
+
+<Canvas of={MenuStories.Section} sourceState="shown" layout="centered" />
+
+### Variant
+
+Variants are used to display a related value in the value area.
+
+- light
+- dark
+
+<Unstyled>
+  <VariantView />
+</Unstyled>
+
+<Canvas of={MenuStories.Variant} sourceState="shown" layout="centered" />
