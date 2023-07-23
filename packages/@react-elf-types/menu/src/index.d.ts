@@ -65,15 +65,15 @@ export type ItemType =
 interface MenuStyle {
   backgroundColor?: string;
   color?: string;
-  fontSize?: string;
-  fontWeight?: string;
-  height?: string;
-  padding?: string;
-  borderRadius?: string;
+  fontSize?: string | number;
+  fontWeight?: string | number;
+  height?: string | number;
+  padding?: string | number;
+  borderRadius?: string | number;
   borderColor?: string;
   boxShadow?: string;
-  width?: string;
-  maxWidth?: string;
+  width?: string | number;
+  maxWidth?: string | number;;
   sectionTitleColor?: string;
   sectionTitleBackgroundColor?: string;
   dividerColor?: string;
@@ -95,6 +95,7 @@ export interface MenuProps {
   variant?: MenuVariant;
   rootClose?: () => void;
   onOpen?: () => void;
+  relative?: boolean;
 }
 
 export interface CustomMenuItemProps {

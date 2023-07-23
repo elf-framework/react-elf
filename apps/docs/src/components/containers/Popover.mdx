@@ -1,0 +1,70 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import { Flex, Grid, Ghost } from "@react-elf/ui";
+
+import * as PopoverStories from "./Popover.stories";
+
+import { MainView } from "./popover/MainView";
+import { OptionsView } from "./popover/OptionsView";
+import { ShowTipView } from "./popover/ShowTipView";
+import { PlacementView } from "./popover/PlacementView";
+
+<Meta title="Components/Containers/Popover" of={PopoverStories} />
+
+# Popover
+
+Popovers are containers used to display transient content such as menus, options, additional actions, and more. They visually stand out through stroke and drop shadow and float on top of the interface.
+
+<MainView />
+
+## Usage
+
+<Canvas of={PopoverStories.Default} sourceState="shown" />
+
+## Options
+
+### Width and height
+
+A popover’s width and height can be customized appropriately for its
+context.
+
+<OptionsView />
+
+<Canvas of={PopoverStories.WidthHeight} sourceState="shown" />
+
+### Placement
+
+A popover is positioned in relation to its source. The placement
+property values are the following:
+
+- top
+- top-left
+- top-right
+- bottom
+- bottom-left
+- bottom-right
+- left
+- left-top
+- left-bottom
+- right
+- right-top
+- right-bottom
+
+. The default placement value is at the top.
+
+<PlacementView />
+
+<Canvas of={PopoverStories.Placement} sourceState="shown" />
+
+### Show tip
+
+By default, popovers do not have a tip. Popovers without a tip should
+be used when the source has a visually distinct down state, in order
+to show the connection between the popover and its source.
+
+Popovers can have a tip. A tip should be used to help show the
+connection to its source, in cases where the source does not have a
+visually distinct down state.
+
+<ShowTipView />
+
+<Canvas of={PopoverStories.ShowTip} sourceState="shown" />

@@ -52,6 +52,20 @@ export interface FlexProps {
     | "space-around"
     | "space-evenly"
     | "space-between";
+  alignItems?:
+    | "start"
+    | "center"
+    | "end"
+    | "flex-start"
+    | "flex-end"
+    | "self-start"
+    | "self-end"
+    | "stretch"
+    | "baseline"
+    | "first baseline"
+    | "last baseline"
+    | "safe center"
+    | "unsafe center";
 }
 
 export interface VBoxProps {

@@ -17,6 +17,7 @@ export function Flex(props: FlexProps) {
     columnGap = undefined,
     rowGap = undefined,
     justifyContent = undefined,
+    alignItems = undefined,
   } = props;
 
   const localClass = useMemo(() => {
@@ -36,6 +37,7 @@ export function Flex(props: FlexProps) {
           gap,
           flexDirection: direction,
           justifyContent,
+          alignItems,
           columnGap,
           rowGap,
           ...style,

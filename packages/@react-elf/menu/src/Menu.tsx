@@ -103,9 +103,17 @@ export function Menu(props: MenuProps) {
     autoPosition = false,
     variant = "light",
     compact = false,
+    relative = false,
   } = props;
 
   let itemStyle = { ...style };
+
+  if (relative) {
+    itemStyle = {
+      ...itemStyle,
+      position: "relative",
+    };
+  }
 
   const localClass = useMemo(() => {
     return classNames("elf--menu", {

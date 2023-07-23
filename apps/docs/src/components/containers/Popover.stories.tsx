@@ -1,65 +1,205 @@
-import * as React from "react";
-import { Meta, Story } from "@storybook/react";
-import { Popover, Divider, Button } from "@react-elf/ui";
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button, Menu, Popover } from "@react-elf/ui";
+import { MdSettings } from "react-icons/md";
 
-export default {
-  component: Divider,
-  title: "Components/Containers/Popover",
-  argTypes: {
-    title: {
-      name: "title",
-      description: "trigger text",
-      defaultValue: "ReactNode or text",
-      control: {
-        type: "text",
-      },
-    },
-    show: {
-      name: "show",
-      description: "show popover",
-      defaultValue: false,
-      control: {
-        type: "boolean",
-      },
-    },
-    trigger: {
-      name: "trigger",
-      description: "trigger to open popover",
-      defaultValue: "hover",
-      control: {
-        type: "select",
-        options: ["hover", "click"],
-      },
-    },
-  },
-  args: {
-    title: "Popover trigger text",
-    show: false,
-    trigger: "hover",
-  },
-  parameters: {
-    componentSubtitle:
-      "Buttons should always have a label, unless they are only using an icon that is universally understood and accessible. ",
-    docs: {
-      description: {
-        component: `
-They can have an optional icon, but it should not be used for decoration. Use an icon only when necessary and when it has a strong association with the label text.
+const meta = {
+  component: Popover,
+  tags: ["autodocs"],
+} satisfies Meta<typeof Popover>;
 
-The label can be hidden to create an icon-only button. If the label is hidden, an icon is required, and the label will appear in a tooltip.
-        `,
-      },
-    },
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+/**
+ * Preview Popover Story
+ */
+export const Default: Story = {
+  render: (args) => {
+    return (
+      <div
+        style={{
+          height: 240,
+          display: "flex",
+          alignItems: "start",
+          justifyContent: "center",
+        }}
+      >
+        <Popover
+          body={
+            <Menu
+              type="dropdown"
+              relative
+              items={[
+                { type: "item", title: "Document Setup" },
+                { type: "item", title: "Settings" },
+                { type: "item", title: "Copy" },
+                {
+                  type: "section",
+                  title: "Group",
+                },
+                {
+                  type: "item",
+                  title: "Languages",
+                },
+              ]}
+              style={{
+                width: 200,
+                boxShadow: "none",
+              }}
+            />
+          }
+          show
+          showTip
+          placement="bottom-left"
+        >
+          <Button>
+            <MdSettings /> Settings
+          </Button>
+        </Popover>
+      </div>
+    );
   },
-} as Meta;
-export const DefaultPopover: Story = (args) => {
-  const { title, show, trigger } = args;
-  return (
-    <div style={{ padding: 10 }}>
-      <Popover body={<div>body</div>} trigger={trigger} show={show}>
-        <Button style={{ padding: 10, border: "1px solid #ececec" }}>
-          {title}
-        </Button>
-      </Popover>
-    </div>
-  );
+};
+
+export const WidthHeight: Story = {
+  render: (args) => {
+    return (
+      <div
+        style={{
+          height: 240,
+          display: "flex",
+          alignItems: "start",
+          justifyContent: "center",
+        }}
+      >
+        <Popover
+          body={
+            <Menu
+              type="dropdown"
+              relative
+              items={[
+                { type: "item", title: "Document Setup" },
+                { type: "item", title: "Settings" },
+                { type: "item", title: "Copy" },
+                {
+                  type: "section",
+                  title: "Group",
+                },
+                {
+                  type: "item",
+                  title: "Languages",
+                },
+              ]}
+              style={{
+                width: 300,
+                boxShadow: "none",
+              }}
+            />
+          }
+          show
+          placement="bottom-left"
+        >
+          <Button>
+            <MdSettings /> Settings
+          </Button>
+        </Popover>
+      </div>
+    );
+  },
+};
+
+export const Placement: Story = {
+  render: (args) => {
+    return (
+      <div
+        style={{
+          height: 240,
+          display: "flex",
+          alignItems: "start",
+          justifyContent: "center",
+        }}
+      >
+        <Popover
+          body={
+            <Menu
+              type="dropdown"
+              relative
+              items={[
+                { type: "item", title: "Document Setup" },
+                { type: "item", title: "Settings" },
+                { type: "item", title: "Copy" },
+                {
+                  type: "section",
+                  title: "Group",
+                },
+                {
+                  type: "item",
+                  title: "Languages",
+                },
+              ]}
+              style={{
+                width: 300,
+                boxShadow: "none",
+              }}
+            />
+          }
+          show
+          placement="top-left"
+        >
+          <Button>
+            <MdSettings /> Settings
+          </Button>
+        </Popover>
+      </div>
+    );
+  },
+};
+
+export const ShowTip: Story = {
+  render: (args) => {
+    return (
+      <div
+        style={{
+          height: 240,
+          display: "flex",
+          alignItems: "end",
+          justifyContent: "center",
+        }}
+      >
+        <Popover
+          body={
+            <Menu
+              type="dropdown"
+              relative
+              items={[
+                { type: "item", title: "Document Setup" },
+                { type: "item", title: "Settings" },
+                { type: "item", title: "Copy" },
+                {
+                  type: "section",
+                  title: "Group",
+                },
+                {
+                  type: "item",
+                  title: "Languages",
+                },
+              ]}
+              style={{
+                width: 300,
+                boxShadow: "none",
+              }}
+            />
+          }
+          show
+          showTip
+          placement="top-left"
+        >
+          <Button>
+            <MdSettings /> Settings
+          </Button>
+        </Popover>
+      </div>
+    );
+  },
 };
