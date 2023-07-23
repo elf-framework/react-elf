@@ -1,65 +1,56 @@
-import * as React from "react";
-import { Meta, Story } from "@storybook/react";
-import { Grid, Divider } from "@react-elf/ui";
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Divider } from "@react-elf/ui";
 
-export default {
+const meta = {
+  // title: "Components/Actions/Button",
   component: Divider,
-  title: "Components/Containers/Divider",
-  argTypes: {},
-  args: {
-    title: "Grid Item",
-  },
-  parameters: {
-    componentSubtitle:
-      "Buttons should always have a label, unless they are only using an icon that is universally understood and accessible. ",
-    docs: {
-      description: {
-        component: `
-They can have an optional icon, but it should not be used for decoration. Use an icon only when necessary and when it has a strong association with the label text.
+  tags: ["autodocs"],
+} satisfies Meta<typeof Divider>;
 
-The label can be hidden to create an icon-only button. If the label is hidden, an icon is required, and the label will appear in a tooltip.
-        `,
-      },
-    },
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+/**
+ * Preview Divider Story
+ */
+export const Default: Story = {
+  render: (args) => {
+    return (
+      <div>
+        <h1>Profile</h1>
+        <Divider />
+        <p>Your profile is a place to keep your settings and preferences.</p>
+      </div>
+    );
   },
-} as Meta;
-export const DefaultDivider: Story = (args) => {
-  const { title, gap } = args;
-  return (
-    <div>
-      <Grid columns={3} gap={30} rows={[100]}>
-        <div>
-          <Divider />
-          <Divider
-            style={{
-              borderStyle: "dashed",
-              borderWidth: 30,
-            }}
-          />
-        </div>
-        <div>
-          <Divider />
-          <Divider
-            style={{
-              borderStyle: "dashed",
-              borderWidth: 10,
-            }}
-          />
-        </div>
-        <div>
-          <Divider />
-        </div>
-      </Grid>
-      <Grid columns={3} gap={gap}>
-        <div style={{ border: "1px solid #ececec" }}>{title}</div>
-        <div style={{ border: "1px solid #ececec" }}>{title}</div>
-        <div style={{ border: "1px solid #ececec" }}>{title}</div>
-      </Grid>
-      <Grid columns={3} gap={gap}>
-        <div style={{ border: "1px solid #ececec" }}>{title}</div>
-        <div style={{ border: "1px solid #ececec" }}>{title}</div>
-        <div style={{ border: "1px solid #ececec" }}>{title}</div>
-      </Grid>
-    </div>
-  );
+};
+
+export const SizeSmall: Story = {
+  args: {
+    size: "small",
+  },
+};
+
+export const SizeLarge: Story = {
+  args: {
+    size: "large",
+  },
+};
+
+export const Vertical: Story = {
+  args: {
+    orientation: "vertical",
+  },
+  render: (args) => {
+    return (
+      <div
+        style={{
+          height: 100,
+        }}
+      >
+        <Divider orientation="vertical" />
+      </div>
+    );
+  },
 };

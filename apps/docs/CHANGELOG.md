@@ -1,5 +1,18 @@
 # @react-elf/docs
 
+## 0.0.67
+
+### Patch Changes
+
+- update layout, divider mdx
+
+## 0.0.66
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.66
+
 ## 0.0.65
 
 ### Patch Changes

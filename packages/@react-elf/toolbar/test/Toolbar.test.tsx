@@ -1,12 +1,13 @@
-import { render, screen } from "@testing-library/react";
 import React from "react";
+import { render } from "@testing-library/react";
+
 import { describe, expect, it } from "vitest";
 
-import { Toolbar } from "../src";
+import { Toolbar } from "../src/";
 
 describe("Toolbar", () => {
   it("renders Toolbar", () => {
-    const { container } = render(<Toolbar />);
+    const { container } = render(<Toolbar items={[]} />);
 
     // screen.debug(container);
 

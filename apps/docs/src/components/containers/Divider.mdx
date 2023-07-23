@@ -1,0 +1,48 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import { Flex, Grid, Ghost } from "@react-elf/ui";
+
+import * as DividerStories from "./Divider.stories";
+import { MainView } from "./divider/MainView";
+import { OptionsView } from "./divider/OptionsView";
+import { OrientationView } from "./divider/OrientationView";
+
+<Meta title="Components/Containers/Divider" of={DividerStories} />
+
+# Divider
+
+The divider groups and splits content closely to clarify the layout. It can also be used to set up rhythms and hierarchies.
+
+## Usage
+
+<MainView />
+<Canvas of={DividerStories.Default} sourceState="shown" />
+
+## Options
+
+### Size
+
+The `small` dividers are the default size. Used to split
+similar components, such as table rows, action button groups, and
+components within a panel.
+
+The `medium` dividers are used to divide subsections of
+pages or to separate different groups of components, such as panels,
+etc.
+
+The `large` dividers should only be used for page titles or
+section titles.
+
+<OptionsView />
+
+<Canvas of={DividerStories.SizeSmall} sourceState="shown" />
+<Canvas of={DividerStories.SizeLarge} sourceState="shown" />
+
+### Orientation
+
+By default, the dividing line is horizontal and should be used to
+separate content vertically. Vertical dividers are used to separate
+content horizontally.
+
+<OrientationView />
+
+<Canvas of={DividerStories.Vertical} sourceState="shown" />

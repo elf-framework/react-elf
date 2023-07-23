@@ -12,6 +12,11 @@ export function Flex(props: FlexProps) {
     stack,
     wrap = false,
     sameWidth = false,
+    direction = "row",
+    gap = undefined,
+    columnGap = undefined,
+    rowGap = undefined,
+    justifyContent = undefined,
   } = props;
 
   const localClass = useMemo(() => {
@@ -26,7 +31,17 @@ export function Flex(props: FlexProps) {
     className: localClass,
 
     style: {
-      ...propertyMap(style, {}),
+      ...propertyMap(
+        {
+          gap,
+          flexDirection: direction,
+          justifyContent,
+          columnGap,
+          rowGap,
+          ...style,
+        },
+        {}
+      ),
     },
   };
 

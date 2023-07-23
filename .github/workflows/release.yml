@@ -30,8 +30,8 @@ jobs:
           EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Build for documentation
-        run: pnpm run lib:build
+      - name: Build for library
+        run: pnpm lib:build
       - name: Publish to npm
         run: pnpm release
         env:

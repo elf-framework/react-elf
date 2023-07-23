@@ -1,5 +1,9 @@
-import { CommonStyle, SizeType, VariantType } from "@react-elf-types/shared";
-
+import {
+  CommonStyle,
+  OrientationType,
+  SizeType,
+  VariantType,
+} from "@react-elf-types/shared";
 
 interface DividerProps {
   size?: SizeType;

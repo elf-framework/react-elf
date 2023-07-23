@@ -1,5 +1,14 @@
 # @react-elf/dialog
 
+## 0.0.66
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/toast@0.0.66
+  - @react-elf/shared@0.0.66
+  - @react-elf/button@0.0.66
+
 ## 0.0.65
 
 ### Patch Changes

@@ -40,7 +40,7 @@ export interface CommonStyle extends KeyValue {
   justifyContent?: string;
   left?: string;
   letterSpacing?: string;
-  lineHeight?: string;
+  lineHeight?: string | number;
   margin?: string | number | number[] | string[];
   marginBlock?: string;
   marginBlockEnd?: string;
@@ -77,7 +77,7 @@ export interface CommonStyle extends KeyValue {
   right?: string;
   row?: string;
   rowEnd?: string;
-  rowGap?: string;
+  rowGap?: string | number;
   rowSpan?: string;
   rowStart?: string;
   shrink?: string;
@@ -90,7 +90,7 @@ export interface CommonStyle extends KeyValue {
   top?: string;
   transform?: string;
   transformOrigin?: string;
-  width?: string;
+  width?: string | number;
   whiteSpace?: string;
   wrap?: string;
 }
