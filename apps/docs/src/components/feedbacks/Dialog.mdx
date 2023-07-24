@@ -26,22 +26,44 @@ Alert dialogs display important information that users need to acknowledge. They
 
 ### Title
 
-<TitleView />
+All alert dialogs must have a title. The title appears in bold at the
+top of the dialog and uses a few words to convey the outcome of what
+will happen if a user continues with an action.
+
+<Unstyled>
+  <TitleView />
+</Unstyled>
+<Canvas of={DialogStories.Title} sourceState="shown" layout="centered" />
 
 ### Description
 
-<DescriptionView />
+Alert dialogs can include a description. A description briefly
+communicates any additional information or context that a user needs
+to know in order to make one of the decisions offered by the buttons.
+
+<Unstyled>
+  <DescriptionView />
+</Unstyled>
+<Canvas of={DialogStories.Description} sourceState="shown" layout="centered" />
 
 ### Confirmation Variant
 
-<VariantView />
+This is the default variant for alert dialogs. Use a confirmation variant
+for asking a user to confirm a choice. This alert dialog has an accent button to
+highlight a strong preference for which action to take.
 
-&nbsp;
-This is the default variant for alert dialogs. Use a confirmation
-variant for asking a user to confirm a choice. This alert dialog has
-an accent button to highlight a strong preference for which action to
-take.
+<Unstyled>
+  <VariantView />
+</Unstyled>
 
-### Cloasable
+<Canvas of={DialogStories.Variant} sourceState="shown" layout="centered" />
 
-<ClosableView />
+### Closable
+
+Dialogs can be canceled.
+
+<Unstyled>
+  <ClosableView />
+</Unstyled>
+
+<Canvas of={DialogStories.Closable} sourceState="shown" layout="centered" />

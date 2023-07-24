@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Dialog, RoundButton } from "@react-elf/ui";
+import { Dialog, Ghost, RoundButton } from "@react-elf/ui";
 
 const meta = {
   component: Dialog,
@@ -29,5 +29,74 @@ export const Default: Story = {
         other fonts.
       </div>
     ),
+  },
+};
+
+export const Title: Story = {
+  args: {
+    visible: true,
+    style: {
+      width: 300,
+      // height: 200,
+    },
+    closable: false,
+    title: "Dialog",
+    footer: <span />,
+    children: (
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <Ghost style={{ width: "100%" }} />
+        <Ghost style={{ width: "90%" }} />
+      </div>
+    ),
+  },
+};
+
+export const Description: Story = {
+  args: {
+    visible: true,
+    noBorder: true,
+    style: {
+      width: 300,
+      // height: 200,
+    },
+    closable: false,
+    title: <Ghost style={{ width: "100%" }} />,
+    footer: <span />,
+    children: (
+      <>
+        The following typefaces are not available. Please either install these
+        on your computer or in Figma. Alternatively you can replace them with
+        other fonts.
+      </>
+    ),
+  },
+};
+
+export const Variant: Story = {
+  args: {
+    visible: true,
+    noBorder: true,
+    style: {
+      width: 300,
+      // height: 200,
+    },
+    closable: false,
+    okProps: {
+      variant: "dark",
+    },
+    title: <Ghost style={{ width: "100%" }} />,
+    children: "Smart filters are nondestructive",
+  },
+};
+
+export const Closable: Story = {
+  args: {
+    visible: true,
+    style: {
+      width: 300,
+      // height: 200,
+    },
+    title: "Title",
+    children: "Smart filters are nondestructive",
   },
 };

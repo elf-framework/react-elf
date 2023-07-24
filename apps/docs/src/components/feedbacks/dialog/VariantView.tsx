@@ -18,6 +18,7 @@ export function VariantView() {
           gridTemplateColumns: "1fr 1fr",
           gap: 20,
           textAlign: "center",
+          padding: 50,
         }}
       >
         <Dialog

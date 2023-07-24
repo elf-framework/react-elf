@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.74
+
+### Patch Changes
+
+- update Dialog mdx
+
 ## 0.0.73
 
 ### Patch Changes
