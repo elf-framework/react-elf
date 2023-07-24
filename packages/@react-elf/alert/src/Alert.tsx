@@ -30,6 +30,8 @@ export function Alert(props: AlertProps) {
     actions,
     weak = false,
     icon,
+    onShow,
+    onHide,
     ...extrProps
   } = props;
   const [localDelay, setLocalDelay] = useState(delay);
@@ -76,8 +78,7 @@ export function Alert(props: AlertProps) {
       {...styleObject}
       onContextMenu={(e) => e.preventDefault()}
       onTransitionEnd={() => {
-        this.props.onHide && this.props.onHide();
-        this.destroy(true);
+        onHide?.();
       }}
     >
       {title ? (
@@ -102,8 +103,7 @@ export function Alert(props: AlertProps) {
           onClick={() => {
             setHide(true);
             if (localDelay === 0) {
-              this.props.onHide && this.props.onHide();
-              this.destroy(true);
+              onHide?.();
             }
           }}
         >

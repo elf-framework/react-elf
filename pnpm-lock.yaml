@@ -608,6 +608,15 @@ importers:
       '@react-elf-types/shared':
         specifier: workspace:*
         version: link:../../@react-elf-types/shared
+      '@types/react':
+        specifier: ^18.2.15
+        version: 18.2.15
+      classnames:
+        specifier: ^2.3.2
+        version: 2.3.2
+      react:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^5.17.0

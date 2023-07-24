@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.71
+
+### Patch Changes
+
+- modify alert component
+
 ## 0.0.69
 
 ### Patch Changes

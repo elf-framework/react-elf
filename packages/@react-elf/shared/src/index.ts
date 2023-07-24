@@ -1,4 +1,7 @@
 import { KeyValue, StringKeyValue } from "@react-elf-types/shared";
+
+export * from "./Icon";
+
 export const NumberStyleKeys = {
   width: true,
   height: true,
@@ -105,8 +108,6 @@ export function makeCssVariablePrefixMap(
   return newObj;
 }
 
-
-
 export const ComponentPropsToStylePropsMap = {
   alignContent: "alignContent",
   alignItems: "alignItems",
@@ -196,7 +197,6 @@ export const ComponentPropsToStylePropsMap = {
   wrap: "flexWrap",
   zIndex: "zIndex",
 };
-
 
 /**
  * properties key 중에 style key가 있는지 확인

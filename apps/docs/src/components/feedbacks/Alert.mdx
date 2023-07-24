@@ -1,0 +1,82 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as AlertStories from "./Alert.stories";
+
+import { MainView } from "./alert/MainView";
+import { TextView } from "./alert/TextView";
+import { VariantView } from "./alert/VariantView";
+import { ActionableView } from "./alert/ActionableView";
+import { DismissableView } from "./alert/DismissableView";
+import { TextOverflowView } from "./alert/TextOverflowView";
+
+<Meta title="Components/Feed Backs/Alert" of={AlertStories} />
+
+# Alert
+
+The `alert` banner displays emergency and high signal messages, such as system warnings. This is to pay attention and urge the user to take action.
+
+## Usage
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+<Canvas of={AlertStories.Default} sourceState="shown" />
+
+## Options
+
+### Text
+
+Text is required for all alert banners. The message should be concise
+and, if applicable, describe the next step that a user can take.
+
+<Unstyled>
+  <TextView />
+</Unstyled>
+
+<Canvas of={AlertStories.Text} sourceState="shown" />
+
+### Variant
+
+An alert banner always has a semantic meaning and uses semantic
+colors. Only gray (neutral), blue (informative), and red (negative)
+are available as options.
+
+<Unstyled>
+  <VariantView />
+</Unstyled>
+
+<Canvas of={AlertStories.Variant} sourceState="shown" />
+
+### Actionable
+
+An alert banner always has a semantic meaning and uses semantic
+colors. Only gray (neutral), blue (informative), and red (negative)
+are available as options.
+
+<Unstyled>
+  <ActionableView />
+</Unstyled>
+
+<Canvas of={AlertStories.Actionable} sourceState="shown" />
+
+### Dismissable
+
+An alert banner can include an icon-only close button to dismiss it.
+
+<Unstyled>
+  <DismissableView />
+</Unstyled>
+
+<Canvas of={AlertStories.Dismissable} sourceState="shown" />
+
+### Text overflow
+
+When the text is too long for the available horizontal space, it wraps
+to form another line. In actionable alert banners, the button moves
+below the text prior to text wrapping.
+
+<Unstyled>
+  <TextOverflowView />
+</Unstyled>
+
+<Canvas of={AlertStories.TextOverflow} sourceState="shown" />
