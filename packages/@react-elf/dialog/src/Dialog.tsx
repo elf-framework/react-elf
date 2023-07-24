@@ -70,31 +70,32 @@ export function Dialog(props: DialogProps) {
         ) : undefined}
       </div>
       {noBorder ? undefined : <div className="elf--dialog-divider" />}
+
       <div className="elf--dialog-content">
         <div className="elf--dialog-text">{children}</div>
-        <div className="elf--dialog-content-tools">
-          {footer ? (
-            footer
-          ) : (
-            <>
-              <Button
-                shape="round"
-                {...cancelProps}
-                onClick={(e) => onCancel?.(e)}
-              >
-                {cancelText}
-              </Button>
-              <Button
-                shape="round"
-                variant="primary"
-                {...okProps}
-                onClick={(e) => onOk?.(e)}
-              >
-                {okText}
-              </Button>
-            </>
-          )}
-        </div>
+      </div>
+      <div className="elf--dialog-footer">
+        {footer ? (
+          footer
+        ) : (
+          <>
+            <Button
+              shape="round"
+              {...cancelProps}
+              onClick={(e) => onCancel?.(e)}
+            >
+              {cancelText}
+            </Button>
+            <Button
+              shape="round"
+              variant="primary"
+              {...okProps}
+              onClick={(e) => onOk?.(e)}
+            >
+              {okText}
+            </Button>
+          </>
+        )}
       </div>
     </div>
   );

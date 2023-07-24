@@ -1,3 +1,4 @@
+import { CommonStyle } from "@react-elf-types/shared";
 import { ButtonProps } from "@react-elf-types/button";
 import type { ReactNode } from "react";
 
@@ -10,11 +11,11 @@ interface DialogStyle {
   fontWeight?: string;
   height?: number | string;
   width?: number | string;
-  boxShadow: string;
-  borderRadius: string;
-  borderColor: string;
-  padding: string;
-  position: DialogPositionType;
+  boxShadow?: string;
+  borderRadius?: string;
+  borderColor?: string;
+  padding?: string;
+  position?: DialogPositionType;
 }
 
 interface DialogProps {
@@ -24,7 +25,7 @@ interface DialogProps {
   children?: ReactNode;
   center?: boolean;
   noBorder?: boolean;
-  style?: DialogStyle;
+  style?: DialogStyle & CommonStyle;
   okText?: ReactNode;
   cancelText?: ReactNode;
   okProps?: ButtonProps;

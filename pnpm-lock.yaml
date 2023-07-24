@@ -153,6 +153,15 @@ importers:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
         version: 18.2.0
 
+  packages/@react-elf-types/badge:
+    dependencies:
+      '@react-elf-types/shared':
+        specifier: workspace:*
+        version: link:../shared
+      react:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0
+
   packages/@react-elf-types/button:
     dependencies:
       '@react-elf-types/shared':
@@ -164,12 +173,12 @@ importers:
 
   packages/@react-elf-types/dialog:
     dependencies:
+      '@react-elf-types/button':
+        specifier: workspace:*
+        version: link:../button
       '@react-elf-types/shared':
         specifier: workspace:*
         version: link:../shared
-      '@react-elf-types/tooltip':
-        specifier: workspace:*
-        version: link:../tooltip
       react:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
         version: 18.2.0
@@ -296,6 +305,40 @@ importers:
       '@react-elf-types/alert':
         specifier: workspace:*
         version: link:../../@react-elf-types/alert
+      '@react-elf/shared':
+        specifier: workspace:*
+        version: link:../shared
+      '@types/react':
+        specifier: ^18.2.15
+        version: 18.2.15
+      classnames:
+        specifier: ^2.3.2
+        version: 2.3.2
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^5.17.0
+        version: 5.17.0
+      '@testing-library/react':
+        specifier: ^14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      vite:
+        specifier: ^4.4.6
+        version: 4.4.6(@types/node@20.4.4)(less@4.1.3)(sass@1.64.1)
+      vite-plugin-dts:
+        specifier: ^3.3.1
+        version: 3.3.1(@types/node@20.4.4)(typescript@5.1.6)(vite@4.4.6)
+      vitest:
+        specifier: 0.33.0
+        version: 0.33.0
+
+  packages/@react-elf/badge:
+    dependencies:
+      '@react-elf-types/badge':
+        specifier: workspace:*
+        version: link:../../@react-elf-types/badge
       '@react-elf/shared':
         specifier: workspace:*
         version: link:../shared
@@ -796,6 +839,9 @@ importers:
       '@react-elf/alert':
         specifier: workspace:*
         version: link:../alert
+      '@react-elf/badge':
+        specifier: workspace:*
+        version: link:../badge
       '@react-elf/button':
         specifier: workspace:*
         version: link:../button
@@ -6324,12 +6370,12 @@ packages:
     peerDependencies:
       webpack: ^5.0.0
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.26)
-      postcss: 8.4.26
-      postcss-modules-extract-imports: 3.0.0(postcss@8.4.26)
-      postcss-modules-local-by-default: 4.0.3(postcss@8.4.26)
-      postcss-modules-scope: 3.0.0(postcss@8.4.26)
-      postcss-modules-values: 4.0.0(postcss@8.4.26)
+      icss-utils: 5.1.0(postcss@8.4.27)
+      postcss: 8.4.27
+      postcss-modules-extract-imports: 3.0.0(postcss@8.4.27)
+      postcss-modules-local-by-default: 4.0.3(postcss@8.4.27)
+      postcss-modules-scope: 3.0.0(postcss@8.4.27)
+      postcss-modules-values: 4.0.0(postcss@8.4.27)
       postcss-value-parser: 4.2.0
       semver: 7.5.4
       webpack: 5.88.2(esbuild@0.18.12)
@@ -7968,13 +8014,13 @@ packages:
       safer-buffer: 2.1.2
     optional: true
 
-  /icss-utils@5.1.0(postcss@8.4.26):
+  /icss-utils@5.1.0(postcss@8.4.27):
     resolution: {integrity: sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==}
     engines: {node: ^10 || ^12 || >= 14}
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      postcss: 8.4.26
+      postcss: 8.4.27
     dev: true
 
   /ieee754@1.2.1:
@@ -9799,45 +9845,45 @@ packages:
       webpack: 5.88.2(esbuild@0.18.12)
     dev: true
 
-  /postcss-modules-extract-imports@3.0.0(postcss@8.4.26):
+  /postcss-modules-extract-imports@3.0.0(postcss@8.4.27):
     resolution: {integrity: sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==}
     engines: {node: ^10 || ^12 || >= 14}
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      postcss: 8.4.26
+      postcss: 8.4.27
     dev: true
 
-  /postcss-modules-local-by-default@4.0.3(postcss@8.4.26):
+  /postcss-modules-local-by-default@4.0.3(postcss@8.4.27):
     resolution: {integrity: sha512-2/u2zraspoACtrbFRnTijMiQtb4GW4BvatjaG/bCjYQo8kLTdevCUlwuBHx2sCnSyrI3x3qj4ZK1j5LQBgzmwA==}
     engines: {node: ^10 || ^12 || >= 14}
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.26)
-      postcss: 8.4.26
+      icss-utils: 5.1.0(postcss@8.4.27)
+      postcss: 8.4.27
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-modules-scope@3.0.0(postcss@8.4.26):
+  /postcss-modules-scope@3.0.0(postcss@8.4.27):
     resolution: {integrity: sha512-hncihwFA2yPath8oZ15PZqvWGkWf+XUfQgUGamS4LqoP1anQLOsOJw0vr7J7IwLpoY9fatA2qiGUGmuZL0Iqlg==}
     engines: {node: ^10 || ^12 || >= 14}
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      postcss: 8.4.26
+      postcss: 8.4.27
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /postcss-modules-values@4.0.0(postcss@8.4.26):
+  /postcss-modules-values@4.0.0(postcss@8.4.27):
     resolution: {integrity: sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==}
     engines: {node: ^10 || ^12 || >= 14}
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.26)
-      postcss: 8.4.26
+      icss-utils: 5.1.0(postcss@8.4.27)
+      postcss: 8.4.27
     dev: true
 
   /postcss-selector-parser@6.0.13:
@@ -10350,7 +10396,7 @@ packages:
       adjust-sourcemap-loader: 4.0.0
       convert-source-map: 1.9.0
       loader-utils: 2.0.4
-      postcss: 8.4.26
+      postcss: 8.4.27
       source-map: 0.6.1
     dev: true
 

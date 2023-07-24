@@ -1,5 +1,5 @@
 {
-  "name": "@react-elf-types/dialog",
+  "name": "@react-elf-types/badge",
   "version": "0.0.73",
   "description": "Elf UI components in React",
   "license": "MIT",
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@react-elf-types/shared": "workspace:*",
-    "@react-elf-types/button": "workspace:*",
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
   "publishConfig": {

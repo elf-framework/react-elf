@@ -1,5 +1,5 @@
 {
-  "name": "@react-elf/dialog",
+  "name": "@react-elf/badge",
   "version": "0.0.73",
   "description": "",
   "files": [
@@ -10,7 +10,7 @@
   "main": "./src/index.ts",
   "publishConfig": {
     "access": "public",
-    "main": "./dist/index.cjs",
+    "main": "./dist/index.umd.js",
     "module": "./dist/index.mjs",
     "types": "./dist/types/index.d.ts"
   },
@@ -24,17 +24,16 @@
   "keywords": [
     "react",
     "elf",
-    "button"
+    "badge"
   ],
   "author": "elf-framework",
   "license": "MIT",
   "dependencies": {
-    "@react-elf-types/dialog": "workspace:*",
-    "@react-elf/button": "workspace:*",
+    "@react-elf-types/badge": "workspace:*",
     "@react-elf/shared": "workspace:*",
     "@types/react": "^18.2.15",
     "classnames": "^2.3.2",
-    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.17.0",

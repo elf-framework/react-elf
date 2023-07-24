@@ -1,5 +1,18 @@
 # @react-elf/docs
 
+## 0.0.73
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.73
+
+## 0.0.72
+
+### Patch Changes
+
+- add Dialog mdx
+
 ## 0.0.71
 
 ### Patch Changes

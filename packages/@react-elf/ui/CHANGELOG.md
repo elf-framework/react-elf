@@ -1,5 +1,15 @@
 # @react-elf/button
 
+## 0.0.73
+
+### Patch Changes
+
+- add Badge component
+
+- Updated dependencies []:
+  - @react-elf/dialog@0.0.73
+  - @react-elf/badge@0.0.73
+
 ## 0.0.71
 
 ### Patch Changes

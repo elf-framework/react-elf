@@ -1,5 +1,14 @@
 # @react-elf/dialog
 
+## 0.0.73
+
+### Patch Changes
+
+- add Badge component
+
+- Updated dependencies []:
+  - @react-elf-types/dialog@0.0.73
+
 ## 0.0.71
 
 ### Patch Changes

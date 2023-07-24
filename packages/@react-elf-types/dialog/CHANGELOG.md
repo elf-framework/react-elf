@@ -1,5 +1,11 @@
 # @react-elf-types/notification
 
+## 0.0.73
+
+### Patch Changes
+
+- add Badge component
+
 ## 0.0.69
 
 ### Patch Changes

@@ -1,0 +1,47 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as DialogStories from "./Dialog.stories";
+
+import { MainView } from "./dialog/MainView";
+import { TitleView } from "./dialog/TitleView";
+import { DescriptionView } from "./dialog/DescriptionView";
+import { VariantView } from "./dialog/VariantView";
+import { ClosableView } from "./dialog/ClosableView";
+import { CustomFooterView } from "./dialog/CustomFooterView";
+
+<Meta title="Components/Feed Backs/Dialog" of={DialogStories} />
+
+# Alert Dialog
+
+Alert dialogs display important information that users need to acknowledge. They appear over the interface and block further interactions until an action is selected.
+
+## Usage
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+<Canvas of={DialogStories.Default} sourceState="shown" layout="centered" />
+
+## Options
+
+### Title
+
+<TitleView />
+
+### Description
+
+<DescriptionView />
+
+### Confirmation Variant
+
+<VariantView />
+
+&nbsp;
+This is the default variant for alert dialogs. Use a confirmation
+variant for asking a user to confirm a choice. This alert dialog has
+an accent button to highlight a strong preference for which action to
+take.
+
+### Cloasable
+
+<ClosableView />
