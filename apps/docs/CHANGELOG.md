@@ -1,5 +1,11 @@
 # @react-elf/docs
 
+## 0.0.79
+
+### Patch Changes
+
+- update Toast mdx
+
 ## 0.0.78
 
 ### Patch Changes

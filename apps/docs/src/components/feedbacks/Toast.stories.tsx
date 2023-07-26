@@ -16,6 +16,9 @@ type Story = StoryObj<typeof meta>;
  */
 export const Default: Story = {
   args: {
+    style: {
+      position: "absolute",
+    },
     direction: "center",
     icon: (
       <IconWrapper>
@@ -39,6 +42,9 @@ export const Default: Story = {
 
 export const Text: Story = {
   args: {
+    style: {
+      position: "absolute",
+    },
     direction: "center",
     children: "Your trial has expired. Please purchase to continue.",
   },
@@ -46,6 +52,9 @@ export const Text: Story = {
 
 export const Icon: Story = {
   args: {
+    style: {
+      position: "absolute",
+    },
     icon: (
       <IconWrapper
         style={{
@@ -62,6 +71,9 @@ export const Icon: Story = {
 
 export const Closable: Story = {
   args: {
+    style: {
+      position: "absolute",
+    },
     closable: true,
     icon: (
       <IconWrapper
@@ -81,6 +93,9 @@ export const Variant: Story = {
   args: {
     closable: true,
     variant: "primary",
+    style: {
+      position: "absolute",
+    },
     icon: (
       <IconWrapper
         style={{
@@ -98,6 +113,9 @@ export const Variant: Story = {
 export const Tools: Story = {
   args: {
     closable: true,
+    style: {
+      position: "absolute",
+    },
     tools: (
       <RoundButton
         outline
