@@ -1,5 +1,11 @@
 # @react-elf-types/shared
 
+## 0.0.76
+
+### Patch Changes
+
+- add badge, panel component
+
 ## 0.0.69
 
 ### Patch Changes

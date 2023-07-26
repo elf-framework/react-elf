@@ -1,5 +1,13 @@
 # @react-elf-types/notification
 
+## 0.0.76
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/shared@0.0.76
+  - @react-elf-types/tooltip@0.0.76
+
 ## 0.0.69
 
 ### Patch Changes

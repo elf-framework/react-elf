@@ -23,7 +23,8 @@ type ButtonVariant =
   | "warning"
   | "outline"
   | "light"
-  | "dark";
+  | "dark"
+  | "white";
 type ButtonSize = "extra-small" | "small" | "default" | "large" | "extra-large";
 
 type ButtonShape = "square" | "round" | "circle";

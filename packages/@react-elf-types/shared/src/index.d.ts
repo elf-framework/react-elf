@@ -24,8 +24,8 @@ export interface CommonStyle extends KeyValue {
   color?: string;
   column?: string;
   columnEnd?: string;
-  columnGap?: string | number;
-  columnSpan?: string;
+  columnGap?: number;
+  columnSpan?: number;
   columnStart?: string;
   direction?: string;
   display?: string;
@@ -41,7 +41,7 @@ export interface CommonStyle extends KeyValue {
   left?: string;
   letterSpacing?: string;
   lineHeight?: string | number;
-  margin?: string | number | number[] | string[];
+  margin?: string | number | number[] | string[] | (number | string)[];
   marginBlock?: string;
   marginBlockEnd?: string;
   marginBlockStart?: string;

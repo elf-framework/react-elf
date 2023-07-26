@@ -32,7 +32,7 @@ export interface ToastProps {
   delay?: number;
   animationDelay?: number;
   variant?: VariantType;
-  tools?: ReactNode | ReactNode[];
+  tools?: ReactNode;
   onShow?: () => void;
   onClose?: () => void;
 }

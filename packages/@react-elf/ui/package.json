@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/ui",
-  "version": "0.0.73",
+  "version": "0.0.76",
   "description": "",
   "files": [
     "dist",
@@ -43,7 +43,8 @@
     "@react-elf/tools": "workspace:*",
     "@react-elf/toolbar": "workspace:*",
     "@react-elf/ghost": "workspace:*",
-    "@react-elf/badge": "workspace:*"
+    "@react-elf/badge": "workspace:*",
+    "@react-elf/panel": "workspace:*"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.17.0",

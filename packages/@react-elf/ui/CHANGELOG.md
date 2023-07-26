@@ -1,5 +1,29 @@
 # @react-elf/button
 
+## 0.0.76
+
+### Patch Changes
+
+- add badge, panel component
+
+- Updated dependencies []:
+  - @react-elf/tooltip@0.0.76
+  - @react-elf/shared@0.0.76
+  - @react-elf/badge@0.0.76
+  - @react-elf/panel@0.0.76
+  - @react-elf/button@0.0.76
+  - @react-elf/toolbar@0.0.76
+  - @react-elf/toast@0.0.76
+  - @react-elf/tools@0.0.76
+  - @react-elf/alert@0.0.76
+  - @react-elf/dialog@0.0.76
+  - @react-elf/divider@0.0.76
+  - @react-elf/ghost@0.0.76
+  - @react-elf/layout@0.0.76
+  - @react-elf/menu@0.0.76
+  - @react-elf/notification@0.0.76
+  - @react-elf/popover@0.0.76
+
 ## 0.0.73
 
 ### Patch Changes

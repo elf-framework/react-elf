@@ -1,6 +1,6 @@
 {
   "name": "@react-elf-types/ghost",
-  "version": "0.0.69",
+  "version": "0.0.76",
   "description": "Elf UI components in React",
   "license": "MIT",
   "types": "src/index.d.ts",

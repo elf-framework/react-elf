@@ -1,5 +1,12 @@
+import { CommonStyle, KeyValue } from "@react-elf-types/shared";
 import React from "react";
-export function IconWrapper({ children }) {
+
+interface IconWrapperProps {
+  children: React.ReactNode;
+  style?: CommonStyle;
+}
+
+export function IconWrapper({ children, style }: IconWrapperProps) {
   return (
     <span
       className="elf--icon"
@@ -8,6 +15,7 @@ export function IconWrapper({ children }) {
         alignItems: "center",
         justifyContent: "center",
         flex: "none",
+        ...(style as KeyValue),
       }}
     >
       {children}

@@ -1,5 +1,14 @@
 # @react-elf-types/button
 
+## 0.0.76
+
+### Patch Changes
+
+- add badge, panel component
+
+- Updated dependencies []:
+  - @react-elf-types/shared@0.0.76
+
 ## 0.0.69
 
 ### Patch Changes
