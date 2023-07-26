@@ -43,3 +43,54 @@ export const Text: Story = {
     children: "Your trial has expired. Please purchase to continue.",
   },
 };
+
+export const Icon: Story = {
+  args: {
+    icon: (
+      <IconWrapper
+        style={{
+          fontSize: 20,
+        }}
+      >
+        <MdInfoOutline />
+      </IconWrapper>
+    ),
+    direction: "center",
+    children: "Your trial has expired. Please purchase to continue.",
+  },
+};
+
+export const Closable: Story = {
+  args: {
+    closable: true,
+    icon: (
+      <IconWrapper
+        style={{
+          fontSize: 20,
+        }}
+      >
+        <MdInfoOutline />
+      </IconWrapper>
+    ),
+    direction: "center",
+    children: "Your trial has expired. Please purchase to continue.",
+  },
+};
+
+export const Variant: Story = {
+  args: {
+    closable: true,
+    variant: "primary",
+    icon: (
+      <IconWrapper
+        style={{
+          fontSize: 20,
+        }}
+      >
+        <MdInfoOutline />
+      </IconWrapper>
+    ),
+    direction: "center",
+    children: "Your trial has expired. Please purchase to continue.",
+  },
+};
