@@ -8,7 +8,11 @@ function Item({ variant }) {
       variant={variant}
       direction="bottom-right"
       icon={
-        <IconWrapper>
+        <IconWrapper
+          style={{
+            fontSize: 20,
+          }}
+        >
           <MdInfoOutline />
         </IconWrapper>
       }
@@ -16,6 +20,7 @@ function Item({ variant }) {
         <RoundButton
           place="toast"
           variant="white"
+          thin
           outline
           onClick={() => console.log("action")}
         >
