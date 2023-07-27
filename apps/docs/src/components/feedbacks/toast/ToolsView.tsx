@@ -13,11 +13,11 @@ export function ToolsView() {
       <div>
         <Toast
           direction="bottom-right"
-          tools={[
+          tools={
             <RoundButton place="toast" outline variant="white">
               Action
-            </RoundButton>,
-          ]}
+            </RoundButton>
+          }
         >
           Hello World yellow 234
         </Toast>

@@ -1,5 +1,11 @@
 # @react-elf/dialog
 
+## 0.0.80
+
+### Patch Changes
+
+- modify toast placement
+
 ## 0.0.76
 
 ### Patch Changes

@@ -84,7 +84,7 @@ export function Toast(props: ToastProps) {
       <div className="content">
         <div className="elf--toast-text">{children}</div>
       </div>
-      <div className="tools">{tools}</div>
+      {tools ? <div className="tools">{tools}</div> : undefined}
       {closable ? (
         <div className="close-area">
           <Button
@@ -93,7 +93,7 @@ export function Toast(props: ToastProps) {
             iconOnly
             quiet
             closable
-            onClick={() => this.hide(1)}
+            onClick={() => setHide(true)}
           >
             &times;
           </Button>

@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.80
+
+### Patch Changes
+
+- modify toast placement
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.80
+
 ## 0.0.79
 
 ### Patch Changes

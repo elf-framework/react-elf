@@ -1,5 +1,12 @@
 # @react-elf/button
 
+## 0.0.80
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/toast@0.0.80
+
 ## 0.0.76
 
 ### Patch Changes
