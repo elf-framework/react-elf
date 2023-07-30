@@ -1,0 +1,104 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as TooltipStories from "./Tooltip.stories";
+
+import { MainView } from "./tooltip/MainView";
+import { LabelView } from "./tooltip/LabelView";
+import { IconView } from "./tooltip/IconView";
+import { PlacementView } from "./tooltip/PlacementView";
+import { VariantView } from "./tooltip/VariantView";
+import { MaxWidthView } from "./tooltip/MaxWidthView";
+import { FixedTooltipView } from "./tooltip/FixedTooltipView";
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+Tooltips show contextual help or information about specific components when a user hovers or focuses on them.
+
+## Usage
+
+<MainView />
+
+<Canvas of={TooltipStories.Default} sourceState="shown" />
+
+## Options
+
+### Label
+
+All tooltips have a label. The label communicates the contextual help or information about specific components when a user hovers over or focuses on them.
+
+<LabelView />
+
+<Canvas of={TooltipStories.Label} sourceState="shown" />
+
+### Variants
+
+By default, tooltips are the neutral variant. These are the most common variant because most tooltips are used to only disclose
+additional information, without conveying a semantic meaning. The
+neutral variant never includes an icon.
+
+Tooltips also come in semantic variants: informative (blue), positive
+(green), and negative (red). These use semantic colors to communicate
+the meaning.
+
+<VariantView />
+
+<Canvas of={TooltipStories.Variant} sourceState="shown" />
+
+### Icon
+
+3 of the 4 tooltip variants (informative, positive, and negative) can
+include an icon to supplement the messaging.
+
+These icons are predefined and can not be customized. Unless it's being used to
+provide context about the exact same icon, a semantic tooltip should
+always show an icon.
+
+Doing this is essential for helping users with
+color vision deficiency to discern the message tone.
+
+<IconView />
+
+<Canvas of={TooltipStories.Icon} sourceState="shown" />
+
+### Maximum width
+
+By default, the maximum width of a tooltip is size-2000 (160 px on
+desktop, 200 px on mobile). This can be customized to better fit your
+context.
+
+<MaxWidthView />
+
+<Canvas of={TooltipStories.MaxWidth} sourceState="shown" />
+
+### Placement
+
+A tooltip is positioned in relation to its target. Placement property
+values are at the:
+
+- top
+- top-left
+- top-right
+- bottom
+- bottom-left
+- bottom-right
+- left
+- right
+
+The default placement value is at the top.
+
+<PlacementView />
+
+<Canvas of={TooltipStories.Placement} sourceState="shown" />
+
+## Fixed tooltip
+
+Tooltips sometimes need to be shown beyond the display area.
+
+Then you can use the FixedTooltip to show the tooltip in a wider area.
+
+<Unstyled>
+  <FixedTooltipView />
+</Unstyled>
+
+<Canvas of={TooltipStories.FixedTooltipDefault} sourceState="shown" />

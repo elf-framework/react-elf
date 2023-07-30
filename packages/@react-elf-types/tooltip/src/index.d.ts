@@ -16,6 +16,7 @@ interface TooltipStyle {
 }
 
 type TooltipTriggerType = "hover" | "click" | "focus" | "manual";
+type TooltipPositionType = "relative" | "absolute" | "fixed";
 export interface TooltipProps {
   children?: ReactNode;
   message?: ReactNode;
@@ -35,7 +36,7 @@ export interface TooltipProps {
   animated?: boolean;
   style?: TooltipStyle & CommonStyle;
   hideArrow?: boolean;
-  position?: "relative" | "absolute" | "fixed";
+  position?: TooltipPositionType;
   variant?: VariantType;
   container?: HTMLElement;
   hideDelay?: number;

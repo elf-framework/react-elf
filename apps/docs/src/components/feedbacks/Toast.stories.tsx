@@ -4,6 +4,7 @@ import { IconWrapper, RoundButton, Toast } from "@react-elf/ui";
 import { MdInfoOutline } from "react-icons/md";
 
 const meta = {
+  title: "Components/Feed backs/Toast",
   component: Toast,
   tags: ["autodocs"],
 } satisfies Meta<typeof Toast>;

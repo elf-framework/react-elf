@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Dialog, Ghost, RoundButton } from "@react-elf/ui";
 
 const meta = {
+  title: "Components/Feed backs/Dialog",
   component: Dialog,
   tags: ["autodocs"],
 } satisfies Meta<typeof Dialog>;

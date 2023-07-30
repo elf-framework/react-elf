@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.81
+
+### Patch Changes
+
+- add Tooltip mdx
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.81
+
 ## 0.0.80
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @react-elf/tools
 
+## 0.0.81
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/tooltip@0.0.81
+  - @react-elf/tooltip@0.0.81
+  - @react-elf-types/tools@0.0.81
+
 ## 0.0.76
 
 ### Patch Changes

@@ -1,5 +1,6 @@
 import React, { useCallback, useMemo, useState } from "react";
 import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import classNames from "classnames";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import { TooltipProps } from "@react-elf-types/tooltip";
@@ -144,7 +145,9 @@ export function tooltip({
   style,
   variant = "default",
 }: TooltipProps) {
-  return ReactDOM.createPortal(
+  const div = document.createElement("div");
+  const root = createRoot(div);
+  root.render(
     <Tooltip
       variant={variant}
       delay={delay}
@@ -155,7 +158,18 @@ export function tooltip({
       show={true}
     >
       {children || <span>&nbsp;</span>}
-    </Tooltip>,
-    container
+    </Tooltip>
   );
+
+  container.appendChild(div);
+
+  return {
+    close: () => {
+      root.unmount();
+    },
+
+    remove: () => {
+      div.remove();
+    },
+  };
 }

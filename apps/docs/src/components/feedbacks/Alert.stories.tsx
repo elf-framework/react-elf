@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Alert, RoundButton } from "@react-elf/ui";
 
 const meta = {
+  title: "Components/Feed backs/Alert",
   component: Alert,
   tags: ["autodocs"],
 } satisfies Meta<typeof Alert>;

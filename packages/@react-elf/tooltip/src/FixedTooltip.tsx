@@ -1,30 +1,24 @@
-import { Dom, useCallback, useRef } from "@elf-framework/sapa";
-
+import React, { useCallback, useRef } from "react";
 import { tooltip } from "./index";
+import { TooltipProps } from "@react-elf-types/tooltip";
 
 export function FixedTooltip({
-  content,
+  children,
   message,
-  position = "fixed",
-  options,
   ...tooltipProps
-}) {
+}: TooltipProps) {
   const tooltipRef = useRef(null);
 
   const onMouseEnter = useCallback(
     (e) => {
-      const target = Dom.create(e.target);
-      const labelRect = target.rect();
+      const target = e.target;
+      const labelRect = target.getBoundingClientRect();
       const { left, top, width, height, right, bottom } = labelRect;
-
-      // TODO: container 의 영역에 따라서 tooltip 의 위치를 조정한다.
-      const container = options?.container || document.body;
 
       tooltipRef.current = tooltip({
         placement: "top",
-        ...tooltipProps,
         message,
-        position,
+        ...tooltipProps,
         style: {
           left,
           top,
@@ -33,7 +27,6 @@ export function FixedTooltip({
           right,
           bottom,
         },
-        options,
       });
     },
     [message]
@@ -47,7 +40,7 @@ export function FixedTooltip({
 
   return (
     <div
-      class="elf--fixed-tooltip"
+      className="elf--fixed-tooltip"
       style={{
         display: "inline-block",
         width: "fit-content",
@@ -56,7 +49,7 @@ export function FixedTooltip({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      {content}
+      {children}
     </div>
   );
 }

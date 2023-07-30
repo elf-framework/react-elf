@@ -1,5 +1,12 @@
 # @react-elf/popover
 
+## 0.0.81
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/popover@0.0.81
+
 ## 0.0.76
 
 ### Patch Changes
