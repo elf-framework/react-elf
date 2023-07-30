@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.82
+
+### Patch Changes
+
+- add Checkbox mdx
+
 ## 0.0.81
 
 ### Patch Changes

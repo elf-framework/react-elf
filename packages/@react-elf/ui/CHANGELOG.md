@@ -1,5 +1,19 @@
 # @react-elf/button
 
+## 0.0.82
+
+### Patch Changes
+
+- add Checkbox mdx
+
+- Updated dependencies []:
+  - @react-elf/tooltip@0.0.82
+  - @react-elf/button@0.0.82
+  - @react-elf/tools@0.0.82
+  - @react-elf/dialog@0.0.82
+  - @react-elf/toast@0.0.82
+  - @react-elf/toolbar@0.0.82
+
 ## 0.0.81
 
 ### Patch Changes

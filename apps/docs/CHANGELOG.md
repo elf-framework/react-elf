@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.82
+
+### Patch Changes
+
+- add Checkbox mdx
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.82
+
 ## 0.0.81
 
 ### Patch Changes

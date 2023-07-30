@@ -1,5 +1,4 @@
 import React, { useCallback, useMemo, useState } from "react";
-import * as ReactDOM from "react-dom";
 import { createRoot } from "react-dom/client";
 import classNames from "classnames";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";

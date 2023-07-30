@@ -15,3 +15,4 @@ export * from "@react-elf/tools";
 export * from "@react-elf/ghost";
 export * from "@react-elf/badge";
 export * from "@react-elf/panel";
+export * from "@react-elf/checkbox";

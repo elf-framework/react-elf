@@ -1,0 +1,80 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as CheckboxStories from "./Checkbox.stories";
+
+import { MainView } from "./checkbox/MainView";
+import { OptionsView } from "./checkbox/OptionsView";
+import { SelectionView } from "./checkbox/SelectionView";
+import { SizeView } from "./checkbox/SizeView";
+import { EmphasisView } from "./checkbox/EmphasisView";
+import { DisabledView } from "./checkbox/DisabledView";
+import { ErrorView } from "./checkbox/ErrorView";
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.
+
+## Usage
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+## Options
+
+### Label
+
+Checkboxes should always have a label. When the label is not defined, a checkbox becomes standalone. Standalone checkboxes are only used when their connection to other components is clear and they give sufficient context — for example, in application panels.
+
+<Unstyled>
+  <OptionsView />
+</Unstyled>
+
+### Selection
+
+Checkboxes can be selected, not selected, or in an indeterminate state. They are in an indeterminate state when they represent both selected and not selected values.
+
+<Unstyled>
+  <SelectionView />
+</Unstyled>
+
+### Size
+
+Checkboxes come in four different sizes: small, medium, large, and extra-large. The medium size is the default and most frequently used option. Use the other sizes sparingly; they should be used to create a hierarchy of importance within the page.
+
+<Unstyled>
+  <SizeView />
+</Unstyled>
+
+### Emphasis
+
+By default, checkboxes are not emphasized (gray). This version is optimal for when the checkbox is not the core part of an interface,
+such as in application panels, where all visual components are monochrome in order to direct focus to the content.
+
+The emphasized (blue) version provides a visual prominence that is optimal for forms, settings, lists or grids of assets, and other situations where a checkbox need to be noticed.
+
+<Unstyled>
+  <EmphasisView />
+</Unstyled>
+
+### Disabled
+
+A checkbox in a disabled state shows that a selection exists, but is not available in that circumstance.
+This can be used to maintain layout continuity and communicate that an action may become available later.
+
+<Unstyled>
+  <DisabledView />
+</Unstyled>
+
+### Error
+
+Checkboxes can be marked as having an error to show that a selection needs to be made in order to move forward,
+or that a selection that was made is invalid.
+
+For example, in a form that requires a user to acknowledge legal terms before proceeding,
+the checkbox would show an unchecked error to communicate that it needs to be selected.
+
+<Unstyled>
+  <ErrorView />
+</Unstyled>
