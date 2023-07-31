@@ -1,8 +1,9 @@
 import React from "react";
-import { Checkbox } from "./Checkbox";
 import { CheckboxGroupProps } from "@react-elf-types/checkbox";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
 import classNames from "classnames";
+import { CheckboxGroupContext } from "./context";
+import { useCheckboxGroupState } from "./hooks/useCheckboxGroupState";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--checkbox", {
   borderColor: true,
@@ -17,16 +18,9 @@ const cssProperties = makeCssVariablePrefixMap("--elf--checkbox", {
 });
 
 export function CheckboxGroup(props: CheckboxGroupProps) {
-  const {
-    disabled,
-    style = {},
-    value = [],
-    options = [],
-    onChange,
-    direction = "horizontal",
-    size = "medium",
-    variant = "default",
-  } = props;
+  const { disabled, style = {}, children, direction = "horizontal" } = props;
+
+  const state = useCheckboxGroupState(props);
 
   const styleObject = {
     className: classNames([
@@ -42,23 +36,9 @@ export function CheckboxGroup(props: CheckboxGroupProps) {
 
   return (
     <div {...styleObject}>
-      {options.map((it, index) => {
-        return (
-          <Checkbox
-            value={it.value}
-            onChange={(e) => {
-              onChange(e);
-            }}
-            checked={value?.includes(it.value)}
-            disabled={disabled}
-            indeterminate={it.indeterminate}
-            size={size}
-            variant={variant}
-          >
-            {it.label}
-          </Checkbox>
-        );
-      })}
+      <CheckboxGroupContext.Provider value={state}>
+        {children}
+      </CheckboxGroupContext.Provider>
     </div>
   );
 }

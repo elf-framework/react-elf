@@ -1,12 +1,17 @@
-import { CommonStyle, VariantType, SizeType } from "@react-elf-types/shared";
+import {
+  CommonStyle,
+  VariantType,
+  SizeType,
+  OrientationType,
+} from "@react-elf-types/shared";
 import { ChangeEvent } from "react";
 import type { ReactNode } from "react";
 
 export interface CheckboxProps {
   checked?: boolean;
   name?: string;
-  value?: string | number | readonly string[] | undefined;
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  value?: string | number;
+  onChange?: (checked: boolean) => void;
   style?: CommonStyle;
   indeterminate?: boolean;
   variant?: VariantType;
@@ -23,12 +28,13 @@ interface CheckboxItem {
 
 export interface CheckboxGroupProps {
   name?: string;
-  value: any[];
+  values: any[];
   direction?: OrientationType;
-  options?: CheckboxItem[];
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  children?: ReactNode;
+  onChange?: (values: any) => void;
   style?: CommonStyle;
   size?: SizeType;
   variant?: VariantType;
   disabled?: boolean;
+  readonly?: boolean;
 }

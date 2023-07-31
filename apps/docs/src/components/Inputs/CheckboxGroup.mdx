@@ -1,0 +1,61 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as CheckboxGroupStories from "./CheckboxGroup.stories";
+
+import { MainView } from "./checkbox-group/MainView";
+import { SizeView } from "./checkbox-group/SizeView";
+import { DisabledView } from "./checkbox-group/DisabledView";
+import { ErrorView } from "./checkbox-group/ErrorView";
+
+<Meta of={CheckboxGroupStories} />
+
+# Checkbox Group
+
+A checkbox group is a grouping of checkboxes that are related to each other.
+
+## Usage
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+<Canvas of={CheckboxGroupStories.Default} sourceState="shown" />
+
+## Options
+
+### Size
+
+Checkboxes come in four different sizes: small, medium, large, and extra-large. The medium size is the default and most frequently used option. Use the other sizes sparingly; they should be used to create a hierarchy of importance within the page.
+
+<Unstyled>
+  <SizeView />
+</Unstyled>
+
+<Canvas of={CheckboxGroupStories.Size} sourceState="shown" />
+
+### Disabled
+
+A checkbox group in a disabled state shows that a selection exists,
+but is not available in that circumstance. This can be used to
+maintain layout continuity and communicate that an action may become
+available later. The field label, checkboxes, and help text are all
+displayed in a disabled state when the checkbox group is disabled.
+
+<Unstyled>
+  <DisabledView />
+</Unstyled>
+
+<Canvas of={CheckboxGroupStories.Disabled} sourceState="shown" />
+
+### Error
+
+Checkboxes can be marked as having an error to show that a selection
+needs to be made in order to move forward, or that a selection that
+was made is invalid. For example, in a form that requires a user to
+acknowledge legal terms before proceeding, the checkbox would show an
+unchecked error to communicate that it needs to be selected.
+
+<Unstyled>
+  <ErrorView />
+</Unstyled>
+
+<Canvas of={CheckboxGroupStories.Error} sourceState="shown" />

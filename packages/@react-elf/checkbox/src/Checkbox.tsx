@@ -1,7 +1,24 @@
-import React, { useEffect } from "react";
+import React, {
+  Ref,
+  createRef,
+  forwardRef,
+  useContext,
+  useEffect,
+  useMemo,
+} from "react";
 import { CheckboxProps } from "@react-elf-types/checkbox";
 import classNames from "classnames";
 import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
+import { CheckboxGroupContext } from "./context";
+
+interface CheckboxItemProps {
+  checked?: boolean;
+  onChange?: (checked: boolean) => void;
+  disabled?: boolean;
+  value?: string | number;
+  variant?: string;
+  size?: string;
+}
 
 const cssProperties = makeCssVariablePrefixMap("--elf--checkbox", {
   borderColor: true,
@@ -15,7 +32,7 @@ const cssProperties = makeCssVariablePrefixMap("--elf--checkbox", {
   borderRadius: true,
 });
 
-export function Checkbox(props: CheckboxProps) {
+export function CheckboxComp(props: CheckboxProps, ref: Ref<HTMLLabelElement>) {
   const {
     disabled,
     style = {},
@@ -29,37 +46,66 @@ export function Checkbox(props: CheckboxProps) {
     size = "medium",
   } = props;
 
-  const checkboxRef = React.createRef<HTMLInputElement>();
+  // Only Checkbox
+  const inputRef = createRef<HTMLInputElement>();
 
-  const styleObject = {
-    className: classNames([
+  // for CheckboxGroup
+  let groupState = useContext(CheckboxGroupContext);
+
+  const localProps: CheckboxItemProps = {};
+
+  // check if it is a single checkbox
+  if (!groupState) {
+    localProps.checked = checked;
+    localProps.onChange = onChange;
+    localProps.disabled = disabled;
+    localProps.value = value;
+    localProps.variant = variant;
+    localProps.size = size;
+  } else {
+    localProps.checked = groupState.isSelected(value);
+    localProps.onChange = () => {
+      groupState.toggleValue(value);
+    };
+    localProps.disabled = groupState.isDisabled;
+    localProps.value = value;
+    localProps.variant = groupState.variant;
+    localProps.size = groupState.size;
+  }
+
+  const localClassName = useMemo(() => {
+    return classNames([
       "elf--checkbox",
       {
-        disabled,
-        [variant]: true,
-        [size]: true,
+        disabled: localProps.disabled,
+        [localProps.variant]: true,
+        [localProps.size]: true,
       },
-    ]),
+    ]);
+  }, [localProps.disabled, localProps.variant, localProps.size]);
+
+  const styleObject = {
+    className: localClassName,
     style: propertyMap(style, cssProperties),
   };
 
   useEffect(() => {
-    if (checkboxRef.current) {
-      checkboxRef.current.indeterminate = indeterminate;
+    if (inputRef.current) {
+      inputRef.current.indeterminate = indeterminate;
     }
   }, [indeterminate]);
 
   return (
     <div {...styleObject}>
-      <label>
+      <label ref={ref}>
         <input
-          ref={checkboxRef}
+          ref={inputRef}
           type="checkbox"
-          checked={checked}
-          disabled={disabled}
+          checked={localProps.checked}
+          disabled={localProps.disabled}
           name={name}
           value={value}
-          onChange={(e) => onChange?.(e)}
+          onChange={(e) => localProps.onChange?.(e.target.checked)}
         />
         {children?.length ? (
           <span className="text">{children}</span>
@@ -68,3 +114,5 @@ export function Checkbox(props: CheckboxProps) {
     </div>
   );
 }
+
+export const Checkbox = forwardRef(CheckboxComp);

@@ -1,4 +1,3 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Checkbox } from "@react-elf/ui";
 
@@ -12,7 +11,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 /**
- * Preview Tooltip Story
+ * Preview Checkbox Story
  */
 export const Default: Story = {
   args: {

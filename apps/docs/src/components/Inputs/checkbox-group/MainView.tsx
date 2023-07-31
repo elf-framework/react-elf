@@ -1,4 +1,5 @@
-import { CheckboxGroup, Grid, VBox } from "@elf-framework/ui";
+import React from "react";
+import { Checkbox, CheckboxGroup, Grid, VBox } from "@react-elf/ui";
 
 export function MainView() {
   return (
@@ -6,11 +7,14 @@ export function MainView() {
       style={{
         gap: 30,
         backgroundColor: "var(--color-gray-0)",
-        padding: [60, 200],
+        padding: [100, 100],
         position: "relative",
+        height: 300,
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      <Grid columns={2}>
+      <Grid columns={2} gap={100}>
         <div
           style={{
             display: "flex",
@@ -23,14 +27,15 @@ export function MainView() {
 
           <CheckboxGroup
             direction="vertical"
-            value={[10]}
-            options={[
-              { value: 10, label: "Travel" },
-              { value: 20, label: "Music" },
-              { value: 30, label: "Shopping" },
-            ]}
-            onChange={(e, values) => console.log(values)}
-          />
+            values={[10, 20]}
+            disabled
+            variant="danger"
+            onChange={(values) => console.log(values)}
+          >
+            <Checkbox value={10}>Travel</Checkbox>
+            <Checkbox value={20}>Music</Checkbox>
+            <Checkbox value={30}>Shopping</Checkbox>
+          </CheckboxGroup>
         </div>
         <div
           style={{
@@ -44,14 +49,13 @@ export function MainView() {
           <CheckboxGroup
             direction="vertical"
             variant="dark"
-            value={[10]}
-            options={[
-              { value: 10, label: "Travel" },
-              { value: 20, label: "Music" },
-              { value: 30, label: "Shopping" },
-            ]}
-            onChange={(e, values) => console.log(values)}
-          />
+            values={[10]}
+            onChange={(values) => console.log(values)}
+          >
+            <Checkbox value={10}>Travel</Checkbox>
+            <Checkbox value={20}>Music</Checkbox>
+            <Checkbox value={30}>Shopping</Checkbox>
+          </CheckboxGroup>
         </div>
       </Grid>
     </VBox>

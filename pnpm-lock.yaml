@@ -428,6 +428,9 @@ importers:
       '@react-elf-types/checkbox':
         specifier: workspace:*
         version: link:../../@react-elf-types/checkbox
+      '@react-elf-types/shared':
+        specifier: workspace:*
+        version: link:../../@react-elf-types/shared
       '@react-elf/shared':
         specifier: workspace:*
         version: link:../shared
