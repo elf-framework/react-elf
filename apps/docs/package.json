@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/docs",
-  "version": "0.0.83",
+  "version": "0.0.84",
   "private": true,
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
@@ -14,9 +14,9 @@
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
-    "@elf-framework/color": "^0.0.216",
-    "@elf-framework/design-system": "^0.0.261",
-    "@elf-framework/design-tokens": "^0.0.261",
+    "@elf-framework/color": "^0.0.267",
+    "@elf-framework/design-system": "^0.0.268",
+    "@elf-framework/design-tokens": "^0.0.268",
     "@react-elf/ui": "workspace:*",
     "@storybook/react": "^7.1.1",
     "@storybook/react-vite": "^7.1.1",

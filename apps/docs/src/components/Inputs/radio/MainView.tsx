@@ -1,5 +1,13 @@
-import WarningOutlined from "@elf-framework/icon/WarningOutlined";
-import { Grid, HelpText, RadioGroup, VBox } from "@elf-framework/ui";
+import React from "react";
+import {
+  Grid,
+  HelpText,
+  IconWrapper,
+  Radio,
+  RadioGroup,
+  VBox,
+} from "@react-elf/ui";
+import { MdOutlineWarning } from "react-icons/md";
 
 export function MainView() {
   return (
@@ -9,6 +17,9 @@ export function MainView() {
         backgroundColor: "var(--color-gray-0)",
         padding: [60, 100],
         position: "relative",
+        justifyContent: "center",
+        alignItems: "center",
+        height: 300,
       }}
     >
       <Grid columns={2} style={{ gap: 50 }}>
@@ -24,13 +35,12 @@ export function MainView() {
           <RadioGroup
             direction="vertical"
             value={10}
-            options={[
-              { value: 10, label: "Small" },
-              { value: 20, label: "Medium" },
-              { value: 30, label: "Large" },
-            ]}
-            onChange={(e, values) => console.log(values)}
-          />
+            onChange={(value) => console.log(value)}
+          >
+            <Radio value={10}>Option 10</Radio>
+            <Radio value={20}>Option 20</Radio>
+            <Radio value={30}>Option 30</Radio>
+          </RadioGroup>
           <HelpText>Select a product size</HelpText>
         </div>
         <div
@@ -46,14 +56,20 @@ export function MainView() {
             direction="vertical"
             variant="dark"
             value={10}
-            options={[
-              { value: 10, label: "Small" },
-              { value: 20, label: "Medium" },
-              { value: 30, label: "Large" },
-            ]}
-            onChange={(e, values) => console.log(values)}
-          />
-          <HelpText variant="danger" icon={<WarningOutlined />}>
+            onChange={(value) => console.log(value)}
+          >
+            <Radio value={10}>Option 10</Radio>
+            <Radio value={20}>Option 20</Radio>
+            <Radio value={30}>Option 30</Radio>
+          </RadioGroup>
+          <HelpText
+            variant="danger"
+            icon={
+              <IconWrapper>
+                <MdOutlineWarning />
+              </IconWrapper>
+            }
+          >
             Select a product size
           </HelpText>
         </div>

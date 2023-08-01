@@ -27,7 +27,7 @@ type ButtonVariant =
   | "white";
 type ButtonSize = "extra-small" | "small" | "default" | "large" | "extra-large";
 
-type ButtonShape = "square" | "round" | "circle";
+type ButtonShape = "rect" | "round" | "circle";
 
 type OrientationType = "horizontal" | "vertical";
 

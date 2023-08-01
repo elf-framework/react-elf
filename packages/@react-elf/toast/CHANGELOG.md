@@ -1,5 +1,12 @@
 # @react-elf/dialog
 
+## 0.0.84
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/button@0.0.84
+
 ## 0.0.82
 
 ### Patch Changes

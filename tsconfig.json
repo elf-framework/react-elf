@@ -26,6 +26,6 @@
     "skipLibCheck": false,
     "strict": false
   },
-  "include": ["packages", "apps"],
+  "include": ["packages", "apps", "apps/docs/src/components/Inputs/.colorarea"],
   "exclude": ["**/node_modules"]
 }

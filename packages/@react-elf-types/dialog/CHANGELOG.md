@@ -1,5 +1,12 @@
 # @react-elf-types/notification
 
+## 0.0.84
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/button@0.0.84
+
 ## 0.0.76
 
 ### Patch Changes

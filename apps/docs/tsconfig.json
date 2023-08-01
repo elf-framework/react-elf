@@ -5,6 +5,6 @@
     "outDir": "dist",
     "jsx": "react"
   },
-  "include": ["src"],
+  "include": ["src", "src/components/Inputs/.colorarea"],
   "exclude": []
 }

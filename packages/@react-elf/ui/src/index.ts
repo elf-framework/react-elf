@@ -16,3 +16,6 @@ export * from "@react-elf/ghost";
 export * from "@react-elf/badge";
 export * from "@react-elf/panel";
 export * from "@react-elf/checkbox";
+// export * from "@react-elf/color-mixer";
+export * from "@react-elf/radio";
+export * from "@react-elf/help-text";
