@@ -16,8 +16,8 @@
   },
   "scripts": {
     "npm-check": "npx npm-check-updates -u",
-    "vite:dist": "vite build --config=vite.dist.config.ts",
-    "lib:build": "pnpm run vite:dist",
+    "//vite:dist": "vite build --config=vite.dist.config.ts",
+    "//lib:build": "pnpm run vite:dist",
     "test": "vitest",
     "coverage": "vitest --coverage"
   },
