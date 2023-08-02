@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/ui",
-  "version": "0.0.84",
+  "version": "0.0.85",
   "description": "",
   "files": [
     "dist",
@@ -48,7 +48,8 @@
     "@react-elf/checkbox": "workspace:*",
     "@react-elf/color-mixer": "workspace:*",
     "@react-elf/radio": "workspace:*",
-    "@react-elf/help-text": "workspace:*"
+    "@react-elf/help-text": "workspace:*",
+    "@react-elf/input-editor": "workspace:*"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.17.0",

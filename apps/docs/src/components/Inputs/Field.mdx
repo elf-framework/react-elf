@@ -1,0 +1,78 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as FieldStories from "./Field.stories";
+
+import { MainView } from "./field/MainView";
+import { OptionsView } from "./field/OptionsView";
+import { LabelPositionView } from "./field/LabelPositionView";
+import { SizeView } from "./field/SizeView";
+import { DisabledView } from "./field/DisabledView";
+
+<Meta of={FieldStories} />
+
+# Field label
+
+Help text provides either an informative description or an error message that gives more context about what a user needs to input. It’s commonly used in forms.
+
+## Usage
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+<Canvas of={FieldStories.Default} sourceState="shown" />
+
+## Options
+
+### Label
+
+Inputs (text fields, checkboxes, sliders, etc.) should always have a
+label. In rare cases where context is sufficient and an
+accessibility expert has reviewed the design, the label could be
+undefined. These inputs without a visible label should still include
+an aria-label in HTML (depending on the context, “aria-label” or
+“aria-labelledby”).
+
+<Unstyled>
+  <OptionsView />
+</Unstyled>
+<Canvas of={FieldStories.Label} sourceState="shown" />
+
+### Label position
+
+A label can be placed either on top or on the side of an input. This
+option affects the bounding box of the component to ensure proper
+alignment. Top labels are the default and are recommended because
+they work better with long copy, localization, and responsive
+layouts. Side labels are most useful when vertical space is limited.
+
+<Unstyled>
+  <LabelPositionView />
+</Unstyled>
+
+<Canvas of={FieldStories.LabelPosition} sourceState="shown" />
+
+### Size
+
+Help text comes in four different sizes: small, medium, large, and
+extra-large. The medium size is the default and most frequent
+option. Use the other sizes sparingly and pair them with components
+of the same size to respect the built-in hierarchy.
+
+<Unstyled>
+  <SizeView />
+</Unstyled>
+
+<Canvas of={FieldStories.Size} sourceState="shown" />
+
+### Disabled
+
+A field label in a disabled state shows that an input field exists,
+but is not available in that circumstance. This can be used to
+maintain layout continuity and communicate that an input field may
+become available later.
+
+<Unstyled>
+  <DisabledView />
+</Unstyled>
+
+<Canvas of={FieldStories.Disabled} sourceState="shown" />

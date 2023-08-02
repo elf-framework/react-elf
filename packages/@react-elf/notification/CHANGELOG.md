@@ -1,5 +1,13 @@
 # @react-elf/notification
 
+## 0.0.85
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/notification@0.0.85
+  - @react-elf/shared@0.0.85
+
 ## 0.0.81
 
 ### Patch Changes

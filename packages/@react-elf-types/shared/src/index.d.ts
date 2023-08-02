@@ -1,3 +1,11 @@
+import type {
+  FocusEvent,
+  ChangeEvent,
+  ClipboardEvent,
+  FormEvent,
+  KeyboardEvent,
+  MouseEvent,
+} from "react";
 export interface KeyValue {
   [key: string]: unknown;
 }
@@ -94,6 +102,54 @@ export interface CommonStyle extends KeyValue {
   whiteSpace?: string;
   wrap?: string;
 }
+
+export type DomEventType = {
+  onFocus?: (event: FocusEvent<HTMLElement>) => void;
+  onFocusEnter?: (event: FocusEvent<HTMLElement>) => void;
+  onFocusLeave?: (event: FocusEvent<HTMLElement>) => void;
+  onBlur?: (event: FocusEvent<HTMLElement>) => void;
+  onKeyDown?: (event: KeyboardEvent<HTMLElement>) => void;
+  onKeyUp?: (event: KeyboardEvent<HTMLElement>) => void;
+  onKeyPress?: (event: KeyboardEvent<HTMLElement>) => void;
+  onChange?: (event: ChangeEvent<HTMLElement>) => void;
+  onInput?: (event: FormEvent<HTMLElement>) => void;
+  onPaste?: (event: ClipboardEvent<HTMLElement>) => void;
+  onCut?: (event: ClipboardEvent<HTMLElement>) => void;
+  onCopy?: (event: ClipboardEvent<HTMLElement>) => void;
+  onClick?: (event: MouseEvent<HTMLElement>) => void;
+  onDoubleClick?: (event: MouseEvent<HTMLElement>) => void;
+  onCompositionStart?: (event: KeyboardEvent) => void;
+  onCompositionEnd?: (event: KeyboardEvent) => void;
+  onCompositionUpdate?: (event: KeyboardEvent) => void;
+  onSelect?: (event: KeyboardEvent) => void;
+  onMouseDown?: (event: MouseEvent) => void;
+  onMouseUp?: (event: MouseEvent) => void;
+  onMouseMove?: (event: MouseEvent) => void;
+  onMouseEnter?: (event: MouseEvent) => void;
+  onMouseLeave?: (event: MouseEvent) => void;
+  onMouseOver?: (event: MouseEvent) => void;
+  onMouseOut?: (event: MouseEvent) => void;
+  onWheel?: (event: WheelEvent) => void;
+  onContextMenu?: (event: MouseEvent) => void;
+  onDragStart?: (event: DragEvent) => void;
+  onDrag?: (event: DragEvent) => void;
+  onDragEnd?: (event: DragEvent) => void;
+  onDragEnter?: (event: DragEvent) => void;
+  onDragLeave?: (event: DragEvent) => void;
+  onDragOver?: (event: DragEvent) => void;
+  onDrop?: (event: DragEvent) => void;
+  onScroll?: (event: WheelEvent) => void;
+  onTouchStart?: (event: TouchEvent) => void;
+  onTouchMove?: (event: TouchEvent) => void;
+  onTouchEnd?: (event: TouchEvent) => void;
+  onTouchCancel?: (event: TouchEvent) => void;
+  onPointerDown?: (event: PointerEvent) => void;
+  onPointerMove?: (event: PointerEvent) => void;
+  onPointerUp?: (event: PointerEvent) => void;
+  onPointerCancel?: (event: PointerEvent) => void;
+  onPointerEnter?: (event: PointerEvent) => void;
+  onPointerLeave?: (event: PointerEvent) => void;
+};
 
 export function makeCssVariablePrefixMap(
   prefix: string,

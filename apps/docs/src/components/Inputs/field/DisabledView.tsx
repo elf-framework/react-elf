@@ -1,4 +1,5 @@
-import { Field, Grid, InputEditor, VBox } from "@elf-framework/ui";
+import React from "react";
+import { Field, Grid, InputEditor, VBox } from "@react-elf/ui";
 
 export function DisabledView() {
   return (
@@ -8,6 +9,9 @@ export function DisabledView() {
         backgroundColor: "var(--color-gray-0)",
         padding: "60px 20px",
         fontSize: 13,
+        justifyContent: "center",
+        alignItems: "center",
+        height: 300,
       }}
     >
       <Grid columns={1} style={{ padding: [0, 10] }}>

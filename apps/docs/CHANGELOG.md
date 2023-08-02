@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.85
+
+### Patch Changes
+
+- add InputEditor, TextAreaEditor component
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.85
+
 ## 0.0.84
 
 ### Patch Changes

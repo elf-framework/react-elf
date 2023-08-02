@@ -1,5 +1,11 @@
 # @react-elf-types/shared
 
+## 0.0.85
+
+### Patch Changes
+
+- add InputEditor, TextAreaEditor component
+
 ## 0.0.76
 
 ### Patch Changes

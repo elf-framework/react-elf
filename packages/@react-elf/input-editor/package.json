@@ -1,0 +1,48 @@
+{
+  "name": "@react-elf/input-editor",
+  "version": "0.0.85",
+  "description": "",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "main": "./src/index.ts",
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/types/index.d.ts"
+  },
+  "scripts": {
+    "npm-check": "npx npm-check-updates -u",
+    "vite:dist": "vite build --config=vite.dist.config.ts",
+    "lib:build": "pnpm run vite:dist",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
+  },
+  "keywords": [
+    "react",
+    "elf",
+    "button"
+  ],
+  "author": "elf-framework",
+  "license": "MIT",
+  "dependencies": {
+    "@elf-framework/color": "^0.0.267",
+    "@react-elf-types/input-editor": "workspace:*",
+    "@react-elf-types/shared": "workspace:*",
+    "@react-elf/shared": "workspace:*",
+    "@types/react": "^18.2.15",
+    "classnames": "^2.3.2",
+    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "vite": "^4.4.6",
+    "vite-plugin-dts": "^3.3.1",
+    "vitest": "0.33.0"
+  }
+}

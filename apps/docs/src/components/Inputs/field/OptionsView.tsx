@@ -1,6 +1,7 @@
-import { Field, InputEditor, VBox } from "@elf-framework/ui";
+import React from "react";
+import { Field, InputEditor, VBox } from "@react-elf/ui";
 
-export function LabelPositionView() {
+export function OptionsView() {
   return (
     <VBox
       style={{
@@ -8,6 +9,9 @@ export function LabelPositionView() {
         backgroundColor: "var(--color-gray-0)",
         padding: "30px 20px",
         fontSize: 13,
+        justifyContent: "center",
+        alignItems: "center",
+        height: 300,
       }}
     >
       <div
@@ -15,16 +19,12 @@ export function LabelPositionView() {
           display: "flex",
           gap: 30,
           flexDirection: "column",
-          padding: [20, 40],
+          padding: "20px 40px",
           // justifyContent: "center",
           alignItems: "center",
         }}
       >
         <Field label="Email address">
-          <InputEditor />
-        </Field>
-
-        <Field label="Email address" position="horizontal">
           <InputEditor />
         </Field>
       </div>

@@ -1,5 +1,13 @@
 # @react-elf/badge
 
+## 0.0.85
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf-types/badge@0.0.85
+  - @react-elf/shared@0.0.85
+
 ## 0.0.76
 
 ### Patch Changes
