@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.86
+
+### Patch Changes
+
+- update TextField component
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.86
+
 ## 0.0.85
 
 ### Patch Changes

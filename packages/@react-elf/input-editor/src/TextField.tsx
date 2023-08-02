@@ -1,8 +1,9 @@
 import React from "react";
-import { Field } from "./Field";
 
-import { InputEditor } from "./InputEditor";
 import { TextFieldProps } from "@react-elf-types/input-editor";
+
+import { Field } from "./Field";
+import { InputEditor } from "./InputEditor";
 
 export function TextField({
   help,

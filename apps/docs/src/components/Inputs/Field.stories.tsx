@@ -1,9 +1,9 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Field, InputEditor } from "@react-elf/ui";
+import { Field, HelpText, InputEditor } from "@react-elf/ui";
 
 const meta = {
-  title: "Components/Inputs/Field",
+  title: "Components/Inputs/Field Label",
   component: Field,
   tags: ["autodocs"],
 } satisfies Meta<typeof Field>;
@@ -12,7 +12,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 /**
- * Preview RadioGroup Story
+ * Preview Field Story
  */
 export const Default: Story = {
   args: {

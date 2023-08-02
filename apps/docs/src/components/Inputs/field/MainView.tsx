@@ -36,7 +36,7 @@ export function MainView() {
           />
         </Field>
 
-        <Field label="uncontrolled">
+        <Field label="Uncontrolled">
           <InputEditor defaultValue={value} />
         </Field>
       </div>

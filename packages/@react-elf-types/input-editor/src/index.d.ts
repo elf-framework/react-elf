@@ -56,8 +56,8 @@ export type InputEditorProps = {
   style?: InputEditorStyle & CommonStyle;
   disabled?: boolean;
   required?: boolean;
-  value?: string;
-  defaultValue?: string;
+  value?: string | number;
+  defaultValue?: string | number;
   readOnly?: boolean;
   size?: SizeType;
   icon?: ReactNode;
@@ -114,7 +114,7 @@ export type TextAreaEditorProps = {
   FieldProps;
 
 export type TextFieldProps = {
-  inputStyle?: InputEditorStyle;
+  inputStyle?: InputEditorStyle & CommonStyle;
 } & InputEditorProps &
   DomEventType &
   FieldProps;
