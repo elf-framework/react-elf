@@ -1,4 +1,5 @@
-import { TextArea, VBox } from "@elf-framework/ui";
+import React from "react";
+import { TextArea, VBox } from "@react-elf/ui";
 
 export function MainView() {
   return (
@@ -8,6 +9,10 @@ export function MainView() {
         backgroundColor: "var(--color-gray-0)",
         padding: [60, 200],
         position: "relative",
+        fontSize: 13,
+        justifyContent: "center",
+        alignItems: "center",
+        height: 300,
       }}
     >
       <div

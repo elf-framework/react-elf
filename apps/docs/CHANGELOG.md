@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.87
+
+### Patch Changes
+
+- update TextArea type
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.87
+
 ## 0.0.86
 
 ### Patch Changes

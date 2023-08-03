@@ -1,5 +1,6 @@
 import React from "react";
 
+import { TextAreaProps } from "@react-elf-types/input-editor";
 import { Field } from "./Field";
 import { TextAreaEditor } from "./TextAreaEditor";
 
@@ -21,7 +22,7 @@ export function TextArea({
   inputStyle,
   resizable,
   ...extraProps
-}) {
+}: TextAreaProps) {
   const fieldProps = {
     label,
     help,

@@ -55,7 +55,6 @@ export const TextAreaEditorComp: ForwardRefRenderFunction<
     placeholder,
     autoFocus,
     hover,
-    focused,
   } = props;
 
   const inputRef = useRef<HTMLTextAreaElement>(null);

@@ -1,5 +1,12 @@
 # @react-elf/button
 
+## 0.0.87
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/input-editor@0.0.87
+
 ## 0.0.86
 
 ### Patch Changes

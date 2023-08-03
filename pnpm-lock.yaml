@@ -29,8 +29,8 @@ importers:
         specifier: ^0.0.267
         version: 0.0.267
       '@elf-framework/design-system':
-        specifier: ^0.0.268
-        version: 0.0.268
+        specifier: ^0.0.269
+        version: 0.0.269
       '@elf-framework/design-tokens':
         specifier: ^0.0.268
         version: 0.0.268
@@ -2807,8 +2807,8 @@ packages:
     resolution: {integrity: sha512-txG+DpDBf89IhTfuFW2KGPDS9h9JgXM3dOUMWD3Rc2n576vKC1kp0N2n1M6XIR54Qu83UBVVwUuaflZ+cTvWKg==}
     dev: false
 
-  /@elf-framework/design-system@0.0.268:
-    resolution: {integrity: sha512-IUzTXe593u31693wqliUDRZYwFl4SXYmz5kIrAaxngO+dnjLFvAMUCz/w/xKEUjyEC8aewR1yOnleTyxUNGQqg==}
+  /@elf-framework/design-system@0.0.269:
+    resolution: {integrity: sha512-Jw39KTugysXndOnENm2OjBeO3N19ATOJsbLkOcyopfhpr6QL4hm6+r6vzbGTir7duY9Gs3FovUpiZ2B+Fq5WwQ==}
     dependencies:
       '@elf-framework/design-tokens': 0.0.268
     dev: false

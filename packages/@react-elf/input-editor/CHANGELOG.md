@@ -1,5 +1,11 @@
 # @react-elf/input-editor
 
+## 0.0.87
+
+### Patch Changes
+
+- update TextArea type
+
 ## 0.0.86
 
 ### Patch Changes

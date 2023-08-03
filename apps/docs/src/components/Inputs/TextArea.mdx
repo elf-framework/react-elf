@@ -1,0 +1,140 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as TextAreaStories from "./TextArea.stories";
+
+import { MainView } from "./textarea/MainView";
+import { OptionsView } from "./textarea/OptionsView";
+import { LabelPositionView } from "./textarea/LabelPositionView";
+import { ValueView } from "./textarea/ValueView";
+import { WidthView } from "./textarea/WidthView";
+import { SizeView } from "./textarea/SizeView";
+import { RequiredOptionalView } from "./textarea/RequiredOptionalView";
+import { DisabledView } from "./textarea/DisabledView";
+import { ReadOnlyView } from "./textarea/ReadOnlyView";
+import { HelpTextView } from "./textarea/HelpTextView";
+import { ResizableView } from "./textarea/ResizableView";
+
+<Meta of={TextAreaStories} />
+
+# Text Area
+
+A text area lets a user input a longer amount of text than a standard text field. It can include all of the standard validation options supported by the text field component.
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+## Options
+
+### Label
+
+A Text area should always have a label. In rare cases where context
+is sufficient and an accessibility expert has reviewed the design,
+the label could be undefined. A text area without a visible label
+should still include an aria-label in HTML (depending on the
+context, “aria-label” or “aria-labelledby”).
+
+<Unstyled>
+  <OptionsView />
+</Unstyled>
+
+### Label position
+
+Labels can be placed either on top or on the side. Top labels are
+the default and are recommended because they work better with long
+copy, localization, and responsive layouts. Side labels are most
+useful when vertical space is limited.
+
+<Unstyled>
+  <LabelPositionView />
+</Unstyled>
+
+### Value
+
+The value shows a user’s entered text.
+
+<Unstyled>
+  <ValueView />
+</Unstyled>
+
+### Width
+
+The width of a text area can be customized appropriately for its
+context.
+
+<Unstyled>
+  <WidthView />
+</Unstyled>
+
+### Size
+
+Text fields come in four different sizes: small, medium, large, and
+extra-large. The medium size is the default and most frequently used
+option. Use the other sizes sparingly; they should be used to create
+a hierarchy of importance within the page.
+
+<Unstyled>
+  <SizeView />
+</Unstyled>
+
+### Required or Optional
+
+Text fields can be marked as optional or required, depending on the
+situation. For required text fields, there are two styling options:
+a “(required)” label or an asterisk. If you use an asterisk, be sure
+to include hint text to explain what the asterisk means. Optional
+text fields are either denoted with text added to the end of the
+label — “(optional)” — or have no indication at all.
+
+The asterisk used in this component is an icon that has specific
+spacing from the label text — not part of the label text itself.
+
+<Unstyled>
+  <RequiredOptionalView />
+</Unstyled>
+
+### Disabled
+
+A text field in a disabled state shows that an input field exists, but
+is not available in that circumstance. This can be used to maintain
+layout continuity and communicate that a field may become available
+later.
+
+<Unstyled>
+  <DisabledView />
+</Unstyled>
+
+### Read only
+
+Text fields have a read-only option for when content in the disabled
+state still needs to be shown. This allows for content to be copied,
+but not interacted with or changed. A text field does not have a
+read-only option if there is nothing entered in it.
+
+<Unstyled>
+  <ReadOnlyView />
+</Unstyled>
+
+### Help text(description and error message)
+
+A text field can have help text below the field to give extra context
+or instruction about what a user should input in the field. The help
+text area has two options: a description and an error message. The
+description communicates a hint or helpful information, such as
+specific requirements for correctly filling out the field. The error
+message communicates an error for when the field requirements aren’t
+met, prompting a user to adjust what they had originally input.
+
+<Unstyled>
+  <HelpTextView />
+</Unstyled>
+
+### Resize drag handle
+
+Text areas can either be a static size or can be resizable with a drag
+icon in the bottom right corner. The drag icon should be hidden if the
+fixed variant is turned off, or if the text area should not be
+resizable.
+
+<Unstyled>
+  <ResizableView />
+</Unstyled>
