@@ -1,5 +1,11 @@
 # @react-elf/button
 
+## 0.0.88
+
+### Patch Changes
+
+- add Switch component
+
 ## 0.0.85
 
 ### Patch Changes

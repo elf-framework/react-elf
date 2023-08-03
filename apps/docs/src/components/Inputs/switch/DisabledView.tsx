@@ -1,4 +1,5 @@
-import { Switch, Grid, VBox } from "@elf-framework/ui";
+import React from "react";
+import { Switch, Grid, VBox } from "@react-elf/ui";
 
 export function DisabledView() {
   return (
@@ -8,6 +9,8 @@ export function DisabledView() {
         backgroundColor: "var(--color-gray-0)",
         padding: "60px 20px",
         fontSize: 13,
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Grid columns={1} style={{ padding: [0, 100] }}>
@@ -15,9 +18,6 @@ export function DisabledView() {
           <div>&nbsp;</div>
           <Switch disabled>label</Switch>
           <Switch disabled checked>
-            label
-          </Switch>
-          <Switch disabled indeterminate>
             label
           </Switch>
         </div>

@@ -104,19 +104,39 @@ export type HSLColorEditorProps = {
 } & InputPaintProps &
   DomEventType;
 
+export type AreaEditorProps = {
+  type?: InputEditorType;
+  hover?: boolean;
+  focused?: boolean;
+  autoFocus?: boolean;
+  autoFocusDelay?: number;
+  placeholder?: string;
+  style?: InputEditorStyle & CommonStyle;
+  disabled?: boolean;
+  required?: boolean;
+  value?: string | number;
+  defaultValue?: string | number;
+  readOnly?: boolean;
+  size?: SizeType;
+  icon?: ReactNode;
+  tools?: ReactNode;
+  invalid?: boolean;
+} & DomEventType;
+
 export type TextAreaEditorProps = {
   rows?: number;
   resizable?: boolean;
   icon?: ReactNode;
   tools?: ReactNode;
-} & InputEditorProps &
-  DomEventType &
+} & AreaEditorProps &
   FieldProps;
 
 export type TextFieldProps = {
   inputStyle?: InputEditorStyle & CommonStyle;
 } & InputEditorProps &
-  DomEventType &
   FieldProps;
 
-export type TextAreaProps = TextFieldProps & TextAreaEditorProps & CommonStyle;
+export type TextAreaProps = {
+  inputStyle?: InputEditorStyle & CommonStyle;
+} & FieldProps &
+  TextAreaEditorProps;

@@ -1,18 +1,18 @@
 import React, {
-  FocusEventHandler,
   ForwardRefRenderFunction,
   forwardRef,
-  useCallback,
   useEffect,
   useImperativeHandle,
   useMemo,
   useRef,
-  useState,
 } from "react";
-import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
+import {
+  makeCssVariablePrefixMap,
+  propertyMap,
+  useControlled,
+} from "@react-elf/shared";
 import { TextAreaEditorProps } from "@react-elf-types/input-editor";
 import classNames from "classnames";
-import { useControlled } from "./hooks/useControlled";
 import { useFocusEvent } from "./hooks/useFocusEvent";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--input-editor", {

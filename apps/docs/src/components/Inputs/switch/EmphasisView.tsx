@@ -1,4 +1,5 @@
-import { Switch, Grid, VBox } from "@elf-framework/ui";
+import React from "react";
+import { Switch, Grid, VBox } from "@react-elf/ui";
 
 export function EmphasisView() {
   return (
@@ -8,6 +9,8 @@ export function EmphasisView() {
         backgroundColor: "var(--color-gray-0)",
         padding: "60px 20px",
         fontSize: 13,
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Grid columns={2}>

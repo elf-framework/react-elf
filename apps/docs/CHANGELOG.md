@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.88
+
+### Patch Changes
+
+- add Switch component
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.88
+
 ## 0.0.87
 
 ### Patch Changes

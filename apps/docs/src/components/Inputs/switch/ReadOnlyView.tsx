@@ -1,4 +1,5 @@
-import { Switch, Grid, VBox } from "@elf-framework/ui";
+import React from "react";
+import { Switch, Grid, VBox } from "@react-elf/ui";
 
 export function ReadOnlyView() {
   return (
@@ -8,6 +9,8 @@ export function ReadOnlyView() {
         backgroundColor: "var(--color-gray-0)",
         padding: "60px 20px",
         fontSize: 13,
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Grid columns={1} style={{ padding: [0, 100] }}>
@@ -17,9 +20,7 @@ export function ReadOnlyView() {
           <Switch readOnly checked>
             label
           </Switch>
-          <Switch readOnly indeterminate>
-            label
-          </Switch>
+          <Switch readOnly>label</Switch>
         </div>
       </Grid>
     </VBox>

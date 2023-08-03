@@ -1,5 +1,15 @@
 # @react-elf/tools
 
+## 0.0.88
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/shared@0.0.88
+  - @react-elf/layout@0.0.88
+  - @react-elf/menu@0.0.88
+  - @react-elf/tooltip@0.0.88
+
 ## 0.0.85
 
 ### Patch Changes

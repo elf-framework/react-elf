@@ -1,4 +1,5 @@
-import { Switch, VBox } from "@elf-framework/ui";
+import React from "react";
+import { Switch, VBox } from "@react-elf/ui";
 
 export function MainView() {
   return (
@@ -9,6 +10,8 @@ export function MainView() {
         padding: [60, 200],
         position: "relative",
         alignItems: "center",
+        justifyContent: "center",
+        height: 300,
       }}
     >
       <div

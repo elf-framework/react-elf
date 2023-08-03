@@ -1,5 +1,15 @@
 # @react-elf/input-editor
 
+## 0.0.88
+
+### Patch Changes
+
+- add Switch component
+
+- Updated dependencies []:
+  - @react-elf-types/input-editor@0.0.88
+  - @react-elf/shared@0.0.88
+
 ## 0.0.87
 
 ### Patch Changes

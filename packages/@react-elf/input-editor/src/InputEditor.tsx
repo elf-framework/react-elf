@@ -8,8 +8,11 @@ import React, {
 } from "react";
 import classNames from "classnames";
 import { InputEditorProps } from "@react-elf-types/input-editor";
-import { makeCssVariablePrefixMap, propertyMap } from "@react-elf/shared";
-import { useControlled } from "./hooks/useControlled";
+import {
+  makeCssVariablePrefixMap,
+  propertyMap,
+  useControlled,
+} from "@react-elf/shared";
 import { useFocusEvent } from "./hooks/useFocusEvent";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--input-editor", {

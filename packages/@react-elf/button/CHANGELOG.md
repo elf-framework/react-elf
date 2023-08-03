@@ -1,5 +1,13 @@
 # @react-elf/button
 
+## 0.0.88
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @react-elf/shared@0.0.88
+  - @react-elf/tooltip@0.0.88
+
 ## 0.0.85
 
 ### Patch Changes

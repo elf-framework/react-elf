@@ -1,6 +1,7 @@
 import { KeyValue, StringKeyValue } from "@react-elf-types/shared";
 
 export * from "./Icon";
+export * from "./hooks";
 
 export const NumberStyleKeys = {
   width: true,

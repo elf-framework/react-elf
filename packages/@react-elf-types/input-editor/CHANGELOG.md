@@ -1,5 +1,11 @@
 # @react-elf-types/input-editor
 
+## 0.0.88
+
+### Patch Changes
+
+- add Switch component
+
 ## 0.0.86
 
 ### Patch Changes
