@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.90
+
+### Patch Changes
+
+- add Slider component
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.90
+
 ## 0.0.89
 
 ### Patch Changes

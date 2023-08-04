@@ -1,0 +1,116 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as SliderStories from "./Slider.stories";
+
+<Meta of={SliderStories} />
+
+import { MainView } from "./slider/MainView";
+import { OptionsView } from "./slider/OptionsView";
+import { LabelPositionView } from "./slider/LabelPositionView";
+import { MinMaxView } from "./slider/MinMaxView";
+import { ValueFormatView } from "./slider/ValueFormatView";
+import { FillView } from "./slider/FillView";
+import { FillStartView } from "./slider/FillStartView";
+import { DisabledView } from "./slider/DisabledView";
+import { GradientView } from "./slider/GradientView";
+
+# Slider
+
+Sliders allow users to quickly select a value within a range. They should be used when the upper and lower bounds to the range are invariable.
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+## Options
+
+### Label
+
+Sliders should always have a label. In rare cases where context is
+sufficient and an accessibility expert has reviewed the design, the
+label could be undefined. These sliders should still include an
+aria-label in HTML (depending on the context, “aria-label” or
+“aria-labelledby”).
+
+<Unstyled>
+  <OptionsView />
+</Unstyled>
+
+### Label Position
+
+Labels can be placed either on top or on the side. Top labels are the
+default and are recommended because they work better with long copy,
+localization, and responsive layouts. Side labels are most useful when
+vertical space is limited.
+
+<Unstyled>
+  <LabelPositionView />
+</Unstyled>
+
+### Value, min value, max value and step
+
+&nbsp;
+
+The value is the number selected within the slider’s range, from the
+min value to max value.
+
+The min and max values can also be customized appropriately for
+whatever the slider is showing. By default, the min value starts at 0
+and the max value is set to 100.
+
+The step is the increment by which these values increase or decrease.
+A step value of 1 (the default) lets a user only select whole numbers
+within the min and max range.
+
+<Unstyled>
+  <MinMaxView />
+</Unstyled>
+
+### Value format
+
+Sometimes a value needs to be formatted for localization or for
+clearer communication (e.g., currencies or percentages). Formatting
+can involve rounding, mathematical transformations, number formatting,
+or displaying a prefix or suffix (e.g., “+/-” or “px”).
+
+<Unstyled>
+  <ValueFormatView />
+</Unstyled>
+
+### Fill
+
+The track of the slider can have a fill. By default, the fill
+originates from the left side of the track.
+
+<Unstyled>
+  <FillView />
+</Unstyled>
+
+### Fill start
+
+If the value represents an offset, the fill start can be set to
+represent the point of origin. This allows the slider fill to start
+from inside the track.
+
+<Unstyled>
+  <FillStartView />
+</Unstyled>
+
+### Gradient
+
+A gradient can be added to the track of any slider to give more
+meaning to the range of values. Tracks with a gradient can also have a
+fill. A gradient track should not be used for choosing a precise
+color; use a color slider, color area, or color wheel instead.
+
+<Unstyled>
+  <GradientView />
+</Unstyled>
+
+### Disabled
+
+A slider in a disabled state shows that an input exists, but is not available in that circumstance.
+This can be used to maintain layout continuity and communicate that a slider may become available later.
+
+<Unstyled>
+  <DisabledView />
+</Unstyled>

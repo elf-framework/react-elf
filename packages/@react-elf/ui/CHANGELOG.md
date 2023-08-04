@@ -1,5 +1,14 @@
 # @react-elf/button
 
+## 0.0.90
+
+### Patch Changes
+
+- add Slider component
+
+- Updated dependencies []:
+  - @react-elf/slider@0.0.90
+
 ## 0.0.88
 
 ### Patch Changes

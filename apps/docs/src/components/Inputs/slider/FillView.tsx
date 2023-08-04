@@ -1,4 +1,5 @@
-import { VBox, Slider } from "@elf-framework/ui";
+import React from "react";
+import { VBox, Slider } from "@react-elf/ui";
 
 export function FillView() {
   return (

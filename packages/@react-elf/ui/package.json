@@ -1,6 +1,6 @@
 {
   "name": "@react-elf/ui",
-  "version": "0.0.88",
+  "version": "0.0.90",
   "description": "",
   "files": [
     "dist",
@@ -50,7 +50,8 @@
     "@react-elf/radio": "workspace:*",
     "@react-elf/help-text": "workspace:*",
     "@react-elf/input-editor": "workspace:*",
-    "@react-elf/switch": "workspace:*"
+    "@react-elf/switch": "workspace:*",
+    "@react-elf/slider": "workspace:*"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.17.0",

@@ -1,4 +1,5 @@
-import { VBox, Slider } from "@elf-framework/ui";
+import React from "react";
+import { VBox, Slider } from "@react-elf/ui";
 
 export function MinMaxView() {
   return (
@@ -28,7 +29,7 @@ export function MinMaxView() {
           </div>
           <Slider
             label={"Opacity"}
-            value={40}
+            defaultValue={40}
             fill
             min={0}
             max={100}
@@ -46,7 +47,7 @@ export function MinMaxView() {
           </div>
           <Slider
             label={"Contrast"}
-            value={40}
+            defaultValue={40}
             fill
             min={0}
             max={100}

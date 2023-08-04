@@ -1,6 +1,8 @@
-import { VBox, Slider } from "@elf-framework/ui";
+import React, { useState } from "react";
+import { VBox, Slider } from "@react-elf/ui";
 
-export function DisabledView() {
+export function OptionsView() {
+  const [value, setValue] = useState(0);
   return (
     <VBox
       style={{
@@ -12,14 +14,11 @@ export function DisabledView() {
     >
       <div style={{ display: "flex", flexDirection: "column", padding: 20 }}>
         <Slider
-          disabled
-          label={"Exposure"}
-          value={1.83}
-          fill
-          min={-5}
-          max={5}
-          step={0.01}
-          valueFunc={(v) => `${v < 0 ? "-" : "+"} ${v}%`}
+          label={"Contrast"}
+          value={value}
+          max={10000}
+          step={20}
+          onChange={(v) => setValue(v)}
         />
       </div>
     </VBox>

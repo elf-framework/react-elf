@@ -1,5 +1,5 @@
-import { useState } from "@elf-framework/sapa";
-import { VBox, Slider } from "@elf-framework/ui";
+import React, { useState } from "react";
+import { VBox, Slider } from "@react-elf/ui";
 
 export function LabelPositionView() {
   const [value, setValue] = useState(0);
@@ -28,7 +28,7 @@ export function LabelPositionView() {
           min={-5}
           max={5}
           step={0.01}
-          onInput={(v) => setValue(v)}
+          onChange={(v) => setValue(v)}
         />
         <Slider
           label={"Contrast"}
@@ -36,7 +36,7 @@ export function LabelPositionView() {
           value={value2}
           max={10000}
           step={20}
-          onInput={(v) => setValue2(v)}
+          onChange={(v) => setValue2(v)}
         />
       </div>
     </VBox>
