@@ -22,3 +22,4 @@ export * from "@react-elf/help-text";
 export * from "@react-elf/input-editor";
 export * from "@react-elf/switch";
 export * from "@react-elf/slider";
+export * from "@react-elf/progress-bar";

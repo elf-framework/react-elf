@@ -1,0 +1,125 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as ProgressBarStories from "./ProgressBar.stories";
+
+<Meta of={ProgressBarStories} />
+
+import { MainView } from "./progressbar/MainView";
+import { IndeterminateView } from "./progressbar/IndeterminateView";
+
+import { LabelView } from "./progressbar/LabelView";
+import { DefaultVariantView } from "./progressbar/DefaultVariantView";
+import { OverBackgroundVariantView } from "./progressbar/OverBackgroundVariantView";
+import { SizeView } from "./progressbar/SizeView";
+import { WidthView } from "./progressbar/WidthView";
+import { ValueView } from "./progressbar/ValueView";
+import { MinMaxValueView } from "./progressbar/MinMaxValueView";
+
+# Progress bar
+
+Progress bars show the progression of a system operation: downloading, uploading, processing, etc., in a visual way. They can represent either determinate or indeterminate progress.
+
+## Usage
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+## Options
+
+### Default variant
+
+Progress bars are used to visually show the progression of a system
+operation such as downloading, uploading, processing, etc. By
+default, progress bars have a blue fill that shows the progress.
+
+<Unstyled>
+  <DefaultVariantView />
+</Unstyled>
+
+### Over background variant
+
+When a progress bar needs to be placed on top of a colored
+background, use the over background variant. This progress bar uses
+a static white color regardless of the color theme. Make sure the
+background offers enough contrast for the progress bar to be legible.
+
+<Unstyled>
+  <OverBackgroundVariantView />
+</Unstyled>
+
+### Label
+
+Progress bars should have a label that gives context about the
+operation being performed. Use an ellipsis at the end of the label
+text to communicate that the process is in progress. In rare cases
+where context is sufficient and an accessibility expert has reviewed
+the design, the label could be undefined. These progress bars should
+still include an aria-label in HTML (depending on the context,
+“aria-label” or “aria-labelledby”). The label is always placed above
+the track.
+
+<Unstyled>
+  <LabelView />
+</Unstyled>
+
+### Value, min value, max value
+
+The value is the progress of a system operation (e.g., downloading,
+uploading, processing) within the progress bar’s range, from the min
+value to max value.
+
+The min and max values can also can be customized appropriately for
+whatever the progress bar is showing. By default, the min value
+starts at 0 and the max value is set to 100.
+
+These values are not applicable when a progress bar is
+indeterminate.
+
+<Unstyled>
+  <MinMaxValueView />
+</Unstyled>
+
+### Value label
+
+Progress bars can have a value label that gives detailed information
+about the progress (e.g. "60%" or "2 of 8"). This value label works
+alongside the label and should not be displayed if the label itself
+is not displayed. It should also not be displayed if the progress is
+indeterminate. Similar to the label, the value label is always
+placed above the track.
+
+<Unstyled>
+  <ValueView />
+</Unstyled>
+
+### width
+
+The width of a progress bar can be customized appropriately for its context.
+The default width is 192px on desktop and 240px on mobile.
+
+<Unstyled>
+  <WidthView />
+</Unstyled>
+
+### Size
+
+Badges come in four different sizes: `small`, `medium`, `large`, and `extra-large`.
+The small size is the default and most frequently used option.
+Use the other sizes sparingly to create a hierarchy of importance on a page.
+
+<Unstyled>
+  <SizeView />
+</Unstyled>
+
+### Indeterminate
+
+A progress bar can be either determinate or indeterminate. By
+default, progress bars are determinate. Use a determinate progress
+bar when progress can be calculated against a specific goal (e.g.,
+downloading a file of a known size). Use an indeterminate progress
+bar when progress is happening but the time or effort to completion
+can’t be determined (e.g., attempting to reconnect to a server).
+
+<Unstyled>
+  <IndeterminateView />
+</Unstyled>

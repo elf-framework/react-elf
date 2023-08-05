@@ -1,5 +1,14 @@
 # @react-elf/docs
 
+## 0.0.91
+
+### Patch Changes
+
+- add ProgressBar component
+
+- Updated dependencies []:
+  - @react-elf/ui@0.0.91
+
 ## 0.0.90
 
 ### Patch Changes

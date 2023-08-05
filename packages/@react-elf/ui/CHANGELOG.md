@@ -1,5 +1,14 @@
 # @react-elf/button
 
+## 0.0.91
+
+### Patch Changes
+
+- add ProgressBar component
+
+- Updated dependencies []:
+  - @react-elf/progress-bar@0.0.91
+
 ## 0.0.90
 
 ### Patch Changes
