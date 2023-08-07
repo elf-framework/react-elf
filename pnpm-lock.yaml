@@ -153,6 +153,15 @@ importers:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
         version: 18.2.0
 
+  packages/@react-elf-types/animation:
+    dependencies:
+      '@react-elf-types/shared':
+        specifier: workspace:*
+        version: link:../shared
+      react:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0
+
   packages/@react-elf-types/badge:
     dependencies:
       '@react-elf-types/shared':
@@ -307,6 +316,15 @@ importers:
         specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
         version: 18.2.0
 
+  packages/@react-elf-types/progress-circle:
+    dependencies:
+      '@react-elf-types/shared':
+        specifier: workspace:*
+        version: link:../shared
+      react:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0
+
   packages/@react-elf-types/radio:
     dependencies:
       '@react-elf-types/shared':
@@ -419,6 +437,43 @@ importers:
         specifier: 0.33.0
         version: 0.33.0
 
+  packages/@react-elf/animation:
+    dependencies:
+      '@react-elf-types/animation':
+        specifier: workspace:*
+        version: link:../../@react-elf-types/animation
+      '@react-elf/shared':
+        specifier: workspace:*
+        version: link:../shared
+      '@types/react':
+        specifier: ^18.2.15
+        version: 18.2.16
+      classnames:
+        specifier: ^2.3.2
+        version: 2.3.2
+      react:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^5.17.0
+        version: 5.17.0
+      '@testing-library/react':
+        specifier: ^14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      vite:
+        specifier: ^4.4.6
+        version: 4.4.7(@types/node@20.4.5)(less@4.1.3)(sass@1.64.1)
+      vite-plugin-dts:
+        specifier: ^3.3.1
+        version: 3.3.1(@types/node@20.4.5)(typescript@5.1.6)(vite@4.4.7)
+      vitest:
+        specifier: 0.33.0
+        version: 0.33.0
+
   packages/@react-elf/badge:
     dependencies:
       '@react-elf-types/badge':
@@ -458,6 +513,9 @@ importers:
       '@react-elf-types/button':
         specifier: workspace:*
         version: link:../../@react-elf-types/button
+      '@react-elf-types/shared':
+        specifier: workspace:*
+        version: link:../../@react-elf-types/shared
       '@react-elf/shared':
         specifier: workspace:*
         version: link:../shared
@@ -968,6 +1026,43 @@ importers:
         specifier: 0.33.0
         version: 0.33.0
 
+  packages/@react-elf/progress-circle:
+    dependencies:
+      '@react-elf-types/progress-circle':
+        specifier: workspace:*
+        version: link:../../@react-elf-types/progress-circle
+      '@react-elf/shared':
+        specifier: workspace:*
+        version: link:../shared
+      '@types/react':
+        specifier: ^18.2.15
+        version: 18.2.16
+      classnames:
+        specifier: ^2.3.2
+        version: 2.3.2
+      react:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^5.17.0
+        version: 5.17.0
+      '@testing-library/react':
+        specifier: ^14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      vite:
+        specifier: ^4.4.6
+        version: 4.4.7(@types/node@20.4.5)(less@4.1.3)(sass@1.64.1)
+      vite-plugin-dts:
+        specifier: ^3.3.1
+        version: 3.3.1(@types/node@20.4.5)(typescript@5.1.6)(vite@4.4.7)
+      vitest:
+        specifier: 0.33.0
+        version: 0.33.0
+
   packages/@react-elf/radio:
     dependencies:
       '@react-elf-types/radio':
@@ -1278,6 +1373,9 @@ importers:
       '@react-elf/alert':
         specifier: workspace:*
         version: link:../alert
+      '@react-elf/animation':
+        specifier: workspace:*
+        version: link:../animation
       '@react-elf/badge':
         specifier: workspace:*
         version: link:../badge
@@ -1323,6 +1421,9 @@ importers:
       '@react-elf/progress-bar':
         specifier: workspace:*
         version: link:../progress-bar
+      '@react-elf/progress-circle':
+        specifier: workspace:*
+        version: link:../progress-circle
       '@react-elf/radio':
         specifier: workspace:*
         version: link:../radio

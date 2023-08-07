@@ -1,4 +1,5 @@
-import { ProgressCircle, VBox } from "@elf-framework/ui";
+import React from "react";
+import { ProgressCircle, VBox } from "@react-elf/ui";
 
 export function MainView() {
   return (
@@ -6,8 +7,11 @@ export function MainView() {
       style={{
         gap: 30,
         backgroundColor: "var(--color-gray-0)",
-        padding: [60, 300],
         position: "relative",
+        margin: [0, "auto"],
+        justifyContent: "center",
+        height: 200,
+        alignItems: "center",
       }}
     >
       <div

@@ -1,0 +1,100 @@
+import { Controls, Canvas, Meta, Unstyled, Source } from "@storybook/blocks";
+import * as ProgressCircleStories from "./ProgressCircle.stories";
+
+<Meta of={ProgressCircleStories} />
+
+import { MainView } from "./progresscircle/MainView";
+import { IndeterminateView } from "./progresscircle/IndeterminateView";
+import { SpinView } from "./progresscircle/SpinView";
+import { DefaultVariantView } from "./progresscircle/DefaultVariantView";
+import { OverBackgroundVariantView } from "./progresscircle/OverBackgroundVariantView";
+import { SizeView } from "./progresscircle/SizeView";
+import { MinMaxValueView } from "./progresscircle/MinMaxValueView";
+
+# Progress Circle
+
+Progress circles show the progression of a system operation such as downloading, uploading, processing, etc. in a visual way. They can represent determinate or indeterminate progress.
+
+## Usage
+
+<Unstyled>
+  <MainView />
+</Unstyled>
+
+<Canvas of={ProgressCircleStories.Default} sourceState="shown" />
+
+## Options
+
+### Default variant
+
+Progress circles are used to visually show the progression of a
+system operation such as downloading, uploading, processing, etc. By
+default, progress circles have a blue fill that shows the progress.
+
+<Unstyled>
+  <DefaultVariantView />
+</Unstyled>
+
+### Over background variant
+
+When a progress circle needs to be placed on top of a colored
+background, use the over background variant. This progress circle
+uses a static white color regardless of the color theme. Make sure
+the background offers enough contrast for the progress circle to be
+legible.
+
+<Unstyled>
+  <OverBackgroundVariantView />
+</Unstyled>
+
+### Value, min value, max value
+
+The value is the progress of a system operation (e.g., downloading,
+uploading, processing) within the progress circle’s range, from the
+min value to max value.
+
+The min and max values can also be customized appropriately for
+whatever the progress circle is showing. By default, the min value
+starts at 0 and the max value is set to 100.
+
+These values are not applicable when a progress circle is
+indeterminate.
+
+<Unstyled>
+  <MinMaxValueView />
+</Unstyled>
+
+### Size
+
+Progress circles come in 3 sizes: small, medium (default), or large.
+These are available to fit various contexts. For example, the small
+progress circle can be used in place of an icon or in tight spaces,
+while the large one can be used for full-page loading.
+
+<Unstyled>
+  <SizeView />
+</Unstyled>
+
+### Indeterminate
+
+A progress circle can be either determinate or indeterminate. By
+default, progress circles are determinate. Use a determinate
+progress circle when progress can be calculated against a specific
+goal (e.g., downloading a file of a known size). Use an
+indeterminate progress circle when progress is happening but the
+time or effort to completion can’t be determined (e.g., attempting
+to reconnect to a server).
+
+<Unstyled>
+  <IndeterminateView />
+</Unstyled>
+
+### spin animation
+
+When part of the page is waiting for asynchronous data or during a
+rendering process, an appropriate loading animation can effectively
+alleviate users' inquietude.
+
+<Unstyled>
+  <SpinView />
+</Unstyled>

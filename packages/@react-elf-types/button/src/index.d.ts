@@ -25,7 +25,7 @@ type ButtonVariant =
   | "light"
   | "dark"
   | "white";
-type ButtonSize = "extra-small" | "small" | "default" | "large" | "extra-large";
+type ButtonSize = "extra-small" | "small" | "medium" | "large" | "extra-large";
 
 type ButtonShape = "rect" | "round" | "circle";
 
@@ -50,13 +50,17 @@ interface ButtonProps {
   hasMinWidth?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   style?: ButtonStyle;
+  value?: ButtonValue;
   thin?: boolean;
   closable?: boolean;
   href?: string;
   target?: string;
   pending?: boolean;
   as?: string;
+  noContext?: boolean;
 }
+
+type ButtonValue = string | number;
 
 interface ActionGroupProps {
   children?: ReactNode;
@@ -67,7 +71,16 @@ interface ActionGroupProps {
   justified?: boolean;
   collapsed?: boolean;
   disabled?: boolean;
-  shape?: "rect" | "normal";
+  readonly?: boolean;
+  size?: ButtonSize;
+  shape?: ButtonShape;
+  variant?: ButtonVariant;
+  outline?: boolean;
+  className?: string;
+  iconOnly?: boolean;
+  thin?: boolean;
+  value?: ButtonValue[];
+  onChange?: (value: ButtonValue | ButtonValue[]) => void;
   onMoreClick?: (event: PointerEvent, items: ReactNode[]) => void;
   style?: ButtonStyle & CommonStyle;
   boundary?: number;

@@ -11,12 +11,12 @@ export function MultiSelectionView() {
         <div>
           <em>Single Selection</em>
         </div>
-        <ActionGroup style={{ gap: 10, margin: 10 }}>
-          <Button quiet selected>
+        <ActionGroup style={{ gap: 10, margin: 10 }} value={[1, 2]}>
+          <Button quiet value={1}>
             <MdDescription />
             Document Setup
           </Button>
-          <Button quiet>
+          <Button quiet value={2}>
             <MdSettings /> Settings
           </Button>
           <Button quiet>
@@ -28,12 +28,12 @@ export function MultiSelectionView() {
         <div>
           <em>Multi Selection</em>
         </div>
-        <ActionGroup style={{ gap: 10, margin: 10 }}>
-          <Button quiet selected>
+        <ActionGroup style={{ gap: 10, margin: 10 }} value={[1, 2]}>
+          <Button quiet value={1}>
             <MdDescription />
             Document Setup
           </Button>
-          <Button quiet selected>
+          <Button quiet value={2}>
             <MdSettings /> Settings
           </Button>
           <Button quiet>

@@ -9,7 +9,7 @@ export function OptionsView() {
     >
       <div>
         <em>Horizontal</em>
-        <ActionGroup style={{ gap: 10, margin: 10 }}>
+        <ActionGroup style={{ gap: 10, margin: 10 }} shape="round">
           <Button>
             <MdDescription />
             Document Setup
@@ -18,7 +18,7 @@ export function OptionsView() {
             <MdSettings /> Settings
           </Button>
         </ActionGroup>
-        <ActionGroup style={{ gap: 10, margin: "10px 10px" }}>
+        <ActionGroup style={{ gap: 10, margin: "10px 10px" }} shape="round">
           <IconButton quiet={true}>
             <MdEdit />
           </IconButton>
@@ -33,7 +33,11 @@ export function OptionsView() {
       <div>
         <em>Vertical</em>
         <Grid columns={2} gap={20}>
-          <ActionGroup direction="vertical" style={{ gap: 10, margin: 10 }}>
+          <ActionGroup
+            direction="vertical"
+            style={{ gap: 10, margin: 10 }}
+            shape="round"
+          >
             <Button>
               <MdDescription />
               Document Setup
@@ -45,6 +49,7 @@ export function OptionsView() {
           <ActionGroup
             direction="vertical"
             style={{ gap: 10, margin: "10px 10px" }}
+            shape="round"
           >
             <IconButton quiet={true}>
               <MdEdit />

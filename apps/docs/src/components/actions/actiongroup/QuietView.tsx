@@ -5,7 +5,14 @@ import { MdDescription, MdSettings } from "react-icons/md";
 export function QuietView() {
   return (
     <VBox
-      style={{ gap: 30, backgroundColor: "var(--color-gray-0)", padding: 40 }}
+      style={{
+        flexDirection: "column",
+        gap: 30,
+        backgroundColor: "var(--color-gray-0)",
+        padding: 40,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
       <div>
         <div>
@@ -25,7 +32,7 @@ export function QuietView() {
         <div>
           <em>Quiet</em>
         </div>
-        <ActionGroup style={{ gap: 10, margin: 10 }}>
+        <ActionGroup style={{ gap: 10, margin: 10 }} quiet>
           <Button quiet={true}>
             <MdDescription />
             Document Setup

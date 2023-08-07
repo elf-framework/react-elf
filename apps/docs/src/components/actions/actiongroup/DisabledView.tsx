@@ -9,17 +9,17 @@ export function DisabledView() {
     >
       <div>
         <div>
-          <em>Wrap</em>
+          <em>Disabled</em>
         </div>
-        <ActionGroup style={{ gap: 10, margin: 10 }}>
-          <Button disabled={true}>
+        <ActionGroup style={{ gap: 10, margin: 10 }} disabled>
+          <Button>
             <MdDescription />
             Document Setup
           </Button>
-          <Button disabled={true}>
+          <Button>
             <MdSettings /> Settings
           </Button>
-          <Button disabled={true}>
+          <Button>
             <MdContentCopy /> Copy
           </Button>
         </ActionGroup>

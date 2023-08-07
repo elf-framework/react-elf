@@ -1,5 +1,11 @@
 import React from "react";
-import { ActionGroup, Button, VBox } from "@react-elf/ui";
+import {
+  ActionGroup,
+  Button,
+  IconButton,
+  IconWrapper,
+  VBox,
+} from "@react-elf/ui";
 import {
   MdContentCopy,
   MdDescription,
@@ -10,44 +16,70 @@ import {
 export function JustifiedView() {
   return (
     <VBox
-      style={{ gap: 30, backgroundColor: "var(--color-gray-0)", padding: 40 }}
+      style={{
+        flexDirection: "column",
+        gap: 30,
+        backgroundColor: "var(--color-gray-0)",
+        padding: 40,
+      }}
     >
-      <VBox>
+      <VBox
+        style={{
+          alignItems: "center",
+        }}
+      >
         <em>Not justified</em>
         <ActionGroup style={{ gap: 10, margin: 10 }}>
           <Button>
-            <MdDescription />
+            <IconWrapper>
+              <MdDescription />
+            </IconWrapper>
             Document Setup
           </Button>
           <Button>
-            <MdSettings /> Settings
+            <IconWrapper>
+              <MdSettings />
+            </IconWrapper>{" "}
+            Settings
           </Button>
         </ActionGroup>
         <ActionGroup compact={true} style={{ gap: 10, margin: 10 }}>
           <Button>
-            <MdDescription />
+            <IconWrapper>
+              <MdDescription />
+            </IconWrapper>
             Document
           </Button>
           <Button>
-            <MdContentCopy /> Copy
+            <IconWrapper>
+              <MdContentCopy />
+            </IconWrapper>{" "}
+            Copy
           </Button>
           <Button>
-            <MdSettings /> Settings
+            <IconWrapper>
+              <MdSettings />
+            </IconWrapper>{" "}
+            Settings
           </Button>
         </ActionGroup>
         <ActionGroup compact={true} style={{ gap: 10, margin: "10px 10px" }}>
-          <Button>
+          <IconButton>
             <MdEdit />
-          </Button>
-          <Button>
+          </IconButton>
+          <IconButton>
             <MdDescription />
-          </Button>
-          <Button>
+          </IconButton>
+          <IconButton>
             <MdSettings />
-          </Button>
+          </IconButton>
         </ActionGroup>
       </VBox>
-      <VBox>
+      <VBox
+        style={{
+          alignItems: "center",
+        }}
+      >
         <em>Justified</em>
         <ActionGroup justified={true} style={{ gap: 10, margin: 10 }}>
           <Button>
@@ -75,15 +107,15 @@ export function JustifiedView() {
           compact={true}
           style={{ gap: 10, margin: "10px 10px" }}
         >
-          <Button>
+          <IconButton>
             <MdEdit />
-          </Button>
-          <Button>
+          </IconButton>
+          <IconButton>
             <MdDescription />
-          </Button>
-          <Button>
+          </IconButton>
+          <IconButton>
             <MdSettings />
-          </Button>
+          </IconButton>
         </ActionGroup>
       </VBox>
     </VBox>

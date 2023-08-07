@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { ActionGroup, Button } from "@react-elf/ui";
+import { ActionGroup, Button, IconWrapper } from "@react-elf/ui";
 import { MdContentCopy, MdEdit, MdMore, MdPadding } from "react-icons/md";
 
 const meta = {
@@ -17,21 +17,30 @@ type Story = StoryObj<typeof meta>;
  */
 export const Default: Story = {
   args: {
+    shape: "round",
     children: (
       <>
         <Button>
-          <MdEdit />
+          <IconWrapper>
+            <MdEdit />
+          </IconWrapper>
           Edit
         </Button>
         <Button>
-          <MdContentCopy />
+          <IconWrapper>
+            <MdContentCopy />
+          </IconWrapper>
           Copy
         </Button>
         <Button iconOnly>
-          <MdPadding />
+          <IconWrapper>
+            <MdPadding />
+          </IconWrapper>
         </Button>
         <Button quiet>
-          <MdEdit />
+          <IconWrapper>
+            <MdEdit />
+          </IconWrapper>
           Edit
         </Button>
       </>
@@ -90,6 +99,7 @@ export const HorizontalQuiet: Story = {
 export const Vertical: Story = {
   args: {
     direction: "vertical",
+    shape: "round",
     children: (
       <>
         <Button>
@@ -139,6 +149,7 @@ export const VerticalQuiet: Story = {
 
 export const SizeDefault: Story = {
   args: {
+    size: "medium",
     children: (
       <>
         <Button>
@@ -163,20 +174,21 @@ export const SizeDefault: Story = {
 
 export const SizeSmall: Story = {
   args: {
+    size: "small",
     children: (
       <>
-        <Button size="small">
+        <Button>
           <MdEdit />
           Edit
         </Button>
-        <Button size="small">
+        <Button>
           <MdContentCopy />
           Copy
         </Button>
-        <Button iconOnly size="small">
+        <Button iconOnly>
           <MdPadding />
         </Button>
-        <Button size="small">
+        <Button>
           <MdEdit />
           Edit
         </Button>
@@ -187,20 +199,21 @@ export const SizeSmall: Story = {
 
 export const SizeLarge: Story = {
   args: {
+    size: "large",
     children: (
       <>
-        <Button size="large">
+        <Button>
           <MdEdit />
           Edit
         </Button>
-        <Button size="large">
+        <Button>
           <MdContentCopy />
           Copy
         </Button>
-        <Button iconOnly size="large">
+        <Button iconOnly>
           <MdPadding />
         </Button>
-        <Button size="large">
+        <Button>
           <MdEdit />
           Edit
         </Button>
@@ -211,20 +224,21 @@ export const SizeLarge: Story = {
 
 export const SizeExtraLarge: Story = {
   args: {
+    size: "extra-large",
     children: (
       <>
-        <Button size="extra-large">
+        <Button>
           <MdEdit />
           Edit
         </Button>
-        <Button size="extra-large">
+        <Button>
           <MdContentCopy />
           Copy
         </Button>
-        <Button iconOnly size="extra-large">
+        <Button iconOnly>
           <MdPadding />
         </Button>
-        <Button size="extra-large">
+        <Button>
           <MdEdit />
           Edit
         </Button>
@@ -311,6 +325,7 @@ export const JustifiedCompact: Story = {
 
 export const Quiet: Story = {
   args: {
+    quiet: true,
     children: (
       <>
         <Button quiet>
@@ -336,9 +351,10 @@ export const Quiet: Story = {
 export const Selection: Story = {
   args: {
     compact: true,
+    value: [1],
     children: (
       <>
-        <Button selected>
+        <Button value={1}>
           <MdEdit />
           Edit
         </Button>
@@ -360,13 +376,15 @@ export const Selection: Story = {
 
 export const MultiSelection: Story = {
   args: {
+    compact: true,
+    value: [1, 2],
     children: (
       <>
-        <Button selected>
+        <Button value={1}>
           <MdEdit />
           Edit
         </Button>
-        <Button selected>
+        <Button value={2}>
           <MdContentCopy />
           Copy
         </Button>
@@ -409,20 +427,21 @@ export const Collapsed: Story = {
 
 export const Disabled: Story = {
   args: {
+    disabled: true,
     children: (
       <>
-        <Button disabled>
+        <Button>
           <MdEdit />
           Edit
         </Button>
-        <Button disabled>
+        <Button>
           <MdContentCopy />
           Copy
         </Button>
-        <Button iconOnly disabled>
+        <Button iconOnly>
           <MdPadding />
         </Button>
-        <Button disabled>
+        <Button>
           <MdEdit />
           Edit
         </Button>

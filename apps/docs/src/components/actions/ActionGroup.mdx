@@ -35,7 +35,9 @@ An action group can be either horizontal or vertical in its
 orientation. By default, an action group is horizontal. The vertical
 option should be reserved for when horizontal space is limited.
 
-<OptionsView />
+<Unstyled>
+  <OptionsView />
+</Unstyled>
 
 <Canvas of={ActionGroupStories.Vertical} sourceState="shown" />
 
@@ -46,7 +48,9 @@ extra-large. The medium size is the default and most frequently used
 option. Use the other sizes sparingly; they should be used to create a
 hierarchy of importance within the page.
 
-<SizeView />
+<Unstyled>
+  <SizeView />
+</Unstyled>
 
 <Canvas of={ActionGroupStories.SizeLarge} sourceState="shown" />
 
@@ -56,7 +60,9 @@ Action groups come in 2 densities: regular and compact. The compact
 density retains the same font and icon sizes, but has tighter spacing.
 The action buttons also become connected for non-quiet action groups.
 
-<DensityView />
+<Unstyled>
+  <DensityView />
+</Unstyled>
 
 <Canvas of={ActionGroupStories.Compact} sourceState="shown" />
 
@@ -66,7 +72,9 @@ Action groups come in 2 densities: regular and compact. The compact
 density retains the same font and icon sizes, but has tighter spacing.
 The action buttons also become connected for non-quiet action groups.
 
-<JustifiedView />
+<Unstyled>
+  <JustifiedView />
+</Unstyled>
 
 <Canvas of={ActionGroupStories.Justified} sourceState="shown" />
 
@@ -83,7 +91,9 @@ layout (vertical stack, table, grid) makes it easy to parse the
 buttons. Too many quiet components in a small space can be hard to
 read.
 
-<QuietView />
+<Unstyled>
+  <QuietView />
+</Unstyled>
 
 <Canvas of={ActionGroupStories.Quiet} sourceState="shown" />
 
@@ -96,7 +106,9 @@ Selection can be enabled for an action group to allow for toggling.
 This can be used to disclose parts of an interface (e.g., showing or
 hiding panels) or to switch between views (e.g., grid or list views).
 
-<EnableSelectionView />
+<Unstyled>
+  <EnableSelectionView />
+</Unstyled>
 
 &nbsp;
 
@@ -107,7 +119,9 @@ hiding panels) or to switch between views (e.g., grid or list views).
 When selection is enabled, an action group can allow for single or
 multiple selection of action buttons.
 
-<MultiSelectionView />
+<Unstyled>
+  <MultiSelectionView />
+</Unstyled>
 
 &nbsp;
 
@@ -121,7 +135,9 @@ group is set to wrap, meaning that the action buttons inside the group
 wrap to form another line. Alternatively, an action group can be set
 to collapse inside a More (...) action button.
 
-<OverflowView />
+<Unstyled>
+  <OverflowView />
+</Unstyled>
 
 <Canvas of={ActionGroupStories.Collapsed} sourceState="shown" />
 
@@ -132,6 +148,8 @@ within the group exist, but are not available in that circumstance.
 This state can be used to maintain layout continuity and to
 communicate that an action group may become available later.
 
-<DisabledView />
+<Unstyled>
+  <DisabledView />
+</Unstyled>
 
 <Canvas of={ActionGroupStories.Disabled} sourceState="shown" />

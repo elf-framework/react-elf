@@ -23,3 +23,5 @@ export * from "@react-elf/input-editor";
 export * from "@react-elf/switch";
 export * from "@react-elf/slider";
 export * from "@react-elf/progress-bar";
+export * from "@react-elf/progress-circle";
+export * from "@react-elf/animation";

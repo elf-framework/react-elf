@@ -1,6 +1,6 @@
 {
   "name": "@react-elf-types/dialog",
-  "version": "0.0.85",
+  "version": "0.0.92",
   "description": "Elf UI components in React",
   "license": "MIT",
   "types": "src/index.d.ts",

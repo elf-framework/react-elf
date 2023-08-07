@@ -1,17 +1,35 @@
 import React from "react";
-import { ActionGroup, Button, Grid, IconButton, VBox } from "@react-elf/ui";
+import {
+  ActionGroup,
+  Button,
+  Grid,
+  IconButton,
+  IconWrapper,
+  VBox,
+} from "@react-elf/ui";
 import { MdDescription, MdEdit, MdSettings } from "react-icons/md";
 
 export function DensityView() {
   return (
     <VBox
-      style={{ gap: 30, backgroundColor: "var(--color-gray-0)", padding: 20 }}
+      style={{
+        flexDirection: "column",
+        gap: 30,
+        backgroundColor: "var(--color-gray-0)",
+        padding: 20,
+        fontSize: 13,
+        justifyContent: "center",
+        alignItems: "center",
+        height: 300,
+      }}
     >
       <VBox>
         <em>Regular</em>
         <ActionGroup style={{ gap: 10, margin: 10 }}>
           <Button>
-            <MdDescription />
+            <IconWrapper>
+              <MdDescription />
+            </IconWrapper>
             Document Setup
           </Button>
           <Button>
@@ -41,12 +59,14 @@ export function DensityView() {
           </IconButton>
         </ActionGroup>
       </VBox>
-      <Grid columns={2}>
+      <Grid columns={1}>
         <VBox>
           <em>Compact</em>
           <ActionGroup compact={true} style={{ gap: 10, margin: 10 }}>
             <Button>
-              <MdDescription />
+              <IconWrapper>
+                <MdDescription />
+              </IconWrapper>
               Document Setup
             </Button>
             <Button>
@@ -84,11 +104,16 @@ export function DensityView() {
             style={{ gap: 10, margin: 10 }}
           >
             <Button>
-              <MdDescription />
+              <IconWrapper>
+                <MdDescription />
+              </IconWrapper>
               Document Setup
             </Button>
             <Button>
-              <MdSettings /> Settings
+              <IconWrapper>
+                <MdSettings />
+              </IconWrapper>{" "}
+              Settings
             </Button>
           </ActionGroup>
           <ActionGroup
@@ -96,9 +121,9 @@ export function DensityView() {
             direction={"vertical"}
             style={{ gap: 10, margin: "10px 10px" }}
           >
-            <Button iconOnly>
+            <IconButton>
               <MdEdit />
-            </Button>
+            </IconButton>
             <IconButton selected>
               <MdDescription />
             </IconButton>

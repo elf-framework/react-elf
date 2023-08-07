@@ -12,7 +12,7 @@ export function EnableSelectionView() {
           <em>Selection not enabled</em>
         </div>
         <ActionGroup style={{ gap: 10, margin: 10 }}>
-          <Button>
+          <Button value={"test"}>
             <MdDescription />
             Document Setup
           </Button>
@@ -34,8 +34,8 @@ export function EnableSelectionView() {
         <div>
           <em>Selection enabled</em>
         </div>
-        <ActionGroup style={{ gap: 10, margin: 10 }}>
-          <Button selected={true}>
+        <ActionGroup style={{ gap: 10, margin: 10 }} value={[1]}>
+          <Button value={1}>
             <MdDescription />
             Document Setup
           </Button>
@@ -43,8 +43,8 @@ export function EnableSelectionView() {
             <MdSettings /> Settings
           </Button>
         </ActionGroup>
-        <ActionGroup compact={true} style={{ gap: 10, margin: 10 }}>
-          <Button selected={true}>
+        <ActionGroup compact={true} style={{ gap: 10, margin: 10 }} value={[1]}>
+          <Button value={1}>
             <MdDescription />
             Document Setup
           </Button>

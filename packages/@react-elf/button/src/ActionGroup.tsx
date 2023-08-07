@@ -10,6 +10,8 @@ import {
 import { Tooltip } from "@react-elf/tooltip";
 
 import { Button } from "./Button";
+import { ActionGroupContext } from "./context";
+import { useActionGroupState } from "./hooks/useActionGroupState";
 
 const cssProperties = makeCssVariablePrefixMap("--elf--action-group", {
   alignItems: true,
@@ -30,6 +32,8 @@ export function ActionGroup(props: ActionGroupProps) {
     shape = "normal",
     ...extraStyle
   } = props;
+
+  const state = useActionGroupState(props);
 
   const elRef = useRef<HTMLDivElement>(null);
   const [visibleTargetList, setVisibilityTargetList] = useState([]);
@@ -127,18 +131,20 @@ export function ActionGroup(props: ActionGroupProps) {
 
   return (
     <div {...styleObject} ref={elRef}>
-      {items}
-      {hiddenItems.length ? (
-        <Tooltip
-          message={hiddenItems}
-          trigger="click"
-          hideArrow={true}
-          placement={"bottom-left"}
-          style={{ contentPadding: "0px" }}
-        >
-          <Button iconOnly>{moreIcon}</Button>
-        </Tooltip>
-      ) : undefined}
+      <ActionGroupContext.Provider value={state}>
+        {items}
+        {hiddenItems.length ? (
+          <Tooltip
+            message={hiddenItems}
+            trigger="click"
+            hideArrow={true}
+            placement={"bottom-left"}
+            style={{ contentPadding: "0px" }}
+          >
+            <Button iconOnly>{moreIcon}</Button>
+          </Tooltip>
+        ) : undefined}
+      </ActionGroupContext.Provider>
     </div>
   );
 }
